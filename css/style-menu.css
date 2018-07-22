@@ -1,0 +1,134 @@
+/******************************* nav menu side bar *******************************/
+
+/*all nav bar link items are #333333, size 16pt, blue on hover*/
+.menu-sidebar {
+    /*display: inline-block;*/
+    font-size: 1em;
+    font-family: "GT America", "Arial", sans-serif;
+    /*text-transform: uppercase;*/
+    width: 25%;
+    min-width: 200px;
+    z-index: 1;
+    overflow-x: hidden;
+    position: fixed;
+    top: 10%;
+}
+
+.toggle-button {
+    display: none;
+}
+
+a {
+    transition: all 300ms ease-out;
+}
+
+/*logo my name*/
+#menu-logo {
+    /*display: inline-block;*/
+    font-family: "Gotham Medium";
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    /*font-weight: 600;*/
+    margin-bottom: 30px;
+    /*position: fixed;
+    top: 10%;*/
+}
+
+#menu-logo a {
+    text-decoration: none;
+    color: #666;
+}
+
+.menu-item {
+   margin: 16px 0 12px 0;
+}
+
+.menu-item a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: #12a8ad;
+    /*transition: .3s linear background;*/
+}
+
+.menu-wrap {
+    /*position: fixed;*/
+    /*top: 0;*/
+    height: 100%;
+    width: 280px;
+    /*margin-left: -280px;*/
+    /*font-size: 1em;*/
+    /*font-weight: 700;*/
+    /*overflow: auto;*/
+    transition: .25s;
+    z-index: 10;
+}
+
+.submenu {
+    /*display: none;*/
+}
+
+.submenu-item {
+    margin: 16px 0 0 24px;
+    /*font-size: .8em;*/
+
+}
+
+/*this is for the line i don't want*/
+/*
+.menu-sidebar li > a::after {
+    content: "";
+    display: block;
+    height: 0.15em;
+    position: absolute;
+    top: 100%;
+    width: 102%;
+    left: 50%;
+    transform: translate(-50%);*/
+    /*background-image: linear-gradient(to right, transparent 50.3%, #FFFA3B 50.3%);*/
+    /*transition: background-position .2s .1s ease-out;*/
+    /*background-size: 200% auto;
+}*/
+/*
+.menu-sidebar li > a:hover::after {
+    background-position: -100% 0;
+}*/
+
+
+/******************************* portolfio menu items *******************************/
+
+.menu-sidebar .menu-item-has-children {
+    position: relative;
+}
+
+.menu-sidebar .menu-item-has-children .sub-menu {
+    display: none;
+}
+
+/*menu arrow*/
+.sidebar-menu-arrow::after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    padding: 5px;
+    color: #333333;
+    position: relative;
+}
+.sidebar-menu-arrow:hover::after {
+    cursor: pointer;
+    color: #12a8ad;
+}
+.sidebar-menu-arrow:active::after {
+    top: 2px;
+}
+
+/******************************* footer *******************************/
+footer {
+    /*margin-top: 10px;*/
+    position: fixed;
+    bottom: 50px;
+    font-size: 0.875em;
+    color: rgb(160,160,150);
+}

@@ -1,0 +1,306 @@
+/*mobile*/
+
+@media screen and (max-width: 414px) {
+    body {
+        margin: 5% 0;
+    }
+
+    .main-right {
+        margin-left: 5%;
+    }
+    .body-content {
+        width: 100%;
+        /*display: block;*/
+        /*vertical-align: top;*/
+    }
+
+    /*.left-title {
+        display: block;
+        width: 100%;
+        line-height: 1.4em;
+    }*/
+
+
+    /******************************************* menu stuff *******************************************/
+    .menu-sidebar {
+        position: inherit;
+        width: 100%;
+    }
+
+    .menu-wrap {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 200px;
+        margin-left: -250px;
+        padding: 80px 20px 20px 20px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        overflow: auto;
+        transition: .25s;
+        z-index: 10;
+    }
+
+    .menu-show {
+        margin-left: 0;
+        /*top: 0;*/
+        /*padding: 80px 20px 20px 20px;*/
+        box-shadow: -4px 2px 15px 1px #333;
+    }
+
+    .sidebar-menu-arrow {
+        display: none;
+    }
+
+    .submenu-item {
+        display: none;
+    }
+
+    #menu-logo {
+        text-align: right;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    /*hamburger icon*/
+    .toggle-button {
+      position: fixed;
+      width: 30px;
+      height: 40px;
+      padding: 4px;
+      transition: .25s;
+      z-index: 15;
+      display: block;
+      top: 20px;
+      left: 10px;
+    }
+
+    .toggle-button:hover {
+        cursor: pointer;
+    }
+
+    .toggle-button .menu-bar {
+        position: absolute;
+        border-radius: 2px;
+        width: 80%;
+        transition: .5s;
+    }
+
+    /*toggle button lines style*/
+    .toggle-button .menu-bar-top {
+        border: 4px solid #555;
+        border-bottom: none;
+        top: 0;
+    }
+
+    .toggle-button .menu-bar-middle {
+        border: 4px solid #555;
+        border-top: none;
+        top: 10px;
+    }
+
+    .toggle-button .menu-bar-bottom {
+        border: 4px solid #555;
+        border-top: none;
+        top: 20px;
+    }
+
+    /*open menu animation*/
+    /*.button-open {
+        left: 20px;
+    }*/
+    .button-open .menu-bar-top {
+        border-color: #555;
+        transform: rotate(45deg) translate(8px, 8px);
+        transition: .3s;
+    }
+    .button-open .menu-bar-middle {
+        background-color: #555;
+        transform: translate(30px);
+        transition: .1s ease-in;
+        opacity: 0;
+    }
+    .button-open .menu-bar-bottom {
+        border-color: #555;
+        transform: rotate(-45deg) translate(7px, -7px);
+        transition: .3s;
+    }
+
+    /************************************ content & type stuff **************************************/
+    h1 {
+        font-size: 3em;
+        font-weight: 400;
+        line-height: 1.2em;
+        margin-bottom: .8em;
+    }
+
+    .left-text-column, .right-text-column {
+        margin-bottom: 1.2em;
+    }
+
+    iframe {
+        width: 100%;
+        height: 213px;
+    }
+
+    hr {
+        margin: 1.2em 0;
+    }
+
+    .bullet-points li {
+        margin-left: 5%;
+    }
+
+
+    /************************************ image stuff ************************************/
+
+    .h3-section img {
+        margin: .8em 0;
+    }
+
+    #second-img {
+        margin: 0;
+    }
+
+    .two-column img, .three-column img {
+        display: block;
+        width: 100%;
+        margin: .8em 0;
+    }
+
+    #right-image {
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    .four-column img {
+        /*display: block;*/
+        width: 48%;
+        margin: .3em .5%;
+    }
+
+    /************************************ specific stuff ************************************/
+    /*portfolio page*/
+    #portfolio-body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #portfolio-main {
+        margin-left: 0;
+    }
+
+    .portfolio-item {
+        margin-right: 0;
+    }
+
+    .overlay-text-title {
+        letter-spacing: 0.03em;
+        font-size: 2em;
+        line-height: 1.2em;
+        margin-bottom: .12em;
+    }
+
+    /*resume*/
+    .resume-h2 {
+        margin-top: 2em;
+    }
+
+    /*about*/
+
+
+    /*sketchbook*/
+    #sketchbook-main-right {
+        margin: 0;
+    }
+    #sketchbook-body {
+        margin-left: 0;
+    }
+
+    .column-1, .column-2 {
+        width: 100%;
+    }
+
+    /*exploring sq hill*/
+    #foodie-gif, #time-gif, #map-gif {
+        width: 100%;
+        margin-bottom: .8em;
+    }
+
+    /*polly*/
+    #pc-final {
+        width: 100%;
+    }
+
+    #polly-app {
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 2em;
+        float: none;
+        margin-left: 6%;
+    }
+
+    #affinity {
+        width: 100%;
+    }
+
+    #servicemap {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    #polly-lofi, #polly-midfi, #polly-hifi {
+        width: 100%;
+    }
+
+    /*ibm*/
+    #mobile-grid {
+        width: 100%;
+    }
+
+    #tablet-grid {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /*linkedin*/
+    #indeed {
+        width: 100%;
+    }
+
+    /*ptp*/
+    #ptp-bg-1 {
+        width: 100%;
+    }
+
+    #ptp-bg-2 {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    /*studiocat*/
+    #cat-projected {
+        margin-top: 0;
+    }
+
+    #welcomelily-1 {
+        width: 100%;
+    }
+
+    #welcomelily-2 {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    /*freelance*/
+    #zoopix img {
+        width: 100%;
+        margin: .8em 0;
+    }
+
+}
+

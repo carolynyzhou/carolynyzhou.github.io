@@ -1,0 +1,58 @@
+/*small desktop window*/
+
+@media screen and (max-width: 1024px) {
+    h1, h2, h3, h4, h5, h6, header, body, p {
+        /*margin: 5%;*/
+    }
+
+/*gallery becomes one column*/
+.portfolio-item {
+    /*position: relative;*/
+    max-width: 100%;
+    min-width: 400px;
+}
+
+/*text sections become one column*/
+.left-title {
+    display: block;
+    width: 100%;
+    line-height: 1.4em;
+    /*vertical-align: top;*/
+}
+
+.right-content {
+    display: block;
+    width: 100%;
+}
+
+#tools-heading {
+    margin-top: 1em;
+}
+
+/*portolfio content text*/
+.body-content {
+    width: 95%;
+}
+
+h1 {
+    /*margin: 0;*/
+}
+
+h2 {
+
+}
+
+hr {
+    /*display: none;*/
+}
+
+.left-text-column, .right-text-column {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+}
+
+.column-1, .column-2 {
+    width: 100%;
+    margin: 0;
+}

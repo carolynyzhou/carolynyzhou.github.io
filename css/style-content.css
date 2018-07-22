@@ -1,0 +1,433 @@
+/*right side stuff*/
+.main-right {
+    display: block;
+    vertical-align: top;
+    margin-left: 25%;
+    /*top: 120px;*/
+}
+
+body {
+    margin: 5% 5%;
+    text-rendering: optimizeLegibility;
+}
+
+/*sizing section where non-portfolio-title/non-gallery content goes*/
+.body-content {
+    width: 66.6%;
+    display: block;
+    vertical-align: top;
+}
+
+/****************************************** text stuff ******************************************/
+/*general text styling*/
+h1 {
+    font-family: "GT America", "Arial", sans-serif;
+    font-size: 6em;
+    font-weight: 400;
+    /*line-height: 1.2em;*/
+    /*text-transform: uppercase;*/
+    color: #444;
+    margin-bottom: 30px;
+}
+
+h2 {
+    /*title of section, left hand column*/
+    font-family: "Gotham Medium", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2em 0 1em 0;
+    letter-spacing: 0.05em;
+    color: #333;
+}
+
+h3 {
+    /*paragraph title*/
+    font-family: "GT America", "Arial", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    margin: .5em 0;
+    color: #333; 
+    /*line-height: 1.6em;*/
+}
+
+h4 {
+    font-family: "GT America", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    position: relative;
+    width: 100%;
+    vertical-align: baseline;
+    color: #777;
+    font-weight: 500;
+}
+
+
+.h3-section {
+    margin-bottom: 2em;
+}
+
+
+.h3-no-body-text-after {
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-family: "GT America", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    position: relative;
+    width: 100%;
+    vertical-align: baseline;
+    color: #333;
+    /*padding-bottom: .5em;*/
+}
+
+a {
+    transition: all 300ms ease-out;
+}
+
+iframe {
+/*        width: 100%;
+        height: auto;
+*/    }
+
+.main-right a {
+    text-decoration: none;
+    color: #12a8ad;
+}
+
+.main-right a:hover {
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+br {
+    line-height: 1.6em;
+}
+
+hr {
+    margin: 3em 0 3em 0;
+    border-color: #ccc;
+}
+
+footer {
+    
+}
+
+
+/*portfolio full content stuff*/
+/*left- and right-title class names are from when portfolio had h2 in left hand column*/
+.left-title {
+    /*display: inline-block;*/
+    display: block;
+    /*width: 30%;*/
+    /*line-height: 0;*/
+    /*vertical-align: top;*/
+    margin-top: 4em;
+}
+
+.right-content {
+
+}
+
+/*two column text*/
+.left-text-column {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-text-column {
+    width: 45%;
+    display: inline-block;
+    margin-left: 9%;
+    vertical-align: top;
+}
+
+/*bullet points*/
+.bullet-points {
+    display: block;
+    list-style-type: square;
+    font-family: "GT America", "Arial", sans-serif;
+    /*font-size: 1em;*/
+    line-height: 1.6em;
+    /*position: relative;*/
+    /*width: 100%;*/
+    vertical-align: baseline;
+    padding-top: .5em;
+    color: #333;
+}
+
+.numbered-list {
+    list-style-type: decimal;
+}
+
+#learning {
+    padding-top: 0;
+}
+
+.reflection p {
+}
+
+/*carousel*/
+.container {
+    position: relative;
+}
+
+.mySlides {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-button {
+    background-color: #eee;
+    border: none;
+    color: #333;
+    padding: 15px 7px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.container:hover .carousel-button {
+    opacity: 1;
+}
+
+.carousel-display-right {
+    right: 0;
+}
+
+/****************************************** image stuff ******************************************/
+.h3-section img {
+    width: 100%;
+    margin: 1.6em 0 0 0;
+}
+
+.two-column img {
+    display: inline-block;
+    width: 48%;
+    /*vertical-align: top;*/
+    /*margin: 1.6em 1% 0 1%;*/
+}
+
+.right-image {
+    float: right;
+}
+
+#right-image {
+    float: right;
+}
+
+.three-column img {
+    display: inline-block;
+    /*float: left;*/
+    width: 30.9%;
+    margin: 1.6em 1% 0 .5%;
+    vertical-align: top;
+}
+
+.four-column img {
+    display: inline-block;
+    width: 22.5%;
+    margin: 1.6em 1% 0 .5%;
+    vertical-align: top;
+}
+
+#image-before-text {
+    margin-bottom: 2em;
+}
+
+
+/******************************************page-specific stuff******************************************/
+/*about me*/
+#me {
+    margin: 0; 
+}
+
+/*resume*/
+.resume-h2 {
+    margin-top: 3em;
+}
+
+.experience-h3 {
+    padding-top: .5em;
+}
+
+.exp-date {
+    color: #777;
+}
+
+.resume-points {
+    display: block;
+    list-style-type: none;
+    font-family: "GT America", "Arial", sans-serif;
+    line-height: 1.6em;
+    /*width: 100%;*/
+    vertical-align: baseline;
+    color: #777;
+}
+
+.skills-h3 {
+    margin-top: 0;
+}
+
+.skills-right-col {
+    margin-bottom: 1em;
+}
+
+/*sketchbook masonry*/
+#sketchbook-body {
+    width: 100%;
+    display: block;
+    vertical-align: top;
+}
+
+.column-1 {
+    display: inline-block;
+    width: 48%;
+    float: left;
+    margin-right: 1.5%;
+}
+
+.column-2 {
+    display: inline-block;
+    width: 48%;
+    /*float: right;*/
+}
+
+.column-1 img, .column-2 img {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+
+/*goodcook*/
+#carrots {
+    margin: 0;
+}
+
+/*ctat*/
+#ctat-carousel {
+    /*width: 66.6%;*/
+}
+
+/*faces of design*/
+.faces-survey-questions {
+    margin-top: 2.4em;
+}
+
+#cube-final {
+    margin: 2em 0;
+}
+
+/*polly*/
+.pocket-course-cards {
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 10px;
+}
+
+#pc-final {
+    width: 60%;
+}
+
+#polly-app {
+    width: 35%;
+    float: right;
+}
+
+#affinity {
+    width: 41%;
+}
+
+#servicemap {
+    width: 54%;
+}
+
+#polly-lofi {
+    width: 26%;
+}
+
+#polly-midfi {
+    width: 33%;
+}
+
+#polly-hifi {
+    width: 33%;
+}
+
+/*exploring sq hill*/
+#foodie-gif {
+    width: 20%;
+}
+
+#time-gif {
+    width: 30%;
+}
+
+#map-gif {
+    width: 42%;
+}
+
+/*linkedin*/
+#indeed {
+    width: 66%;
+    margin-bottom: 1em;
+}
+
+/*ibm*/
+.grid-iterations {
+    box-shadow: 0 2px 6px #ccc;
+}
+
+#mobile-grid {
+    width: 28%;
+}
+
+#tablet-grid {
+    width: 67%;
+}
+
+#icons-1 {
+    margin-right: 1em;
+}
+
+/*ptp*/
+#ptp-bg-1 {
+    width: 29%;
+}
+
+#ptp-bg-2 {
+    width: 65%;
+}
+
+.outline-for-white-bg {
+    box-shadow: 0 1px 2px #ccc;
+}
+
+#outline-for-white-bg {
+    box-shadow: 0 1px 2px #ccc;
+}
+
+/*studiocat*/
+#welcomelily-1 {
+    width: 47%;
+}
+
+#welcomelily-2 {
+    width: 49%;
+}
