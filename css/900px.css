@@ -1,0 +1,18 @@
+@media screen and (max-width: 900px) {
+
+/*    .sidebar-menu-arrow {
+        display: none;
+    }*/
+    
+    .menu-sidebar {
+        top: 5%;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .menu-white-bg {
+        background-color: white;
+    }
+}

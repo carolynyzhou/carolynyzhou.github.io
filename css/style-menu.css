@@ -6,8 +6,8 @@
     font-size: 1em;
     font-family: "GT America", "Arial", sans-serif;
     /*text-transform: uppercase;*/
-    width: 25%;
-    min-width: 200px;
+    /*width: 25%;*/
+    /*min-width: 200px;*/
     z-index: 1;
     overflow-x: hidden;
     position: fixed;
@@ -58,7 +58,7 @@ a {
     /*position: fixed;*/
     /*top: 0;*/
     height: 100%;
-    width: 280px;
+    /*width: 280px;*/
     /*margin-left: -280px;*/
     /*font-size: 1em;*/
     /*font-weight: 700;*/
@@ -76,27 +76,6 @@ a {
     /*font-size: .8em;*/
 
 }
-
-/*this is for the line i don't want*/
-/*
-.menu-sidebar li > a::after {
-    content: "";
-    display: block;
-    height: 0.15em;
-    position: absolute;
-    top: 100%;
-    width: 102%;
-    left: 50%;
-    transform: translate(-50%);*/
-    /*background-image: linear-gradient(to right, transparent 50.3%, #FFFA3B 50.3%);*/
-    /*transition: background-position .2s .1s ease-out;*/
-    /*background-size: 200% auto;
-}*/
-/*
-.menu-sidebar li > a:hover::after {
-    background-position: -100% 0;
-}*/
-
 
 /******************************* portolfio menu items *******************************/
 
