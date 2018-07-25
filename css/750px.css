@@ -1,0 +1,121 @@
+@media screen and (max-width: 850px) {
+    body {
+        margin: 5% 0;
+    }
+
+    /******************* menu stuff **********************/
+    .menu-sidebar {
+        position: inherit;
+        width: 100%;
+        top: 5%;
+        /*font-size: .8em;*/
+    }
+
+    .menu-wrap {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 200px;
+        margin-left: -250px;
+        padding: 80px 20px 20px 20px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        overflow: auto;
+        transition: .25s;
+        z-index: 10;
+    }
+
+    .menu-item {
+       margin: 10px 10px 6px 10px;
+    }
+
+    .submenu-item {
+        margin: 6px 0 0 24px;
+    }
+
+    .menu-show {
+        margin-left: 0;
+        box-shadow: -4px 2px 15px 1px #333;
+    }
+
+    #menu-logo {
+        text-align: right;
+        padding: 0;
+        margin-right: 5%;
+    }
+
+    .nav-text-size {
+        font-size: .8em;
+    }
+
+    /******************* hamburger icon *******************/
+    .toggle-button {
+      position: fixed;
+      width: 24px;
+      height: 40px;
+      padding: 4px;
+      transition: .25s;
+      z-index: 15;
+      display: block;
+      top: 30px;
+      left: 5%;
+    }
+
+    .toggle-button:hover {
+        cursor: pointer;
+    }
+
+    .toggle-button .menu-bar {
+        position: absolute;
+        border-radius: 2px;
+        width: 80%;
+        transition: .5s;
+    }
+
+    /*toggle button lines style*/
+    .toggle-button .menu-bar-top {
+        border: 3px solid #777;
+        border-bottom: none;
+        top: 0;
+    }
+
+    .toggle-button .menu-bar-middle {
+        border: 3px solid #777;
+        border-top: none;
+        top: 9px;
+    }
+
+    .toggle-button .menu-bar-bottom {
+        border: 3px solid #777;
+        border-top: none;
+        top: 18px;
+    }
+
+    .button-open .menu-bar-top {
+        border-color: #777;
+        transform: rotate(45deg) translate(7px, 7px);
+        transition: .3s;
+    }
+    .button-open .menu-bar-middle {
+        background-color: #777;
+        transform: translate(30px);
+        transition: .1s ease-in;
+        opacity: 0;
+    }
+    .button-open .menu-bar-bottom {
+        border-color: #777;
+        transform: rotate(-45deg) translate(6px, -6px);
+        transition: .3s;
+    }
+
+}
+
+
+/******************************************** mobile ********************************************/
+@media screen and (max-width: 414px) {
+    .toggle-button {
+        top: 20px;
+        left: 10px;
+    }
+}

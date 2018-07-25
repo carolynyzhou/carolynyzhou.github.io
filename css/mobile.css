@@ -1,53 +1,18 @@
 /*mobile*/
 
 @media screen and (max-width: 414px) {
-    body {
+    /*body {
         margin: 5% 0;
-    }
+    }*/
 
     .main-right {
         margin-left: 5%;
     }
     .body-content {
         width: 100%;
-        /*display: block;*/
-        /*vertical-align: top;*/
     }
-
-    /*.left-title {
-        display: block;
-        width: 100%;
-        line-height: 1.4em;
-    }*/
-
 
     /******************************************* menu stuff *******************************************/
-    .menu-sidebar {
-        position: inherit;
-        width: 100%;
-    }
-
-    .menu-wrap {
-        background-color: #fff;
-        position: fixed;
-        top: 0;
-        height: 100%;
-        width: 200px;
-        margin-left: -250px;
-        padding: 80px 20px 20px 20px;
-        font-size: 1.2em;
-        line-height: 1.5em;
-        overflow: auto;
-        transition: .25s;
-        z-index: 10;
-    }
-
-    .menu-show {
-        margin-left: 0;
-        /*top: 0;*/
-        /*padding: 80px 20px 20px 20px;*/
-        box-shadow: -4px 2px 15px 1px #333;
-    }
 
     .sidebar-menu-arrow {
         display: none;
@@ -57,16 +22,14 @@
         display: none;
     }
 
-    #menu-logo {
-        text-align: right;
-        padding: 0;
-        margin-right: 5%;
+    .menu-wrap {
+        width: 200px;
     }
 
     /*hamburger icon*/
-    .toggle-button {
+ /*   .toggle-button {
       position: fixed;
-      width: 30px;
+      width: 24px;
       height: 40px;
       padding: 4px;
       transition: .25s;
@@ -74,58 +37,51 @@
       display: block;
       top: 20px;
       left: 10px;
-    }
-
-    .toggle-button:hover {
-        cursor: pointer;
-    }
-
+    }*/
+/*
     .toggle-button .menu-bar {
         position: absolute;
         border-radius: 2px;
         width: 80%;
         transition: .5s;
-    }
+    }*/
 
     /*toggle button lines style*/
-    .toggle-button .menu-bar-top {
-        border: 4px solid #555;
+/*    .toggle-button .menu-bar-top {
+        border: 3px solid #777;
         border-bottom: none;
         top: 0;
     }
 
     .toggle-button .menu-bar-middle {
-        border: 4px solid #555;
+        border: 3px solid #777;
         border-top: none;
         top: 10px;
     }
 
     .toggle-button .menu-bar-bottom {
-        border: 4px solid #555;
+        border: 3px solid #777;
         border-top: none;
         top: 20px;
     }
 
-    /*open menu animation*/
-    /*.button-open {
-        left: 20px;
-    }*/
+
     .button-open .menu-bar-top {
-        border-color: #555;
+        border-color: #777;
         transform: rotate(45deg) translate(8px, 8px);
         transition: .3s;
     }
     .button-open .menu-bar-middle {
-        background-color: #555;
+        background-color: #777;
         transform: translate(30px);
         transition: .1s ease-in;
         opacity: 0;
     }
     .button-open .menu-bar-bottom {
-        border-color: #555;
+        border-color: #777;
         transform: rotate(-45deg) translate(7px, -7px);
         transition: .3s;
-    }
+    }*/
 
     /************************************ content & type stuff **************************************/
     h1 {
