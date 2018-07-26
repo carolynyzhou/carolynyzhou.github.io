@@ -9,6 +9,7 @@
 body {
     margin: 5% 5%;
     text-rendering: optimizeLegibility;
+    background-color: #f8f8fa;
 }
 
 /*sizing section where non-portfolio-title/non-gallery content goes*/
@@ -26,7 +27,7 @@ h1 {
     font-weight: 400;
     /*line-height: 1.2em;*/
     /*text-transform: uppercase;*/
-    color: #444;
+    color: #404040;
     margin-bottom: 30px;
 }
 
@@ -59,7 +60,7 @@ h4 {
     position: relative;
     width: 100%;
     vertical-align: baseline;
-    color: #777;
+    color: #666;
     font-weight: 500;
 }
 
@@ -95,12 +96,12 @@ iframe {
 
 .main-right a {
     text-decoration: none;
-    color: #12a8ad;
+    color: #12a8ad; /*teal*/
 }
 
 .main-right a:hover {
     border-bottom: 1px solid #ccc;
-    color: #ccc;
+    color: #bbb;
 }
 
 .bold {
@@ -243,7 +244,7 @@ footer {
 
 .four-column img {
     display: inline-block;
-    width: 22.5%;
+    width: 22.9%;
     margin: 1.6em 1% 0 .5%;
     vertical-align: top;
 }
@@ -279,7 +280,7 @@ footer {
     line-height: 1.6em;
     /*width: 100%;*/
     vertical-align: baseline;
-    color: #777;
+    color: #666;
 }
 
 .skills-h3 {
@@ -317,9 +318,7 @@ footer {
 
 
 /*goodcook*/
-#carrots {
-    margin: 0;
-}
+
 
 /*ctat*/
 #ctat-carousel {
