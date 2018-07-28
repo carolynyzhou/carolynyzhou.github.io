@@ -283,6 +283,10 @@ footer {
     color: #666;
 }
 
+.experience-block li {
+    margin-bottom: 1em;
+}
+
 .skills-h3 {
     margin-top: 0;
 }
