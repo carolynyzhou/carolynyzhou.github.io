@@ -51,7 +51,6 @@ a {
 
 .menu-item a:hover {
     color: #12a8ad;
-    /*transition: .3s linear background;*/
 }
 
 .menu-wrap {
@@ -67,6 +66,10 @@ a {
 .submenu-item {
     margin: 16px 0 0 24px;
 
+}
+
+#menu-selected {
+    color: #bbb;
 }
 
 /******************************* portolfio menu items *******************************/
