@@ -27,11 +27,11 @@
     }
 
     .menu-item {
-       margin: 10px 10px 6px 10px;
+       margin: .5em 10px .5em 10px;
     }
 
     .submenu-item {
-        margin: 6px 0 0 24px;
+        margin: .5em 0 0 1.5em;
     }
 
     .menu-show {
