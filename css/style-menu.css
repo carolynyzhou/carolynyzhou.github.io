@@ -5,9 +5,7 @@
     /*display: inline-block;*/
     font-size: 1em;
     font-family: "GT America", "Arial", sans-serif;
-    /*text-transform: uppercase;*/
     /*width: 25%;*/
-    /*min-width: 200px;*/
     z-index: 1;
     overflow-x: hidden;
     position: fixed;
@@ -25,7 +23,7 @@ a {
 /*logo my name*/
 #menu-logo {
     /*display: inline-block;*/
-    font-family: "Gotham Medium";
+    font-family: "Gotham Medium", "Arial", sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 0.05em;

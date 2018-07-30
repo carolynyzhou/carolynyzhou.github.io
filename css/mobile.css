@@ -26,63 +26,6 @@
         width: 200px;
     }
 
-    /*hamburger icon*/
- /*   .toggle-button {
-      position: fixed;
-      width: 24px;
-      height: 40px;
-      padding: 4px;
-      transition: .25s;
-      z-index: 15;
-      display: block;
-      top: 20px;
-      left: 10px;
-    }*/
-/*
-    .toggle-button .menu-bar {
-        position: absolute;
-        border-radius: 2px;
-        width: 80%;
-        transition: .5s;
-    }*/
-
-    /*toggle button lines style*/
-/*    .toggle-button .menu-bar-top {
-        border: 3px solid #777;
-        border-bottom: none;
-        top: 0;
-    }
-
-    .toggle-button .menu-bar-middle {
-        border: 3px solid #777;
-        border-top: none;
-        top: 10px;
-    }
-
-    .toggle-button .menu-bar-bottom {
-        border: 3px solid #777;
-        border-top: none;
-        top: 20px;
-    }
-
-
-    .button-open .menu-bar-top {
-        border-color: #777;
-        transform: rotate(45deg) translate(8px, 8px);
-        transition: .3s;
-    }
-    .button-open .menu-bar-middle {
-        background-color: #777;
-        transform: translate(30px);
-        transition: .1s ease-in;
-        opacity: 0;
-    }
-    .button-open .menu-bar-bottom {
-        border-color: #777;
-        transform: rotate(-45deg) translate(7px, -7px);
-        transition: .3s;
-    }*/
-
     /************************************ content & type stuff **************************************/
     h1 {
         font-size: 3em;

@@ -46,7 +46,7 @@
     }
 
     .nav-text-size {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     /******************* hamburger icon *******************/
@@ -92,6 +92,7 @@
         top: 18px;
     }
 
+    /*animation*/
     .button-open .menu-bar-top {
         border-color: #777;
         transform: rotate(45deg) translate(7px, 7px);
@@ -99,7 +100,7 @@
     }
     .button-open .menu-bar-middle {
         background-color: #777;
-        transform: translate(30px);
+        transform: translate(0px);
         transition: .1s ease-in;
         opacity: 0;
     }
