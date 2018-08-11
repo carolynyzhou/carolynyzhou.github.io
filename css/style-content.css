@@ -193,14 +193,14 @@ footer {
     background-color: #eee;
     border: none;
     color: #333;
-    padding: 15px 7px;
+    padding: 1em .5em;
     text-align: center;
     display: inline-block;
     font-size: 1em;
     cursor: pointer;
     position: absolute;
-    top: 48%;
-    opacity: 0;
+    top: 47%;
+    opacity: .5;
     transition: .3s ease;
 }
 
