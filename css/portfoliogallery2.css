@@ -1,0 +1,111 @@
+#index-text {
+    margin: 3em 0 4.5em 0; /*top margin should offset 2em under logo*/
+    font-size: 2.25em;
+}
+
+.portfolio-grid {
+    margin: 0;
+}
+
+/*styling portfolio grid items*/
+.polly {
+    background-image: url(../images/home/polly-thumbnail2.png);
+}
+
+.ctat {
+    background-image: url(../images/home/ctat-thumbnail.png);
+}
+
+.facesofdesign {
+    background-image: url(../images/home/faces_of_design-thumbnail.jpg);
+}
+
+.goodcook {
+    background-image: url(../images/home/goodcook-thumbnail.png);
+}
+
+.ptp {
+    background-image: url(../images/home/ptp-thumbnail.jpg);
+}
+
+.exploringsqhill {
+    background-image: url(../images/home/exploring_sq_hill-thumbnail.png);
+}
+
+.responsiverealestate {
+    background-image: url(../images/home/responsive-thumbnail.png);
+}
+
+.linkedin {
+    background-image: url(../images/home/linkedin-thumbnail.jpg);
+}
+
+.ibm {
+    background-image: url(../images/home/ibm-thumbnail.jpg);
+}
+
+.portfolio {
+    width: 100%;
+    display: block;
+}
+
+.portfolio article {
+    background-color: #f8f8fa;
+    height: 360px; /*must set height*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /*box-shadow: 0px 4px 16px #cccccc;*/
+
+    width: 100%;
+    margin-left: 0;
+    /*margin-bottom: 1%;*/
+    /*float: left;*/
+}
+
+.container {
+    /*position: relative;*/
+    height: 100%;
+}
+
+/*overlay*/
+.overlay {
+    position: absolute;
+    top, bottom, left, right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background-color: white;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    text-align: left;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 20%;
+    margin-left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-title {
+    /*font-family: "Title", "Arial", sans-serif;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.04em;*/
+    color: #777;
+    /*font-size: 6em;*/
+    line-height: 1em;
+    margin-bottom: .125em;
+}
+
+.overlay-subtitle {
+    font-family: "Small Title", "Arial", sans-serif;
+    line-height: 1em;
+    color: #888;
+
+}

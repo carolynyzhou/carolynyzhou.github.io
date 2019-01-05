@@ -1,58 +1,68 @@
 /*small desktop window*/
 
 @media screen and (max-width: 1024px) {
-    h1, h2, h3, h4, h5, h6, header, body, p {
-        /*margin: 5%;*/
+    
+    /*hamburger menu*/
+    .menu-wrapper {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 40%;
+        /*margin-left: -100%;*/
+        padding: 100px 0 20px 10%;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        overflow: auto;
+        transition: .25s;
+        z-index: 10;
     }
 
-/*gallery becomes one column*/
-.portfolio-item {
-    /*position: relative;*/
-    max-width: 100%;
-    min-width: 400px;
-}
+    /*text sections become one column*/
+    .left-title {
+        display: block;
+        width: 100%;
+        line-height: 1.4em;
+        float: none;
+    }
 
-/*text sections become one column*/
-.left-title {
-    display: block;
-    width: 100%;
-    line-height: 1.4em;
-    /*vertical-align: top;*/
-}
+    .left-title h2 {
+        margin: 1em 0 0 0;
+        padding-top: 0;
+        text-align: left;
+    }
 
-.right-content {
-    display: block;
-    width: 100%;
-}
+    .right-content {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
 
-#tools-heading {
-    margin-top: 1em;
-}
+    #tools-heading {
+        margin-top: 1em;
+    }
 
-/*portolfio content text*/
-.body-content {
-    width: 95%;
-}
+    /*portolfio content text*/
+    .two-columns-one-row {
+        width: 100%;
+        margin-left: 0;
+    }
 
-h1 {
-    /*margin: 0;*/
-}
+    .two-columns-one-row ul {
+        padding-bottom: 1.125em;
+    }
 
-h2 {
+    .left-text-column, .right-text-column {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
 
-}
+    .column-1, .column-2 {
+        width: 100%;
+        margin: 0;
+    }
 
-hr {
-    /*display: none;*/
-}
-
-.left-text-column, .right-text-column {
-    width: 100%;
-    display: block;
-    margin-left: 0;
-}
-
-.column-1, .column-2 {
-    width: 100%;
-    margin: 0;
+    hr {
+        margin: 3em 0;
+    }
 }

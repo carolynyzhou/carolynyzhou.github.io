@@ -9,9 +9,10 @@
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/style-menu.css">
         <link rel="stylesheet" type="text/css" href="css/style-content.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
         <link rel="stylesheet" type="text/css" href="css/850px.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- fonts -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- scripts -->
@@ -28,34 +29,27 @@
     <body>
         <header>
             <!-- nav menu -->
-            <div class="menu-sidebar">
-
-                <!-- logo -->
-                <div id="menu-logo">
-                    <a href="index.html">Carolyn Zhou</a>
-                </div>
-
+            <div class="menu">
                 <!-- main nav bar -->
-                <div class="menu-wrap">
-                    <ul class="menu-navbar">
-                        <li class="menu-item menu-item-has-children"><a href="index.html"><span class="nav-text-size">Portfolio</span></a>
+                <div class="menu-wrapper">
+                    <ul class="menu-items">
+                        <li class="menu-item-has-children"><a href="index.html">Portfolio</a>
                             <span class="sidebar-menu-arrow"></span>
                             <ul class="submenu">
-                                <li class="submenu-item"><a href="goodcook.html"><span class="nav-text-size">GoodCook</span></a></li>
-                                <li class="submenu-item"><a href="ctat.html"><span class="nav-text-size">CTAT Redesign</span></a></li>
-                                <li class="submenu-item"><a href="facesofdesign.html"><span class="nav-text-size">Faces of Design</span></a></li>
-                                <li class="submenu-item"><a href="polly.html"><span class="nav-text-size">POLLY</span></a></li>
-                                <li class="submenu-item"><a href="exploringsqhill.html"><span class="nav-text-size">Exploring Squirrel Hill</span></a></li>
-                                <li class="submenu-item"><a href="responsiverealestate.html"><span class="nav-text-size">Responsive Real Estate</span></a></li>
-                                <li class="submenu-item"><a href="linkedin.html"><span class="nav-text-size">LinkedIn</span></a></li>
-                                <li class="submenu-item"><a href="ptp.html"><span class="nav-text-size">Paint the Pavement</span></a></li>
-                                <li class="submenu-item"><a href="studiocat.html"><span class="nav-text-size">StudioCat</span></a></li>
-                                <li class="submenu-item"><a href="ibm.html"><span class="nav-text-size">IBM Design</span></a></li>
+                                <li><a href="polly.html">POLLY</a></li>
+                                <li><a href="ctat.html">CTAT Redesign</a></li>
+                                <li><a href="facesofdesign.html">Faces of Design</a></li>
+                                <li><a href="goodcook.html">GoodCook</a></li>
+                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
+                                <li><a href="ptp.html">Paint the Pavement</a></li>
+                                <li><a href="exploringsqhill.html">Exploring Squirrel Hill</a></li>
+                                <li><a href="linkedin.html">LinkedIn</a></li>
+                                
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="freelance.html"><span class="nav-text-size">Freelance</span></a></li>
-                        <li class="menu-item"><a href="sketchbook.html" id='menu-selected'><span class="nav-text-size">Sketchbook</span></a></li>
-                        <li class="menu-item"><a href="about.html"><span class="nav-text-size">About</span></a></li>
+                        <!-- <li><a href="freelance.html">Freelance</a></li> -->
+                        <li><a href="sketchbook.html" id='menu-selected'>Sketchbook</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,10 +60,15 @@
                 <div class="menu-bar menu-bar-middle"></div>
                 <div class="menu-bar menu-bar-bottom"></div>
             </span>
+            
+            <!-- logo -->
+            <div id="menu-logo">
+                <a href="index.html">Carolyn Zhou</a>
+            </div>
         </header>
 
         <!-- portfolio gallery -->
-        <div class="main-right" id="sketchbook-main-right">
+        <div class="main-content" id="sketchbook-main-right">
             <div class="body-content" id="sketchbook-body">
                 <div class="column-1">
                     <img src="images/sketchbook/girl_ink.jpg">

@@ -1,22 +1,29 @@
 @font-face {
-    font-family: GT America;
-    src: url("/fonts/GT-America-Regular.otf");
+    font-family: Title;
+    src: url("../fonts/Canela-Medium.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Small Title;
+    src: url("../fonts/Montserrat-SemiBold.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Body;
+    src: url("../fonts/Canela-Light.otf");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: GT America;
-    src: url("/fonts/gt-america-standard-medium.ttf");
+    font-family: Body;
+    src: url("../fonts/Canela-LightItalic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Body;
+    src: url("../fonts/Canela-Medium.otf");
     font-weight: 500;
-}
-
-@font-face {
-    font-family: GT America;
-    src: url("/fonts/GT-America-Bold.otf");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: Gotham Medium;
-    src: url("/fonts/GOTHAM-MEDIUM.TTF");
 }

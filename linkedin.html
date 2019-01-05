@@ -9,9 +9,10 @@
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/style-menu.css">
         <link rel="stylesheet" type="text/css" href="css/style-content.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
         <link rel="stylesheet" type="text/css" href="css/850px.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- fonts -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- scripts -->
@@ -26,34 +27,26 @@
     <body>
         <header>
             <!-- nav menu -->
-            <div class="menu-sidebar">
-
-                <!-- logo -->
-                <div id="menu-logo">
-                    <a href="index.html">Carolyn Zhou</a>
-                </div>
-
+            <div class="menu">
                 <!-- main nav bar -->
-                <div class="menu-wrap">
-                    <ul class="menu-navbar">
-                        <li class="menu-item menu-item-has-children"><a href="index.html"><span class="nav-text-size">Portfolio</span></a>
+                <div class="menu-wrapper">
+                    <ul class="menu-items">
+                        <li class="menu-item-has-children"><a href="index.html">Portfolio</a>
                             <span class="sidebar-menu-arrow"></span>
                             <ul class="submenu">
-                                <li class="submenu-item"><a href="goodcook.html"><span class="nav-text-size">GoodCook</span></a></li>
-                                <li class="submenu-item"><a href="ctat.html"><span class="nav-text-size">CTAT Redesign</span></a></li>
-                                <li class="submenu-item"><a href="facesofdesign.html"><span class="nav-text-size">Faces of Design</span></a></li>
-                                <li class="submenu-item"><a href="polly.html"><span class="nav-text-size">POLLY</span></a></li>
-                                <li class="submenu-item"><a href="exploringsqhill.html"><span class="nav-text-size">Exploring Squirrel Hill</span></a></li>
-                                <li class="submenu-item"><a href="responsiverealestate.html"><span class="nav-text-size">Responsive Real Estate</span></a></li>
-                                <li class="submenu-item"><a href="linkedin.html" id='menu-selected'><span class="nav-text-size">LinkedIn</span></a></li>
-                                <li class="submenu-item"><a href="ptp.html"><span class="nav-text-size">Paint the Pavement</span></a></li>
-                                <li class="submenu-item"><a href="studiocat.html"><span class="nav-text-size">StudioCat</span></a></li>
-                                <li class="submenu-item"><a href="ibm.html"><span class="nav-text-size">IBM Design</span></a></li>
+                                <li><a href="polly.html">POLLY</a></li>
+                                <li><a href="ctat.html">CTAT Redesign</a></li>
+                                <li><a href="facesofdesign.html">Faces of Design</a></li>
+                                <li><a href="goodcook.html">GoodCook</a></li>
+                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
+                                <li><a href="ptp.html">Paint the Pavement</a></li>
+                                <li><a href="exploringsqhill.html">Exploring Squirrel Hill</a></li>
+                                <li><a href="linkedin.html" id='menu-selected'>LinkedIn</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="freelance.html"><span class="nav-text-size">Freelance</span></a></li>
-                        <li class="menu-item"><a href="sketchbook.html"><span class="nav-text-size">Sketchbook</span></a></li>
-                        <li class="menu-item"><a href="about.html"><span class="nav-text-size">About</span></a></li>
+                        <!-- <li><a href="freelance.html">Freelance</a></li> -->
+                        <li><a href="sketchbook.html">Sketchbook</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,17 +57,21 @@
                 <div class="menu-bar menu-bar-middle"></div>
                 <div class="menu-bar menu-bar-bottom"></div>
             </span>
-
+            
+            <!-- logo -->
+            <div id="menu-logo">
+                <a href="index.html">Carolyn Zhou</a>
+            </div>
         </header>
 
         <!-- content -->
-        <div class="main-right">
+        <div class="main-content">
             <h1>LinkedIn Design Challenge</h1>
             <div class="body-content">
                 <div class="two-columns-one-row">
                     <div class="left-text-column">
                         <h2>Challenge</h2>
-                        <p>Design an improved job posting experience for recruiters or hiring managers that helps them attract and recruit relevant candidates for the position. One week to complete.</p>
+                        <p>Design an improved job posting experience for recruiters or hiring managers that helps them attract and recruit relevant candidates for the position. Time frame one week.</p>
                     </div>
                     <div class="right-text-column">
                         <h2>Outcome</h2>
@@ -84,21 +81,24 @@
                 <div class="two-columns-one-row">
                     <div class="left-text-column">
                         <h2>Skills Practiced</h2>
-                        <p>User research</p>
-                        <p>User experience design</p>
-                        <p>Interaction design</p>
+                        <ul>
+                            <li>User research</li>
+                            <li>User experience design</li>
+                            <li>Interaction design</li>
+                        </ul>
                     </div>
                 </div>
                 <hr>
 
-                <div class="linkedin-intro">
+                <div class="h2-section-wrapper">
                     <div class="h3-section">
                         <img src="images/linkedin/cover_img.jpg">
                     </div>
                 </div>
+                
 
                 <!-- research -->
-                <div class="h2-section">
+                <div class="h2-section-wrapper">
                     <div class="left-title">
                         <h2>Research</h2>
                     </div>
@@ -112,105 +112,111 @@
                                 <li>How do recruiters reach candidates who are relevant to the job posted?</li>
                                 <li>What do candidates want to see in a job post?</li>
                             </ul>
-                            <p>I conducted some preliminary research on what recruiters might look for in their candidates, and created lists of things that recruiters might look for in their candidates. I listed some criteria and initial thoughts based on my experience job hunting and on LinkedIn’s existing search filters. This process helped me begin to think about information hierarchy and the posting process, and questions for real users.</p>
-                            <img src="images/linkedin/whiteboard.JPG">
+                            <p>I conducted some preliminary research on job posting based on LinkedIn’s search filters and my own experience job searching. This helped me start thinking about information hierarchy in the posting process.</p>
+                            <!-- <img src="images/linkedin/whiteboard.JPG"> -->
                         </div>
 
                         <!-- recruiter interviews -->
                         <div class="h3-section">
                             <h3>Recruiter Interviews</h3>
+                            <p>Talking to recruiters, I learned that job posting involves targeting the right people using the right criteria. Before posting, recruiters need a clear understanding of the job requirements, so that they can provide strong descriptions and accurate criteria. In some cases recruiters look to <span class="bold">current employees’ networks</span> to find people with similar backgrounds. These are more reliable ways to find relevant, high-quality candidates.</p>
+<!--                             <div class="quote-wrapper">
+                                <blockquote>I'll look at our current employees' connections in their networks to find people with similar backgrounds.</blockquote>
+                                <figcaption>- Recruiter at PNC</figcaption>
+                            </div> -->
+                            <p>If recruiters often look to people they already know to find quality candidates, I wondered if there was a better way to communicate about the job opportunity with those people during the posting process.</p>
                             <p>Sample questions:</p>
                             <ul class="bullet-points">
                                 <li>How do you know what criteria is needed for a job?</li>
-                                <li>After posting a job, how much is receiving applications vs. how much is reaching out?</li>
-                                <li>How do you know who is a relevant candidate? How do you identify if a candidate is a good fit?</li>
+                                <li>After posting a job, how much is receiving applications vs. actively reaching out?</li>
+                                <li>How do you know if a candidate is a good fit?</li>
                                 <li>Who do you find to be most responsive, and can you predict it?</li>
                             </ul>
                             <img src="images/linkedin/interviews-1.png" id="image-before-text">
-                            <p>Job posting involves targeting the right people using the right criteria. To post jobs, recruiters first need a clear understanding of the requirements of the job they’re posting, so that they can provide strong descriptions and accurate criteria. In some cases recruiters look to current employees’ networks or referrals to find people with similar backgrounds to people they already know. These are more reliable ways to find relevant, high-quality candidates.</p>
-                            <br>
-                            <p>I noticed that recruiters often rely on people they already know to finding quality candidates, so I wondered if there was a better way to communicate about the job opportunity with those people during the posting process. Also, was there a better way to gauge who’s interested and effectively reach out to them?</p>
+                            
                         </div>
 
                         <!-- candidate interviews -->
                         <div class="h3-section">
                             <h3>Candidate Interviews</h3>
-                            <p>I decided to talk to candidates as well because I wondered what they wanted to see in a job post, and whether that could inform the recruiter’s side to create more effective posts and potentially cut down work. Sample questions:</p>
+                            <p>I decided to talk to candidates as well to find out what they looked for in a job post, and whether that could help the recruiter’s side to post more effectively.</p>
+                            <p>Most job searchers have certain criteria in mind already, such as the job title or company name. <span class="bold">They enjoy hearing from people like them</span>, such as peers in the same field, to learn more about a job or company. I wondered if recruiters could show more of what candidates wanted to see.</p>
+                            <p>Sample questions:</p>
                             <ul class="bullet-points">
                                 <li>Where do you look for jobs? Do you use LinkedIn?</li>
                                 <li>How do you determine if a job is a good fit for you?</li>
                                 <li>What would you like to know about a job before you apply to it?</li>
-                                <li>What is your general experience with recruiters (either contacting them or them contacting you)?</li>
+                                <li>What is your general experience with recruiters?</li>
                             </ul>
                             <img src="images/linkedin/interviews-2.png" id="image-before-text">
-                            <p>Most candidates have certain criteria in mind when job hunting, such as the job title or company name. Candidates enjoy hearing from people like them, such as past employees or people in the same field, to learn more about a job and a company. I wondered if there was a way for recruiters to show what candidates cared about more, and if they could reach people who were interested already based on criteria matches.</p>
-                        </div>
-
-                        <!-- competitive analysis -->
-                        <div class="h3-section">
-                            <h3>Competitive Analysis</h3>
-                            <h4>LinkedIn</h4>
-                            <p>I did some research on the recruiter’s side of LinkedIn, because I was not familiar with the interface. I looked at how recruiters create post jobs, how they manage and track candidates, and so on. Looking at existing job posts on LinkedIn, I also noticed that they are extremely text-heavy and cumbersome to read. One user I interviewed said most job descriptions are generic, and she doesn’t read them. Perhaps it’s not a good use of time for recruiters, then, to type these up.</p>
-                            <div class="two-column">
-                                <img src="images/linkedin/companalysis-linkedin1.png" class="left-image">
-                                <img src="images/linkedin/companalysis-linkedin2.png" id="right-image">
-                            </div>
-                            <br>
-                            <h4>Indeed</h4>
-                            <p>Indeed is the largest job board in the world, and its job posts are viewed by a huge pool of candidates. One thing I picked up about these job posts was that most of the fields are optional. This, in addition to the service being free for employers to use, made me question the quality of job postings. In comparison, LinkedIn marks many more required fields, making the search process easier for candidates, and maybe more difficult for recruiters up front but easier later when sorting through applicants.</p>
-                            <img src="images/linkedin/companalysis-indeed.jpg" id="indeed">
-                            <br>
-                            <h4>Facebook Jobs</h4>
-                            <p>Facebook has an interesting method of targeting. Targeting people who “liked” certain pages reaches people with similar interests or backgrounds. The existence of Facebook Groups makes it easy to do something similar as well. Recruiters on Facebook can leverage social networks to reach distinct groups of people who will likely be interested in certain jobs, and at least one user mentioned his social network as his primary resource for finding job opportunities. LinkedIn has groups and job posting capabilities, but those posts don’t seem to be able to be as targeted for specific demographics, types of companies, candidate backgrounds, etc.</p>
-                            <img src="images/linkedin/companalysis-fb.png">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- prototyping -->
-                <div class="h2-section">
-                    <div class="left-title">
-                        <h2>Design Prototype</h2>
-                    </div>
-                    <div class="right-content">
-                        <!-- key insights -->
-                        <div class="h3-section">
-                            <h3>Key Insights</h3>
-                            <ul class="bullet-points numbered-list">
-                                <li>For effective targeting, <span class="bold">recruiters need to know the business or field</span> of the job they’re posting. A better understanding allows them to know what kinds of skills and experience they want in a candidate. These criteria are best known by the hiring manager themselves, or recruiters might look to current employees as examples.</li>
-                                <li><span class="bold">Social networks and relationships</span> are one of the most valuable resources to both recruiters and job seekers. For recruiters it’s great to get candidate referrals from people they trust, and easiest to base candidate searches on people they already know.</li>
-                                <li><span class="bold">Keyword searches</span> are easy to input and powerful ways to target and search. Candidates find text-based job descriptions generic, and they aren’t as searchable or parseable. The downside is that keywords aren’t comprehensive (i.e. a niche or new field won’t have a keyword tag).</li>
-                            </ul>
-                        </div>
-
-                        <!-- design goals -->
-                        <div class="h3-section">
-                            <h3>Design Goals</h3>
-                            <p>I derived the main goals of my design:​</p>
-                            <ul class="bullet-points numbered-list">
-                                <li>To make criteria clear and easy to input into a job post</li>
-                                <li>To help recruiters show information that candidates care about more, for higher engagement with candidates who are a good match</li>
-                                <li>To use social networks to reach more concentrated pools of relevant, quality candidates</li>
-                            </ul>
+                            
                         </div>
 
                         <!-- journey map -->
                         <div class="h3-section">
                             <h3>As-Is Journey Map</h3>
-                            <p>Although I focused on the job posting part, I drew out a few more steps in the journey just to keep in mind. I didn’t want to design something in the posting part that would make something else more difficult later on.</p>
+                            <p>From my research so far, I could see how jobs openings are posted, shared and tracked. Although my focus was on the job posting section, I sought to understand the fuller process as my designs in the posting part would still be informed by later steps.</p>
                             <img src="images/linkedin/journeymap.jpg">
                         </div>
+
+                        <!-- competitive analysis -->
+                        <div class="h3-section">
+                            <h3>Competitive Analysis</h3>
+                            <p><span class='bold'>LinkedIn:</span> I did some research on the recruiter’s side of LinkedIn, because I was not familiar with the interface. I looked at how recruiters create post jobs, manage and track candidates, and so on. Looking at existing job posts on LinkedIn, I also noticed that they are extremely text-heavy and cumbersome to read. One candidate I interviewed said she doesn't read job descriptions because most of them are generic.</p>
+                            <div class="two-column" id="image-before-text">
+                                <img src="images/linkedin/companalysis-linkedin1.png" class="left-image">
+                                <img src="images/linkedin/companalysis-linkedin2.png" id="right-image">
+                            </div>
+                            <br>
+                            <p><span class='bold'>Indeed:</span> Indeed is the largest job board in the world, and its job posts are viewed by a huge pool of candidates. One thing I picked up about these job posts was that most of the fields are optional. This, in addition to the service being free for employers to use, made me question the quality of job postings. In comparison, LinkedIn marks many more required fields, making the search process easier for candidates, and maybe more difficult for recruiters up front but easier later when sorting through applicants.</p>
+                            <!-- <img src="images/linkedin/companalysis-indeed.jpg" id="indeed"> -->
+                            <br>
+                            <p><span class="bold">Facebook Jobs:</span> Facebook has an interesting method of targeting. Targeting people who “liked” certain pages reaches people with similar interests or backgrounds. The existence of Facebook Groups makes it easy to do something similar. Recruiters on Facebook can leverage social networks to reach distinct groups of people who will likely be interested in certain jobs. At least one candidate mentioned his social network as his primary resource for finding job opportunities.</p>
+                            <img src="images/linkedin/companalysis-fb.png">
+                        </div>
+                        <!-- key insights -->
+                        <div class="h3-section">
+                            <h3>Key Insights</h3>
+                            <ul class="bullet-points numbered-list">
+                                <li><span class="bold">Recruiters need to know the business or field of the job they’re posting</span>, so they can target candidates more effectively. These criteria are best known by the hiring manager, or recruiters might look to current employees as examples.</li>
+                                <li><span class="bold">Social networks and relationships are some of the most valuable resources to both recruiters and job seekers</span>. For recruiters it’s great to get referrals from people they trust, and easier to base candidate searches on people they already know.</li>
+                                <li><span class="bold">Candidates look for key words rather than long job descriptions.</span> Many find paragraphs of descriptions generic and hard to parse. On the other hand, key words are easy to input and search. Of course, they aren’t as comprehensive or descriptive.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- prototyping -->
+                <div class="h2-section-wrapper">
+                    <div class="left-title">
+                        <h2>Design Phase</h2>
+                    </div>
+                    <div class="right-content">
+                        
+
+                        <!-- design goals -->
+                        <div class="h3-section">
+                            <h3>Design Goals</h3>
+                            <p>From my research, I derived the main goals of my design:​</p>
+                            <ul class="bullet-points numbered-list">
+                                <li>To use social networks to reach more concentrated pools of relevant, quality candidates.</li>
+                                <li>To help recruiters show information that candidates care about, for higher engagement with candidates who are a good match.</li>
+                                <li>To make criteria clear and easy to input into a job post.</li>
+                            </ul>
+                        </div>
+
+                        
 
                         <!-- storyboard -->
                         <div class="h3-section">
                             <h3>Storyboard</h3>
-                            <p>The concept is, essentially, “I know Jennifer. I want to hire a Jennifer. Get this job in front of other Jennifers.”</p>
+                            <p>The concept is, essentially, “I know Bob. I want to hire a Bob. Get this job in front of other Bobs.”</p>
                             <ul class="bullet-points numbered-list">
                                 <li><span class="bold">Briefing by hiring manager</span><br>Chris is a recruiter at PNC. She gets briefed by her hiring manager about a job opening for an Experience Designer position, a new role in the company.</li>
                                 <li><span class="bold">New job post composition</span><br>Chris pulls up a new job post composition. She fills in the job title and location, the highest levels of information.</li>
-                                <li><span class="bold">Add job details: Fill in desired skills, company description, etc.</span><br>Some fields are pre-filled based on the job title, such as job functions and company details. Chris fills in Skills based on what designers in similar roles and industries (i.e. designers at banks) have listed for themselves. She opts to leave the company details and application route the way they are.</li>
-                                <li><span class="bold">Target candidates: Channel job post through connections who are likely to know good potential candidates</span><br>In this section, Chris can choose to prioritize who clicks the job post. The database finds people in her network who fit the job criteria , because they are likely to know people in their networks who are similar in terms of expertise, experience and background. She selects people she (and the system) thinks are likely to know designers who are interested in PNC.</li>
-                                <li><span class="bold">Checkout: Set budget and place order</span><br>Finally, Chris sets her daily budget and places her order for the job post. She is content knowing that her money is being spent as effectively as possible on candidate views.</li>
+                                <li><span class="bold">Add job details: Fill in desired skills, company description, etc.</span><br>Some fields are pre-filled based on the job title, such as job functions and company details. Chris fills in Skills based on what designers in similar roles and industries (i.e. designers at banks) have listed for themselves. The company details are pre-filled.</li>
+                                <li><span class="bold">Target candidates: Share post through connections to reach quality candidates</span><br>In this section, Chris can "target" certain networks. The database finds people in her own network who fit the job criteria, because they are likely to know others who have similar expertise, experiences and backgrounds. Chris wants them to see the post so they can send referrals her way.</li>
+                                <li><span class="bold">Checkout: Set budget and place order</span><br>Finally, Chris sets her daily budget and places her order for the post. She is content knowing that her money is being spent as effectively as possible on candidate views.</li>
                             </ul>
                             <div class="two-column">
                                 <img src="images/linkedin/wireframes-1.jpg" class="left-image">
@@ -221,7 +227,7 @@
                         <!-- iterations -->
                         <div class="h3-section">
                             <h3>Iterations & Feedback</h3>
-                            <p>I received feedback on visual placement and layouts and how it led people to mentally group information. I also got feedback to use clearer explanations with my text, and to break down sections to better focus separate tasks. The following screencaps are iterations of the same page.</p>
+                            <p>I received feedback on different layouts and how they led people to follow and group information. I also got feedback to write clearer explanations and to break down certain steps to better focus the tasks. The following screencaps are iterations of the same page.</p>
                             <div class="three-column">
                                 <img src="images/linkedin/hifi-it-1.png">
                                 <img src="images/linkedin/hifi-it-2.png">
@@ -249,35 +255,43 @@
                         <!-- final -->
                         <div class="h3-section">
                             <h3 class="h3-no-body-text-after">Walkthrough</h3>
-                            <iframe src="https://player.vimeo.com/video/244129191" id="linkedin-walkthrough" width="640" height="1035" frameborder="0" allowfullscreen></iframe>
+                            <div class="video-wrapper">
+                                <iframe src="https://player.vimeo.com/video/244129191" id="linkedin-walkthrough" width="640" height="1035" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="h2-section">
+                <hr>
+
+                <div class="h2-section-wrapper">
                     <div class="left-title">
                         <h2>Results</h2>
                     </div>
                     <div class="right-content">
-                        <p>This design passed LinkedIn's Design Challenge round.</p>
+                        <div class="h3-section">
+                            <p>This solution passed LinkedIn's Design Challenge round.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="reflection h2-section">
+                <div class="reflection h2-section-wrapper">
                     <div class="left-title">
                         <h2>Reflection</h2>
                     </div>
                     <div class="right-content">
-                        <p>For this challenge, I made informed decisions based on online research and a small sample of users, but I was aware that I was working off some assumptions. Given that my concept was emphasizing the value of social networks in job posting and recruiting, I would’ve liked to learn more about how well LinkedIn’s virtual networks reflect real-life social networks and interactions.</p>
-                        <br>
-                        <p>If I had more time, I would conduct user tests with my prototype to measure its value and how graspable the concept is. To measure its success, I would track whether recruiters take a shorter time to complete a job post, and whether a higher percentage of candidates who respond to the post feel “relevant” to recruiters and hiring teams.</p>
-                        <br>
-                        <p>I’d also be interested in building a more complete end-to-end system, further exploring the concepts I touched on in my low-fidelity wireframes that could tie into the main posting process. For example, perhaps Jennifer could receive a notification and have a process for introducing people she knows to the recruiter, so Chris could get more referrals too.</p>
+                        <div class="h3-section">
+                            <p>For this challenge, I made informed decisions based on online research and a small sample of users, but I was working off some assumptions. Given that my concept was emphasizing the value of social networks in job posting and recruiting, I would’ve liked to learn more about how well LinkedIn’s virtual networks reflect real-life social networks and interactions.</p>
+                            <p>If I had more time, I would conduct usability tests with my prototype. I'd want to see how easily users can understand the concept. I'd also be interested to test some success measures, such as whether job posts take a shorter time to complete, or whether the candidates who respond to job posts feel “relevant” at a higher rate.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- footer -->
+            <div class="right-content">
+                <footer>Fall 2017</footer>
+            </div>
         </div>
 
-        <!-- footer -->
     </body>
 
 </html>

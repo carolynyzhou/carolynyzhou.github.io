@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     var $toggleButton = $('.toggle-button'),
-        $menuWrap = $('.menu-wrap'),
+        $menuWrap = $('.menu-wrapper'),
         $sidebarArrow = $('.sidebar-menu-arrow');
 
     // Hamburger button

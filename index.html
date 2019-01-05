@@ -9,11 +9,11 @@
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/style-menu.css">
         <link rel="stylesheet" type="text/css" href="css/style-content.css">
-        <link rel="stylesheet" type="text/css" href="css/portfoliogallery.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/portfoliogallery2.css">
+        
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
         <link rel="stylesheet" type="text/css" href="css/850px.css">
-        
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- fonts -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- scripts -->
@@ -26,37 +26,29 @@
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     </head>
 
-    <body id="portfolio-body">
+    <body>
         <header>
             <!-- nav menu -->
-            <div class="menu-sidebar">
-
-                <!-- logo -->
-                <div id="menu-logo">
-                    <a href="index.html">Carolyn Zhou</a>
-                </div>
-
+            <div class="menu">
                 <!-- main nav bar -->
-                <div class="menu-wrap">
-                    <ul class="menu-navbar">
-                        <li class="menu-item menu-item-has-children"><a href="index.html" id='menu-selected'><span class="nav-text-size">Portfolio</span></a>
+                <div class="menu-wrapper">
+                    <ul class="menu-items">
+                        <li class="menu-item-has-children"><a href="index.html" id='menu-selected'>Portfolio</a>
                             <span class="sidebar-menu-arrow"></span>
                             <ul class="submenu">
-                                <li class="submenu-item"><a href="goodcook.html"><span class="nav-text-size">GoodCook</span></a></li>
-                                <li class="submenu-item"><a href="ctat.html"><span class="nav-text-size">CTAT Redesign</span></a></li>
-                                <li class="submenu-item"><a href="facesofdesign.html"><span class="nav-text-size">Faces of Design</span></a></li>
-                                <li class="submenu-item"><a href="polly.html"><span class="nav-text-size">POLLY</span></a></li>
-                                <li class="submenu-item"><a href="exploringsqhill.html"><span class="nav-text-size">Exploring Squirrel Hill</span></a></li>
-                                <li class="submenu-item"><a href="responsiverealestate.html"><span class="nav-text-size">Responsive Real Estate</span></a></li>
-                                <li class="submenu-item"><a href="linkedin.html"><span class="nav-text-size">LinkedIn</span></a></li>
-                                <li class="submenu-item"><a href="ptp.html"><span class="nav-text-size">Paint the Pavement</span></a></li>
-                                <li class="submenu-item"><a href="studiocat.html"><span class="nav-text-size">StudioCat</span></a></li>
-                                <li class="submenu-item"><a href="ibm.html"><span class="nav-text-size">IBM Design</span></a></li>
+                                <li><a href="polly.html">POLLY</a></li>
+                                <li><a href="ctat.html">CTAT Redesign</a></li>
+                                <li><a href="facesofdesign.html">Faces of Design</a></li>
+                                <li><a href="goodcook.html">GoodCook</a></li>
+                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
+                                <li><a href="ptp.html">Paint the Pavement</a></li>
+                                <li><a href="exploringsqhill.html">Exploring Squirrel Hill</a></li>
+                                <li><a href="linkedin.html">LinkedIn</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="freelance.html"><span class="nav-text-size">Freelance</span></a></li>
-                        <li class="menu-item"><a href="sketchbook.html"><span class="nav-text-size">Sketchbook</span></a></li>
-                        <li class="menu-item"><a href="about.html"><span class="nav-text-size">About</span></a></li>
+                        <!-- <li><a href="freelance.html">Freelance</a></li> -->
+                        <li><a href="sketchbook.html">Sketchbook</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,196 +59,176 @@
                 <div class="menu-bar menu-bar-middle"></div>
                 <div class="menu-bar menu-bar-bottom"></div>
             </span>
+
+            <!-- logo -->
+            <div id="menu-logo">
+                <a href="index.html">Carolyn Zhou</a>
+            </div>
         </header>
 
         <!-- portfolio gallery -->
-        <div class="main-right" id="portfolio-main">
-            <ul>
-                <li class="portfolio-item">
-                    <a href="goodcook.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="Good Cook" src="images/home/goodcook-thumbnail.png">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        GoodCook
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Spatial, print and digital design for healthy eating
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="ctat.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="CTAT" src="images/home/ctat-thumbnail.png">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        CTAT Redesign
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Tutorial design for & rebranding of a tutor authoring tool
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="facesofdesign.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="Faces of Design" src="images/home/faces_of_design-thumbnail.jpg">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        Faces of Design
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Installation design for visualization of designers' career paths
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="polly.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="POLLY" src="images/home/polly-thumbnail2.png">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        POLLY
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Print and digital design for LEP patients and doctors
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="exploringsqhill.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="Exploring Squirrel Hill" src="images/home/exploring_sq_hill-thumbnail.png">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        Exploring Squirrel Hill
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Voice UI design for a day trip planner
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="responsiverealestate.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="Responsive Real Estate" src="images/home/responsive-thumbnail.png">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        Responsive Real Estate
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Visualizing the responsiveness of Facebook as an infographic and animation
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="linkedin.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="LinkedIn Design Challenge" src="images/home/linkedin-thumbnail.jpg">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        LinkedIn Design Challenge
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Visual/UX design for an improved job posting experience
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="ptp.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="Paint the Pavement" src="images/home/ptp-thumbnail.jpg">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        Paint the Pavement
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Developing a visual identity for a citywide movement
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="studiocat.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="Studio Cat" src="images/home/studiocat-thumbnail.png">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        StudioCat
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Designing an AR-enhanced studio
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-item">
-                    <a href="ibm.html">
-                        <div class="container">
-                            <img class="portfolio-image" alt="IBM Design Challenge" src="images/home/ibm-thumbnail.jpg">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <div class="overlay-text-title">
-                                        IBM Design Challenge
-                                    </div>
-                                    <hr class="portfolio-hr">
-                                    <div class="overlay-text-sub">
-                                        Predictive digital solution for airline mechanics
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+        <div class="main-content" id="portfolio-main">
+            <div class="body-content">
+                <div class="right-content">
+                <div class="h3-section" id="index-text">
+                    <p>I'm currently working at PNC designing mobile and desktop experiences for <a href="https://www.pnc.com/en/personal-banking/virtual-wallet-overview.html">Virtual Wallet</a>. If you're interested, check out my projects below and I'd love to <a href = "mailto: caroyn.y.zhou@gmail.com">get in touch</a>.</p>
+                </div>
+                </div>
+            </div>
         </div>
 
-        <!-- back to top -->
-        <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button> -->
+        <!-- <div class="portfolio"> -->
+            <section class="portfolio" id="portfolio">
+                <article class="polly">
+                    <a href="polly.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        POLLY
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Print & Mobile Design
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="ctat">
+                    <a href="ctat.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        CTAT Redesign
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        UX & Visual Design
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="facesofdesign">
+                    <a href="facesofdesign.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        Faces of Design
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Visual & Installation Design
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="goodcook">
+                    <a href="goodcook.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        GoodCook
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Spatial, Print & Web Design
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="responsiverealestate">
+                    <a href="responsiverealestate.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        Responsive Real Estate
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Data Visualization
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="ptp">
+                    <a href="ptp.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        Paint the Pavement
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Print Design & Branding
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="exploringsqhill">
+                    <a href="exploringsqhill.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        Exploring Squirrel Hill
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Interaction & Speech Design
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="linkedin">
+                    <a href="linkedin.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        LinkedIn Design Challenge
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        UX & Visual Design
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- <article class="polly">
+                    <a href="polly.html">POLLY</a>
+                </article>
+                <article class="ctat">
+                    <a href="ctat.html">CTAT</a>
+                </article>
+                <article class="facesofdesign">
+                    <a href="facesofdesign.html">Faces of Design</a>
+                </article> -->
+            </section>
+            <div class="right-content">
+                <!-- <footer>Carolyn Zhou - UX Designer - 2019</footer> -->
+            </div>
+        <!-- </div> -->
     </body>
 
 </html>

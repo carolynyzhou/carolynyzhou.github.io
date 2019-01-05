@@ -1,73 +1,146 @@
 /******************************* nav menu side bar *******************************/
 
-/*all nav bar link items are #333333, size 16pt, blue on hover*/
-.menu-sidebar {
-    /*display: inline-block;*/
+.menu {
+    position: inherit;
+    width: 100%;
+    top: 5%;
+    font-family: "Body", sans-serif;
     font-size: 1em;
-    font-family: "GT America", "Arial", sans-serif;
-    /*width: 25%;*/
+    line-height: 1em;
     z-index: 1;
-    overflow-x: hidden;
+}
+
+.menu-wrapper {
+    background-color: #fff;
     position: fixed;
-    top: 10%;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    margin-left: -100%;
+    padding: 10% 4% 40px 4%;
+    overflow: auto;
+    transition: .25s;
+    z-index: 10;
 }
 
-.toggle-button {
-    display: none;
+.menu-wrapper li {
+    margin: .5em 0;
 }
 
-a {
-    transition: all 300ms ease-out;
+.menu-show {
+    margin-left: 0;
+    box-shadow: -4px 2px 15px 1px #333;
 }
 
-/*logo my name*/
 #menu-logo {
-    /*display: inline-block;*/
-    font-family: "Gotham Medium", "Arial", sans-serif;
+    text-align: right;
+    padding: 0;
+    /*old*/
+    font-family: "Small Title", "Arial", sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    /*font-weight: 600;*/
-    margin-bottom: 1.75em;
-    /*position: fixed;
-    top: 10%;*/
+    letter-spacing: 0.1em;
+    margin-right: 10%;
 }
 
-#menu-logo a {
-    text-decoration: none;
-    color: #626262;
-}
-
-.menu-item {
-   margin: 1em 0 .75em 0;
-}
-
-.menu-item a {
+.menu a {
     color: #333333;
     text-decoration: none;
 }
 
-.menu-item a:hover {
+.menu a:hover {
     color: #12a8ad;
 }
 
-.menu-wrap {
+.menu-wrapper {
     height: 100%;
     transition: .25s;
     z-index: 10;
 }
 
 .submenu {
-    /*display: none;*/
-}
-
-.submenu-item {
-    margin: 1em 0 0 1.5em;
-
+    margin: 0 0 0 1.5em;
+    font-size: 1em;
 }
 
 #menu-selected {
     color: #bbb;
+}
+
+/******************* hamburger icon *******************/
+.toggle-button {
+  position: fixed;
+  width: 24px;
+  height: 40px;
+  padding: 4px;
+  transition: .25s;
+  z-index: 15;
+  display: block;
+  /*top: 30px;*/
+  left: 10%;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.toggle-button .menu-bar {
+    position: absolute;
+    border-radius: 2px;
+    width: 80%;
+    transition: .5s;
+}
+
+/*toggle button lines style*/
+.toggle-button .menu-bar-top {
+    border: 3px solid #777;
+    border-bottom: none;
+    top: 0;
+}
+
+.toggle-button .menu-bar-middle {
+    border: 3px solid #777;
+    border-top: none;
+    top: 9px;
+}
+
+.toggle-button .menu-bar-bottom {
+    border: 3px solid #777;
+    border-top: none;
+    top: 18px;
+}
+
+/*animation*/
+.button-open .menu-bar-top {
+    border-color: #777;
+    transform: rotate(45deg) translate(7px, 7px);
+    transition: .3s;
+}
+.button-open .menu-bar-middle {
+    background-color: #777;
+    transform: translate(0px);
+    transition: .1s ease-in;
+    opacity: 0;
+}
+.button-open .menu-bar-bottom {
+    border-color: #777;
+    transform: rotate(-45deg) translate(6px, -6px);
+    transition: .3s;
+}
+
+/******************************* nav menu side bar *******************************/
+
+.toggle-button {
+    /*display: none;*/
+}
+
+a {
+    transition: all 300ms ease-out;
+}
+
+#menu-logo a {
+    text-decoration: none;
+    color: #626262;
 }
 
 /******************************* portolfio menu items *******************************/
@@ -94,13 +167,4 @@ a {
 }
 .sidebar-menu-arrow:active::after {
     top: 2px;
-}
-
-/******************************* footer *******************************/
-footer {
-    /*margin-top: 10px;*/
-    position: fixed;
-    bottom: 50px;
-    font-size: 0.875em;
-    color: rgb(160,160,150);
 }

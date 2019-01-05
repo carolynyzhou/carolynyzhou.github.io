@@ -9,9 +9,10 @@
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/style-menu.css">
         <link rel="stylesheet" type="text/css" href="css/style-content.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
         <link rel="stylesheet" type="text/css" href="css/850px.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- fonts -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- scripts -->
@@ -26,39 +27,28 @@
     <body>
         <header>
             <!-- nav menu -->
-            <div class="menu-sidebar">
-
-                <!-- logo -->
-                <div id="menu-logo">
-                    <a href="index.html">Carolyn Zhou</a>
-                </div>
-
+            <div class="menu">
                 <!-- main nav bar -->
-                <div class="menu-wrap">
-                    <ul class="menu-navbar">
-                        <li class="menu-item menu-item-has-children"><a href="index.html"><span class="nav-text-size">Portfolio</span></a>
+                <div class="menu-wrapper">
+                    <ul class="menu-items">
+                        <li class="menu-item-has-children"><a href="index.html">Portfolio</a>
                             <span class="sidebar-menu-arrow"></span>
                             <ul class="submenu">
-                                <li class="submenu-item"><a href="goodcook.html"><span class="nav-text-size">GoodCook</span></a></li>
-                                <li class="submenu-item"><a href="ctat.html"><span class="nav-text-size">CTAT Redesign</span></a></li>
-                                <li class="submenu-item"><a href="facesofdesign.html"><span class="nav-text-size">Faces of Design</span></a></li>
-                                <li class="submenu-item"><a href="polly.html"><span class="nav-text-size">POLLY</span></a></li>
-                                <li class="submenu-item"><a href="exploringsqhill.html"><span class="nav-text-size">Exploring Squirrel Hill</span></a></li>
-                                <li class="submenu-item"><a href="responsiverealestate.html"><span class="nav-text-size">Responsive Real Estate</span></a></li>
-                                <li class="submenu-item"><a href="linkedin.html"><span class="nav-text-size">LinkedIn</span></a></li>
-                                <li class="submenu-item"><a href="ptp.html"><span class="nav-text-size">Paint the Pavement</span></a></li>
-                                <li class="submenu-item"><a href="studiocat.html"><span class="nav-text-size">StudioCat</span></a></li>
-                                <li class="submenu-item"><a href="ibm.html"><span class="nav-text-size">IBM Design</span></a></li>
+                                <li><a href="polly.html">POLLY</a></li>
+                                <li><a href="ctat.html">CTAT Redesign</a></li>
+                                <li><a href="facesofdesign.html">Faces of Design</a></li>
+                                <li><a href="goodcook.html">GoodCook</a></li>
+                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
+                                <li><a href="ptp.html">Paint the Pavement</a></li>
+                                <li><a href="exploringsqhill.html">Exploring Squirrel Hill</a></li>
+                                <li><a href="linkedin.html">LinkedIn</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="freelance.html"><span class="nav-text-size">Freelance</span></a></li>
-                        <li class="menu-item"><a href="sketchbook.html"><span class="nav-text-size">Sketchbook</span></a></li>
-                        <li class="menu-item"><a href="about.html" id="menu-selected"><span class="nav-text-size">About</span></a></li>
+                        <!-- <li><a href="freelance.html">Freelance</a></li> -->
+                        <li><a href="sketchbook.html">Sketchbook</a></li>
+                        <li><a href="about.html" id='menu-selected'>About</a></li>
                     </ul>
                 </div>
-                <!-- <footer>
-                    <p>Carolyn Zhou © 2018</p>
-                </footer> -->
             </div>
             <div class="clear"></div>
             <!-- hamburger menu -->
@@ -67,106 +57,119 @@
                 <div class="menu-bar menu-bar-middle"></div>
                 <div class="menu-bar menu-bar-bottom"></div>
             </span>
+            
+            <!-- logo -->
+            <div id="menu-logo">
+                <a href="index.html">Carolyn Zhou</a>
+            </div>
         </header>
         
         <!-- about content -->
-        <div class="main-right">
-            <div class="body-content">
+        <div class="main-content">
+            
                 <div class="h3-section">
                     <img src="images/me.jpg" id="me">
                 </div>
                 <!-- <h2>Hello, that's me.</h2> -->
-                
-                <p>A UX designer by trade, I'm interested in digital interfaces and data-driven design. I am passionate about pursuing the could-be's of life's experiences through design thinking, but I really love illustration and visual storytelling. Outside of work, I'm also a doodler/gym rat/tinkerer of code.</p>
-                <br>
-                <p>I'd be pleased to meet you! Reach me at carolyn.y.zhou@gmail.com.</p>
-                
-                <hr>
-                <p>Currently I'm working at PNC redesigning the <a href="https://www.pnc.com/en/personal-banking/virtual-wallet-overview.html">Virtual Wallet</a> experience.</p>
+            <div class="body-content">
+                <div class="right-content">
+                    <p>A UX designer by trade, I'm also interested in digital interfaces and data-driven design. I'm passionate about exploring the could-be's of our experiences through design thinking, but I really love illustration and visual storytelling. Outside of work, I'm also a doodler/gym rat/tinkerer of code.</p>
+                    <p>I'd be pleased to meet you! Reach me at carolyn.y.zhou@gmail.com.</p>
+                </div>
                 <hr>
                 <!-- <h2>Resume</h2> -->
                 <!-- education -->
-                <div class="h3-section">
-                    <div class="resume-h2">
-                        <h2>Education</h2>
-                    </div>
-                    <h3>Carnegie Mellon University</h3>
-                    <ul class="resume-points">
-                        <li>Class of 2018</li>
-                        <li>Bachelor of <a href="https://design.cmu.edu/">Design</a> &</li>
-                        <li>Bachelor of <a href="https://www.hcii.cmu.edu/academics/hci-undergraduate/major">Human-Computer Interaction</a></li>
-                    </ul>
+                <div class="left-title">
+                    <h2>Education</h2>
                 </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <h3>Carnegie Mellon University</h3>
+                        <ul class="resume">
+                            <li>Class of 2018</li>
+                            <li>Bachelor of <a href="https://design.cmu.edu/">Design</a> &</li>
+                            <li>Bachelor of <a href="https://www.hcii.cmu.edu/academics/hci-undergraduate/major">Human-Computer Interaction</a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- experience -->
-                <div class="h3-section">
-                    <div class="resume-h2">
-                        <h2>Experience</h2>
-                    </div>
-                    <h3>Experience Designer • PNC Bank • Oct 2017 - present</h3>
-                    <!-- <h4>Oct 2017 - present</h4> -->
-                    <ul class="resume-points experience-block">
-                        <li>Supporting and overseeing the design of Virtual Wallet, PNC's signature account and money management tool suite.</li>
-                    </ul>
-                    <h3 class="experience-h3">Digital Design Intern • PNC Bank • May - Jul 2017</h3>
-                    <!-- <h4>May - Jul 2017</h4> -->
-                    <ul class="resume-points experience-block">
-                        <li>Created journey maps, storyboards and user profiles to help the Digital Shopping, Buying, and Virtual Wallet team critically understand the physical context and experience of tablet use in retail banking.</li>
-                        <li>Designed web sections for Online Banking and created graphics as needed.</li>
-                    </ul>
-                    <h3 class="experience-h3">Design Intern • BIT Systems • Jun - Aug 2016</span></h3>
-                    <!-- <h4>Jun - Aug 2016</h4> -->
-                    <ul class="resume-points experience-block">
-                        <li>Interface design: Designed dashboard layouts and mockups to optimize visualization of spatial data and algorithmic metrics. Rapidly prototyped and tested over 10 iterations.</li>
-                        <li>Graphic: Rebranded a software application that provides modern visualization of big data.</li>
-                    </ul>
-                    <h3 class="experience-h3">Design Intern • LadyMarry • Jun - Aug 2015</span></h3>
-                    <!-- <h4>Jun - Aug 2015</h4> -->
-                    <ul class="resume-points experience-block">
-                        <li>Redesigned Android and iOS mobile interfaces to improve visual and navigational flow for a wedding planning and management startup.</li>
-                        <li>Overhauled email template design to increase user engagement.</li>
-                    </ul>
+                <div class="left-title">
+                    <h2>Experience</h2>
                 </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <h3>Experience Designer • PNC • Oct 2017 - present</h3>
+                        <ul class="resume experience-block">
+                            <li>Supporting and overseeing the design of Virtual Wallet, PNC's signature account and money management tool suite.</li>
+                        </ul>
+                        <h3>Digital Design Intern • PNC • May - Jul 2017</h3>
+                        <!-- <h4>May - Jul 2017</h4> -->
+                        <ul class="resume experience-block">
+                            <li>Created journey maps, storyboards and user profiles to help the Digital Shopping, Buying, and Virtual Wallet team critically understand the physical context and experience of tablet use in retail banking.</li>
+                            <li>Designed web sections for Online Banking and created graphics as needed.</li>
+                        </ul>
+                        <h3>Design Intern • BIT Systems • Jun - Aug 2016</span></h3>
+                        <!-- <h4>Jun - Aug 2016</h4> -->
+                        <ul class="resume experience-block">
+                            <li>UX design: Designed dashboard layouts and mockups to optimize visualization of spatial data and algorithmic metrics. Rapidly prototyped and tested over 10 iterations.</li>
+                            <li>Graphic design: Rebranded a software application that provides modern visualization of big data.</li>
+                        </ul>
+                        <h3>Design Intern • LadyMarry • Jun - Aug 2015</span></h3>
+                        <!-- <h4>Jun - Aug 2015</h4> -->
+                        <ul class="resume experience-block">
+                            <li>Redesigned Android and iOS mobile interfaces to improve visual and navigational flow for a wedding planning and management startup.</li>
+                            <li>Overhauled email template design to increase user engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- skills -->
-                <div class="h3-section">
-                    <div class="resume-h2">
-                        <h2>Skills</h2>
-                    </div>
-                    <div class="two-columns-one-row">
-                        <div class="left-text-column">
-                            <h3 class="skills-h3">Development</h3>
-                            <ul class="resume-points">
-                                <li>User-centered research</li>
-                                <li>User-centered design</li>
-                                <li>Systems thinking</li>
-                                <li>Rapid prototyping</li>
-                                <li>Wireframing</li>
-                                <li>Storyboarding</li>
-                                <li>Illustration</li>
-                                <li>Web development</li>
-                            </ul>
-                        </div>
-                        <div class="right-text-column">
-                            <div class="skills-right-col">
-                                <h3 class="skills-h3" id="tools-heading">Tools</h3>
-                                <ul class="resume-points">
-                                    <li>Ps, Ai, Id, Ae, Xd</li>
-                                    <li>Sketch</li>
-                                    <li>Principle</li>
-                                    <li>Unity</li>
+                <div class="left-title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <div class="two-columns-one-row" id="resume-skills-columns">
+                            <div class="left-text-column">
+                                <h3 class="resume-skills-h3">Development</h3>
+                                <ul class="resume">
+                                    <li>User-centered research</li>
+                                    <li>User-centered design</li>
+                                    <li>Systems thinking</li>
+                                    <li>Rapid prototyping</li>
+                                    <li>Wireframing</li>
+                                    <li>Storyboarding</li>
+                                    <li>Illustration</li>
+                                    <li>Web development</li>
                                 </ul>
                             </div>
-                            <div class="skills-right-col">
-                                <h3 class="skills-h3">Languages</h3>
-                                <ul class="resume-points">
-                                    <li>HTML/CSS/JS</li>
-                                    <li>Python</li>
-                                </ul>
+                            <div class="right-text-column">
+                                <div class="skills-right-col">
+                                    <h3 class="resume-skills-h3">Tools</h3>
+                                    <ul class="resume">
+                                        <li>Ps, Ai, Id, Ae, Xd</li>
+                                        <li>Sketch</li>
+                                        <li>Principle</li>
+                                        <li>Unity</li>
+                                    </ul>
+                                </div>
+                                <div class="skills-right-col">
+                                    <h3 class="resume-skills-h3">Languages</h3>
+                                    <ul class="resume">
+                                        <li>HTML/CSS/JS</li>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- <br> -->
-                <p>You can get my résumé <a href="https://drive.google.com/file/d/159_mPRiXHM53hImcPxcgoyFBgkoSKPCZ/view?usp=sharing">as a PDF</a>.</p>
+                <div class="right-content">
+                    <p>You can get a <a href="https://drive.google.com/file/d/159_mPRiXHM53hImcPxcgoyFBgkoSKPCZ/view?usp=sharing">PDF of my résumé</a> or <a href = "mailto: caroyn.y.zhou@gmail.com">contact me</a> for my full portfolio.</p>
+                </div>
             </div>
             
 

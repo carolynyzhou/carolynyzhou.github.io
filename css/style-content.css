@@ -1,110 +1,147 @@
-/*right side stuff*/
-.main-right {
-    display: block;
-    vertical-align: top;
-    margin-left: 25%;
-    /*top: 120px;*/
-}
-
 body {
-    margin: 5% 5%;
+    margin: 5% 0;
     text-rendering: optimizeLegibility;
     background-color: #f8f8fa;
 }
 
-/*sizing section where non-portfolio-title/non-gallery content goes*/
-.body-content {
-    width: 66.6%;
+.main-content {
     display: block;
     vertical-align: top;
+    margin: 0 10%;
+}
+
+header {
+    margin-bottom: 5em;
 }
 
 /****************************************** text stuff ******************************************/
 /*general text styling*/
 h1 {
-    font-family: "GT America", "Arial", sans-serif;
+    font-family: "Title", sans-serif;
     font-size: 6em;
     /*line-height: 1.2em;*/
     /*text-transform: uppercase;*/
-    color: #404040;
+    color: #333;
     margin-bottom: 30px;
 }
 
 h2 {
     /*title of section, left hand column*/
-    font-family: "Gotham Medium", "Arial", sans-serif;
+    font-family: "Small Title", sans-serif;
     font-weight: 500;
     font-size: 1em;
     line-height: 1.6em;
     text-transform: uppercase;
-    margin: 2em 0 1em 0;
+    margin: 1em 0 .5em 0;
     letter-spacing: 0.05em;
     color: #333;
+    padding-top: .2em;
+
+}
+
+.left-title h2 {
+    margin: 0;
+    text-align: right;
 }
 
 h3 {
     /*paragraph title*/
-    font-family: "GT America", "Arial", sans-serif;
+    font-family: "Small Title", sans-serif;
     font-size: 1em;
     font-weight: 500;
     margin: .5em 0;
-    color: #333; 
-    /*line-height: 1.6em;*/
-}
-
-h4 {
-    font-family: "GT America", "Arial", sans-serif;
-    font-size: 1em;
+    color: #444;
+    padding-top: .5em;
     line-height: 1.6em;
-    position: relative;
-    width: 100%;
-    vertical-align: baseline;
-    color: #666;
-    font-weight: 500;
 }
-
 
 .h3-section {
     margin-bottom: 2em;
 }
 
-
 .h3-no-body-text-after {
-    margin-bottom: 1.5em;
+    /*margin-bottom: 1.5em;*/
+}
+
+h4, p, figcaption, footer, ul {
+    font-family: "Body", sans-serif;
+    font-size: 1.125em;
+    letter-spacing: .025em;
+    position: relative;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+h4 {
+    line-height: 1.6em;
+    color: #666;
+    font-weight: 500;
 }
 
 p {
-    font-family: "GT America", "Arial", sans-serif;
-    font-size: 1em;
-    line-height: 1.6em;
-    position: relative;
-    width: 100%;
-    vertical-align: baseline;
     color: #333;
-    /*padding-bottom: .5em;*/
+    padding-bottom: 1.125em;
+    line-height: 1.6em;
 }
 
 a {
     transition: all 300ms ease-out;
 }
 
-iframe {
-/*        width: 100%;
-        height: auto;
-*/    }
+figcaption {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: .5em;
+    color: #666;
+}
 
-.main-right a {
+blockquote {
+    font-family: "Body", sans-serif;
+    font-style: italic;
+    font-size: 2.25em;
+    color: #444;
+    line-height: 1.3em;
+    letter-spacing: .03em;
+}
+
+blockquote:before {
+    content: '"';
+    position: absolute;
+    margin-left: -.4em;
+}
+
+blockquote:after {
+    content: '"';
+}
+
+.quote-wrapper {
+    margin: 1.5em 0;
+}
+
+.quote-wrapper figcaption {
+    font-size: 1em;
+    font-style: normal;
+}
+
+
+footer {
+    line-height: 1.6em;
+    margin-top: 2em;
+    color: #777;
+}
+
+.main-content a {
     text-decoration: none;
     color: #12a8ad; /*teal*/
 }
 
-.main-right a:hover {
+.main-content a:hover {
     border-bottom: 1px solid #ccc;
     color: #bbb;
 }
 
 .bold {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 br {
@@ -112,31 +149,44 @@ br {
 }
 
 hr {
-    margin: 3em 0 3em 0;
-    border-color: #ccc;
+    margin: 3em 20%;
+    border-color: #ddd;
 }
 
-footer {
-    
-}
 
+/****************************************** index page stuff ******************************************/
+#portfolio-main {
+
+}
 
 /*portfolio full content stuff*/
 /*left- and right-title class names are from when portfolio had h2 in left hand column*/
-.left-title {
-    /*display: inline-block;*/
+
+/*sizing section where non-portfolio-title/non-gallery content goes*/
+.body-content {
+    width: 100%; /*10 columns*/
     display: block;
-    /*width: 30%;*/
-    /*line-height: 0;*/
+    vertical-align: top;
+    /*below is when all body content is in one column, left title not pulled out to the side*/
+    /*width: 66.6%;*/
+    /*display: block;*/
     /*vertical-align: top;*/
-    margin-top: 4em;
+    /*margin: 0 16.67%;*/
 }
 
-.right-content {
-
+.left-title {
+    display: inline-block;
+    width: 15%;
+    float: left;
 }
 
-/*two column text*/
+
+.right-content, .two-columns-one-row {
+    width: 60%; /*total of page width is 6/10 with 2/10 margins*/
+    margin: 0 0 0 20%;
+    /*float: right;*/
+}
+
 .left-text-column {
     width: 45%;
     display: inline-block;
@@ -150,29 +200,25 @@ footer {
     vertical-align: top;
 }
 
+ul {
+    display: block;
+    list-style-type: none;
+    font-family: "Body", sans-serif;
+    line-height: 1.6em;
+    vertical-align: baseline;
+    color: #333;
+}
+
 /*bullet points*/
 .bullet-points {
-    display: block;
-    list-style-type: square;
-    font-family: "GT America", "Arial", sans-serif;
-    /*font-size: 1em;*/
-    line-height: 1.6em;
-    /*position: relative;*/
-    /*width: 100%;*/
-    vertical-align: baseline;
-    padding-top: .5em;
-    color: #333;
+    list-style-type: disc;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 1.125em;
 }
 
 .numbered-list {
     list-style-type: decimal;
-}
-
-#learning {
-    padding-top: 0;
-}
-
-.reflection p {
 }
 
 /*carousel*/
@@ -213,6 +259,12 @@ footer {
 }
 
 /****************************************** image stuff ******************************************/
+
+.h2-section-wrapper img {
+    width: 80%;
+    margin-left: 10%;
+}
+
 .h3-section img {
     width: 100%;
     margin: 1.6em 0 0 0;
@@ -221,8 +273,6 @@ footer {
 .two-column img {
     display: inline-block;
     width: 48%;
-    /*vertical-align: top;*/
-    /*margin: 1.6em 1% 0 1%;*/
 }
 
 .right-image {
@@ -235,7 +285,6 @@ footer {
 
 .three-column img {
     display: inline-block;
-    /*float: left;*/
     width: 30.9%;
     margin: 1.6em 1% 0 .5%;
     vertical-align: top;
@@ -249,9 +298,26 @@ footer {
 }
 
 #image-before-text {
-    margin-bottom: 2em;
+    margin-bottom: 1.6em;
 }
 
+/****************************************** video iframe ******************************************/
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    /*added by me*/
+    margin-bottom: 3em;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /******************************************page-specific stuff******************************************/
 /*about me*/
@@ -272,10 +338,10 @@ footer {
     color: #777;
 }
 
-.resume-points {
+.resume {
     display: block;
     list-style-type: none;
-    font-family: "GT America", "Arial", sans-serif;
+    font-family: "Body", sans-serif;
     line-height: 1.6em;
     /*width: 100%;*/
     vertical-align: baseline;
@@ -286,7 +352,7 @@ footer {
     margin-bottom: 1em;
 }
 
-.skills-h3 {
+.resume-skills-h3 {
     margin-top: 0;
 }
 
@@ -294,29 +360,34 @@ footer {
     margin-bottom: 1em;
 }
 
-/*sketchbook masonry*/
+#resume-skills-columns {
+    margin: 0; 
+}
+
+/*sketchbook "masonry"*/
 #sketchbook-body {
     width: 100%;
     display: block;
     vertical-align: top;
 }
 
-.column-1 {
+.column-1, .column-2 {
     display: inline-block;
-    width: 48%;
+    width: 49%;
+    /*margin-right: 1.5%;*/
+}
+
+..column-1 {
     float: left;
-    margin-right: 1.5%;
 }
 
 .column-2 {
-    display: inline-block;
-    width: 48%;
-    /*float: right;*/
+    float: right;
 }
 
 .column-1 img, .column-2 img {
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 
@@ -365,11 +436,11 @@ footer {
 }
 
 #polly-midfi {
-    width: 33%;
+    width: 34%;
 }
 
 #polly-hifi {
-    width: 33%;
+    width: 34%;
 }
 
 /*exploring sq hill*/
