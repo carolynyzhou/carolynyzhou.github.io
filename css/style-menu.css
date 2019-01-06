@@ -78,7 +78,9 @@
   display: block;
   /*top: 30px;*/
   left: 10%;
+
 }
+
 
 .toggle-button:hover {
     cursor: pointer;
