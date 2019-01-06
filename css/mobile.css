@@ -9,6 +9,10 @@
 
     /******************************************* menu stuff *******************************************/
 
+    .menu {
+        font-size: 1.125em;
+    }
+
     .sidebar-menu-arrow {
         display: none;
     }
@@ -44,7 +48,7 @@
     }
 
     .portfolio article {
-        height: 150px;
+        height: 190px;
     }
 
     .overlay-text {
@@ -135,6 +139,7 @@
     #sketchbook-main-right {
         margin: 0;
     }
+
     #sketchbook-body {
         margin-left: 0;
     }
