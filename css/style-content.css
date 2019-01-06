@@ -359,6 +359,10 @@ ul {
     margin: 0;
 }
 
+.skills h3 {
+    padding-top: 0;
+}
+
 /*sketchbook "masonry"*/
 #sketchbook-body {
     width: 100%;
