@@ -3,28 +3,12 @@
     /******************* menu stuff **********************/
 
     .menu {
-        font-size: .8em;
         line-height: 1em;
         z-index: 1;
     }
-    /*.menu-wrapper {
-        width: 100%;
-        margin-left: -150%;
-        padding-top: 10%;
-        padding-left: 50%;
-        text-align: center;
-    }*/
-
-    .menu-wrapper {
-        /*margin-left: -150%;*/
-    }
-
-    .submenu {
-        margin-left: 1em;
-    }
 
     .menu-show {
-        /*margin-left: -50%;*/
+        left: 50%;
     }
 
     h1 {

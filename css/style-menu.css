@@ -1,3 +1,4 @@
+
 /******************************* nav menu side bar *******************************/
 
 .menu {
@@ -15,11 +16,11 @@
     position: fixed;
     top: 0;
     height: 100%;
-    width: 200px;
-    margin-left: -100%;
-    padding: 10% 4% 40px 4%;
+    width: 30%;
+    left: 100%;
+    padding: 10% 0 40px 10%;
     overflow: auto;
-    transition: .25s;
+    transition: .3s ease-out;
     z-index: 10;
 }
 
@@ -28,19 +29,16 @@
 }
 
 .menu-show {
-    margin-left: 0;
-    box-shadow: -4px 2px 15px 1px #333;
+    left: 60%;
+    box-shadow: -3px 0px 10px -5px #ccc;
 }
 
 #menu-logo {
-    text-align: right;
-    padding: 0;
-    /*old*/
     font-family: "Small Title", "Arial", sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .menu a {
@@ -50,12 +48,6 @@
 
 .menu a:hover {
     color: #12a8ad;
-}
-
-.menu-wrapper {
-    height: 100%;
-    transition: .25s;
-    z-index: 10;
 }
 
 .submenu {
@@ -68,65 +60,66 @@
 }
 
 /******************* hamburger icon *******************/
-.toggle-button {
-  position: fixed;
-  width: 24px;
-  height: 40px;
-  padding: 4px;
-  transition: .25s;
-  z-index: 15;
-  display: block;
-  /*top: 30px;*/
-  left: 10%;
-
-}
-
-
 .toggle-button:hover {
     cursor: pointer;
 }
 
+.toggle-button {
+    position: fixed;
+    width: 30px;
+    height: 16px;
+    transition: .25s;
+    z-index: 15;
+    display: block;
+    right: 10%;
+}
+
 .toggle-button .menu-bar {
     position: absolute;
-    border-radius: 2px;
-    width: 80%;
+    border: 3px solid #666;
+    border-top: none;
+    border-right: none;
+    width: 90%;
     transition: .5s;
 }
 
-/*toggle button lines style*/
 .toggle-button .menu-bar-top {
-    border: 3px solid #777;
-    border-bottom: none;
     top: 0;
 }
 
 .toggle-button .menu-bar-middle {
-    border: 3px solid #777;
-    border-top: none;
-    top: 9px;
+    top: 50%;
 }
 
 .toggle-button .menu-bar-bottom {
-    border: 3px solid #777;
-    border-top: none;
-    top: 18px;
+    top: 100%;
 }
-
-/*animation*/
+/*
 .button-open .menu-bar-top {
-    border-color: #777;
-    transform: rotate(45deg) translate(7px, 7px);
+    transform: rotate(-45deg) translate(-5px, 6px);
     transition: .3s;
 }
 .button-open .menu-bar-middle {
-    background-color: #777;
+    transform: translate(0px);
+    transition: .1s ease-out;
+    opacity: 0;
+}
+.button-open .menu-bar-bottom {
+    transform: rotate(45deg) translate(-5px, -6px);
+    transition: .3s;
+}*/
+
+.button-open .menu-bar-top {
+    transform: rotate(45deg) translate(5px, 6px);
+    transition: .3s;
+}
+.button-open .menu-bar-middle {
     transform: translate(0px);
     transition: .1s ease-in;
     opacity: 0;
 }
 .button-open .menu-bar-bottom {
-    border-color: #777;
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(5px, -6px);
     transition: .3s;
 }
 
