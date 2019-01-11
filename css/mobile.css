@@ -23,13 +23,12 @@
 
     .menu-wrapper {
         width: 100%;
-        padding-top: 50%;
-        padding-left: 50%;
+        padding: 0%;
         text-align: center;
     }
 
     .menu-show {
-        left: -50%;
+        left: 0%;
     }
 
     .toggle-button {
@@ -40,10 +39,10 @@
         margin-left: 2.5%;
     }
 
-    /************************************ content & type stuff **************************************/
+    /************************************ content & text stuff **************************************/
     /*index page*/
-    #index-text {
-        font-size: 1.5em;
+    #big {
+        font-size: 2em;
     }
 
     .portfolio article {
@@ -89,7 +88,7 @@
     }
 
     figcaption {
-        padding-top: 0;
+        padding-top: .25em;
     }
 
     .bullet-points {
@@ -99,7 +98,7 @@
     /************************************ image stuff ************************************/
 
     .h3-section img {
-        margin: .5em 0;
+        margin: 0 0 1.125em 0;
     }
 
     #second-img {
@@ -109,18 +108,26 @@
     .two-column img, .three-column img {
         display: block;
         width: 100%;
-        margin: .8em 0;
+        margin: 0 0 1.125em 0;
     }
 
     #right-image {
         margin-top: 0;
-        margin-bottom: 2em;
+        margin-bottom: 1.125em;
     }
 
     .four-column img {
         /*display: block;*/
         width: 48%;
-        margin: .3em .5%;
+        margin: 0 .49% 1.125em .49%;
+    }
+
+    .img-caption {
+        margin-bottom: 1.125em;
+    }
+
+    .img-caption img {
+        margin-bottom: 0;
     }
 
     /************************************ specific stuff ************************************/
@@ -160,7 +167,7 @@
         margin-top: 0;
         margin-bottom: 2em;
         float: none;
-        margin-left: 6%;
+        margin-left: 5%;
     }
 
     #affinity {
@@ -177,16 +184,6 @@
         width: 100%;
     }
 
-    /*ibm*/
-    #mobile-grid {
-        width: 100%;
-    }
-
-    #tablet-grid {
-        width: 100%;
-        margin-bottom: 2em;
-    }
-
     /*linkedin*/
     #indeed {
         width: 100%;
@@ -195,27 +192,13 @@
     /*ptp*/
     #ptp-bg-1 {
         width: 100%;
+        margin-bottom: 1.125em;
     }
 
     #ptp-bg-2 {
         width: 100%;
         margin-top: 0;
-        margin-bottom: 2em;
-    }
-
-    /*studiocat*/
-    #cat-projected {
-        margin-top: 0;
-    }
-
-    #welcomelily-1 {
-        width: 100%;
-    }
-
-    #welcomelily-2 {
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     /*freelance*/

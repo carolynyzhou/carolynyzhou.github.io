@@ -1,13 +1,22 @@
 #index-text {
-    margin: 4em 0 4.5em 0; /*top margin should offset 2em under logo*/
+    margin: 27% 0; /*top margin should offset 2em under logo*/
+}
+
+#big {
     font-size: 2.25em;
+    margin-bottom: 0;
 }
 
-.portfolio-grid {
-    margin: 0;
+/*portfolio grid items*/
+.portfolio {
+    /*width: 100%;*/
+    /*display: block;*/
 }
 
-/*styling portfolio grid items*/
+.accactivity {
+    
+}
+
 .polly {
     background-image: url(../images/home/polly-thumbnail2.png);
 }
@@ -44,25 +53,18 @@
     background-image: url(../images/home/ibm-thumbnail.jpg);
 }
 
-.portfolio {
-    width: 100%;
-    display: block;
-}
 
 .portfolio article {
-    background-color: #f8f8fa;
+    background-color: #f0f0fa;
     height: 360px; /*must set height*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
-    /*box-shadow: 0px 4px 16px #cccccc;*/
-
     width: 100%;
     margin-left: 0;
 }
 
 .container {
-    /*position: relative;*/
     height: 100%;
 }
 
@@ -93,12 +95,11 @@
 
 .overlay-title {
     color: #777;
-    /*line-height: 1em;*/
     margin-bottom: .125em;
 }
 
 .overlay-subtitle {
     font-family: "Small Title", "Arial", sans-serif;
-    line-height: 1em;
+    line-height: 1.4em;
     color: #888;
 }

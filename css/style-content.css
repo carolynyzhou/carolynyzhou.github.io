@@ -30,7 +30,7 @@ h2 {
     font-family: "Small Title", sans-serif;
     font-weight: 500;
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.75em;
     text-transform: uppercase;
     margin: 1em 0 .5em 0;
     letter-spacing: 0.05em;
@@ -49,7 +49,7 @@ h3 {
     font-weight: 500;
     margin-bottom: .5em;
     color: #444;
-    line-height: 1.6em;
+    line-height: 1.75em;
 }
 
 .h3-section {
@@ -62,7 +62,7 @@ h3 {
 
 h4, p, figcaption, footer, ul {
     font-family: "Body", sans-serif;
-    font-size: 1.125em;
+    font-size: 1em;
     letter-spacing: .025em;
     position: relative;
     vertical-align: baseline;
@@ -70,15 +70,15 @@ h4, p, figcaption, footer, ul {
 }
 
 h4 {
-    line-height: 1.6em;
+    line-height: 1.75em;
     color: #666;
     font-weight: 500;
 }
 
 p {
     color: #333;
-    padding-bottom: 1.125em;
-    line-height: 1.6em;
+    padding-bottom: 1em;
+    line-height: 1.75em;
 }
 
 a {
@@ -112,7 +112,7 @@ blockquote:after {
 }
 
 .quote-wrapper {
-    margin: 1.5em 0;
+    margin: 1.5em 0 1.75em 0;
 }
 
 .quote-wrapper figcaption {
@@ -122,7 +122,7 @@ blockquote:after {
 
 
 footer {
-    line-height: 1.6em;
+    line-height: 1.75em;
     margin-top: 2em;
     color: #777;
 }
@@ -142,7 +142,7 @@ footer {
 }
 
 br {
-    line-height: 1.6em;
+    line-height: 1.75em;
 }
 
 hr {
@@ -157,7 +157,6 @@ hr {
 }
 
 /*portfolio full content stuff*/
-/*left- and right-title class names are from when portfolio had h2 in left hand column*/
 
 /*sizing section where non-portfolio-title/non-gallery content goes*/
 .body-content {
@@ -180,7 +179,6 @@ hr {
 .right-content, .two-columns-one-row {
     width: 60%; /*total of page width is 6/10 with 2/10 margins*/
     margin: 0 0 0 20%;
-    /*float: right;*/
 }
 
 .left-text-column {
@@ -200,7 +198,7 @@ ul {
     display: block;
     list-style-type: none;
     font-family: "Body", sans-serif;
-    line-height: 1.6em;
+    line-height: 1.75em;
     vertical-align: baseline;
     color: #333;
 }
@@ -256,16 +254,19 @@ ul {
 
 /****************************************** image stuff ******************************************/
 
+/*full image in body column*/
 .h2-section-wrapper img {
     width: 80%;
     margin-left: 10%;
 }
 
+/*image in right content side only*/
 .h3-section img {
     width: 100%;
-    margin: 1.6em 0 0 0;
+    margin: 0 0 1.75em 0;
 }
 
+/*multi-image columns*/
 .two-column img {
     display: inline-block;
     width: 48%;
@@ -275,26 +276,31 @@ ul {
     float: right;
 }
 
-#right-image {
-    float: right;
-}
-
 .three-column img {
     display: inline-block;
     width: 30.9%;
-    margin: 1.6em 1% 0 .5%;
+    margin: 0 1% 1.75em .5%;
     vertical-align: top;
 }
 
 .four-column img {
     display: inline-block;
     width: 22.9%;
-    margin: 1.6em 1% 0 .5%;
+    margin: 0 1% 1.75em .5%;
     vertical-align: top;
 }
 
+/*image caption*/
+.img-caption img {
+    margin-bottom: 0;
+}
+
+.img-caption {
+    margin-bottom: 1.75em;
+}
+
 #image-before-text {
-    margin-bottom: 1.6em;
+    margin-bottom: 1.75em;
 }
 
 .outline-for-white-bg {
@@ -334,7 +340,7 @@ ul {
     display: block;
     list-style-type: none;
     font-family: "Body", sans-serif;
-    line-height: 1.6em;
+    line-height: 1.75em;
     vertical-align: baseline;
     color: #666;
 }
@@ -344,7 +350,7 @@ ul {
 }
 
 ul.resume {
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
 }
 
 .skills {

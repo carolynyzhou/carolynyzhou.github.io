@@ -18,14 +18,20 @@
     height: 100%;
     width: 30%;
     left: 100%;
-    padding: 10% 0 40px 10%;
+    padding: 0 0 0 10%;
     overflow: auto;
-    transition: .3s ease-out;
+    transition: .25s ease-out;
     z-index: 10;
 }
 
 .menu-wrapper li {
     margin: .5em 0;
+}
+
+.menu-items {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .menu-show {
