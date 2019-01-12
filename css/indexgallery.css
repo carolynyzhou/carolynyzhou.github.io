@@ -1,10 +1,11 @@
 #index-text {
-    margin: 27% 0; /*top margin should offset 2em under logo*/
+    margin: 27% 0;
 }
 
 #big {
-    font-size: 2.25em;
-    margin-bottom: 0;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    padding-bottom: .75em;
 }
 
 /*portfolio grid items*/
