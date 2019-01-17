@@ -25,14 +25,18 @@ h1 {
     margin-bottom: 30px;
 }
 
+/*line height and font size*/
+h2, h3, h4, p, figcaption, footer, ul {
+    font-size: 1em;
+    line-height: 1.65em;
+}
+
 h2 {
     /*title of section, left hand column*/
     font-family: "Small Title", sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    line-height: 1.75em;
+    /*font-weight: 500;*/
     text-transform: uppercase;
-    margin: 1em 0 .5em 0;
+    margin: 0 0 .5em 0;
     letter-spacing: 0.05em;
     color: #333;
 }
@@ -45,24 +49,18 @@ h2 {
 h3 {
     /*paragraph title*/
     font-family: "Small Title", sans-serif;
-    font-size: 1em;
-    font-weight: 500;
+    /*font-weight: 500;*/
     margin-bottom: .5em;
     color: #444;
-    line-height: 1.75em;
 }
 
 .h3-section {
     margin-bottom: 2em;
 }
 
-.h3-no-body-text-after {
-    /*margin-bottom: 1.5em;*/
-}
-
+/*elements using Canela*/
 h4, p, figcaption, footer, ul {
     font-family: "Body", sans-serif;
-    font-size: 1em;
     letter-spacing: .025em;
     position: relative;
     vertical-align: baseline;
@@ -70,7 +68,6 @@ h4, p, figcaption, footer, ul {
 }
 
 h4 {
-    line-height: 1.75em;
     color: #666;
     font-weight: 500;
 }
@@ -78,7 +75,6 @@ h4 {
 p {
     color: #333;
     padding-bottom: 1em;
-    line-height: 1.75em;
 }
 
 a {
@@ -86,7 +82,6 @@ a {
 }
 
 figcaption {
-    font-size: 1em;
     line-height: 1.5em;
     padding-top: .5em;
     color: #666;
@@ -122,18 +117,18 @@ blockquote:after {
 
 
 footer {
-    line-height: 1.75em;
     margin-top: 2em;
     color: #777;
 }
 
 .main-content a {
     text-decoration: none;
-    color: #12a8ad; /*teal*/
+    color: #496fa3;
+    border-bottom: 1px dotted #496fa3;
 }
 
 .main-content a:hover {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px dotted #ccc;
     color: #bbb;
 }
 
@@ -159,16 +154,13 @@ hr {
 /*portfolio full content stuff*/
 
 /*sizing section where non-portfolio-title/non-gallery content goes*/
-.body-content {
-    width: 100%; /*10 columns*/
-    display: block;
-    vertical-align: top;
+/*.body-content { */
     /*below is when all body content is in one column, left title not pulled out to the side*/
     /*width: 66.6%;*/
     /*display: block;*/
     /*vertical-align: top;*/
     /*margin: 0 16.67%;*/
-}
+/*}*/
 
 .left-title {
     display: inline-block;
@@ -185,6 +177,7 @@ hr {
     width: 45%;
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 1em;
 }
 
 .right-text-column {
@@ -192,22 +185,28 @@ hr {
     display: inline-block;
     margin-left: 9%;
     vertical-align: top;
+    margin-bottom: 1em;
 }
 
 ul {
     display: block;
     list-style-type: none;
     font-family: "Body", sans-serif;
-    line-height: 1.75em;
     vertical-align: baseline;
     color: #333;
 }
 
+
+
+#bullet {
+    margin-left: 1em;
+}
+
 /*bullet points*/
-.bullet-points {
+.bullet-list {
     list-style-type: disc;
-    margin-left: 5%;
-    width: 90%;
+    /*margin-left: 2%;*/
+    /*width: 98%;*/
     margin-bottom: 1.125em;
 }
 

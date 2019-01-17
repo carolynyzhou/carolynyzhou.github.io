@@ -53,7 +53,8 @@
 }
 
 .menu a:hover {
-    color: #12a8ad;
+    color: #496fa3;
+    border-bottom: 1px dotted #496fa3;
 }
 
 .submenu {
@@ -100,20 +101,6 @@
 .toggle-button .menu-bar-bottom {
     top: 100%;
 }
-/*
-.button-open .menu-bar-top {
-    transform: rotate(-45deg) translate(-5px, 6px);
-    transition: .3s;
-}
-.button-open .menu-bar-middle {
-    transform: translate(0px);
-    transition: .1s ease-out;
-    opacity: 0;
-}
-.button-open .menu-bar-bottom {
-    transform: rotate(45deg) translate(-5px, -6px);
-    transition: .3s;
-}*/
 
 .button-open .menu-bar-top {
     transform: rotate(45deg) translate(5px, 6px);
@@ -164,7 +151,7 @@ a {
 }
 .sidebar-menu-arrow:hover::after {
     cursor: pointer;
-    color: #12a8ad;
+    color: #bbb;
 }
 .sidebar-menu-arrow:active::after {
     top: 2px;

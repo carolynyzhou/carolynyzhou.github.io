@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
     header {
         margin-bottom: 3em;
     }
@@ -37,16 +37,25 @@
 
     #menu-logo {
         margin-left: 2.5%;
+        font-size: 1em;
     }
 
     /************************************ content & text stuff **************************************/
     /*index page*/
-    #big {
-        font-size: 2em;
+    #index-text {
+        margin: 48% 0;
+    }
+
+    .big {
+        font-size: 2.45em;
+    }
+
+    .index-menu {
+        display: none;
     }
 
     .portfolio article {
-        height: 160px;
+        height: 164px;
     }
 
     .overlay-text {
@@ -79,19 +88,20 @@
         margin-bottom: .5em;
     }
 
-    h2 {
-        margin-top: .25em;
-    }
-
     p {
         padding-bottom: 0.875em;
+    }
+
+    blockquote {
+        font-size: 1.75em;
+        line-height: 1.45em;
     }
 
     figcaption {
         padding-top: .25em;
     }
 
-    .bullet-points {
+    .bullet-list {
         margin-bottom: .875em;
     }
 

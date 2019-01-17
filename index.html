@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hi, I'm Carolyn Zhou</title>
+        <title>Hi, I'm Carolyn</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <!-- styles -->
@@ -22,6 +22,7 @@
         <script src="js/main.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/smoothscroll.js" type="text/javascript"></script>
         <!-- favicon -->
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     </head>
@@ -33,22 +34,21 @@
                 <!-- main nav bar -->
                 <div class="menu-wrapper">
                     <ul class="menu-items">
-                        <li class="menu-item-has-children"><a href="index.html" id='menu-selected'>Portfolio</a>
+                        <li class="menu-item-has-children"><a href="index.html" id='menu-selected'>Work</a>
                             <span class="sidebar-menu-arrow"></span>
                             <ul class="submenu">
                                 <li><a href="polly.html">POLLY</a></li>
-                                <li><a href="ctat.html">CTAT Redesign</a></li>
+                                <li><a href="ctat.html">CTAT</a></li>
                                 <li><a href="facesofdesign.html">Faces of Design</a></li>
                                 <li><a href="goodcook.html">GoodCook</a></li>
-                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
-                                <li><a href="ptp.html">Paint the Pavement</a></li>
                                 <li><a href="exploringsqhill.html">Exploring Squirrel Hill</a></li>
-                                <li><a href="linkedin.html">LinkedIn</a></li>
+                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
+                                <!-- <li><a href="linkedin.html">LinkedIn</a></li> -->
                             </ul>
                         </li>
-                        <!-- <li><a href="freelance.html">Freelance</a></li> -->
-                        <li><a href="sketchbook.html">Sketchbook</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="sketchbook.html">Sketchbook</a></li>
+                        <li><a href="mailto: caroyn.y.zhou@gmail.com">Contact Now</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,15 +68,20 @@
 
         <!-- portfolio gallery -->
         <div class="main-content" id="portfolio-main">
-            <div class="body-content">
-                <div class="right-content">
+            <!-- <div class="body-content"> -->
+            <div class="right-content">
                 <div class="h3-section" id="index-text">
-                    <p id="big">Hello, I currently work at PNC designing <a href="https://www.pnc.com/en/personal-banking/virtual-wallet-overview.html" target="_blank">Virtual Wallet</a> mobile and desktop experiences.</p>
-                    <p>I invite you to check out my projects below, and <a href = "mailto: caroyn.y.zhou@gmail.com">contact me</a> for my full portfolio, or to say hi!</p>
+                    <p class="big">Hi, I'm Carolyn. I'm currently at PNC designing mobile and online experiences.</p>
+                    <!-- <p class="big"> Check out my projects and <a href = "mailto: caroyn.y.zhou@gmail.com">say hi</a>!</p> -->
+                    <div class="index-menu">
+                        <a href="about.html" id="index-link-about">More About Me</a>
+                        <a href="#portfolio">My Work</a>
+                        <a href="#contact">Say Hi</a>
+                    </div>
                 </div>
                 
-                </div>
             </div>
+            <!-- </div> -->
         </div>
 
         <!-- <div class="portfolio"> -->
@@ -107,7 +112,7 @@
                                         POLLY
                                     </h1>
                                     <h2 class="overlay-subtitle">
-                                        Print & Mobile Design
+                                        Print & Mobile Design | Capstone
                                     </h2>
                                 </div>
                             </div>
@@ -121,7 +126,7 @@
                             <div class="overlay">
                                 <div class="overlay-text">
                                     <h1 class="overlay-title">
-                                        CTAT Redesign
+                                        CTAT
                                     </h1>
                                     <h2 class="overlay-subtitle">
                                         UX & Visual Design | Client
@@ -158,41 +163,7 @@
                                         GoodCook
                                     </h1>
                                     <h2 class="overlay-subtitle">
-                                        Spatial, Print & Web Design
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="responsiverealestate">
-                    <a href="responsiverealestate.html">
-                        <div class="container">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <h1 class="overlay-title">
-                                        Responsive Real Estate
-                                    </h1>
-                                    <h2 class="overlay-subtitle">
-                                        Data Visualization
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="ptp">
-                    <a href="ptp.html">
-                        <div class="container">
-                            <div class="overlay">
-                                <div class="overlay-text">
-                                    <h1 class="overlay-title">
-                                        Paint the Pavement
-                                    </h1>
-                                    <h2 class="overlay-subtitle">
-                                        Print Design & Branding
+                                        System & Visual Design
                                     </h2>
                                 </div>
                             </div>
@@ -217,7 +188,41 @@
                     </a>
                 </article>
 
-                <article class="linkedin">
+                <article class="responsiverealestate">
+                    <a href="responsiverealestate.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        Responsive Real Estate
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Data Visualization
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- <article class="ptp">
+                    <a href="ptp.html">
+                        <div class="container">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h1 class="overlay-title">
+                                        Paint the Pavement
+                                    </h1>
+                                    <h2 class="overlay-subtitle">
+                                        Print Design & Branding
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article> -->
+
+                <!-- <article class="linkedin">
                     <a href="linkedin.html">
                         <div class="container">
                             <div class="overlay">
@@ -232,12 +237,19 @@
                             </div>
                         </div>
                     </a>
-                </article>
+                </article> -->
+
             </section>
-            <div class="right-content">
-                <!-- <footer>Carolyn Zhou - UX Designer - 2019</footer> -->
+
+            <div class="main-content">
+                <!-- <div class="body-content"> -->
+                    <div class="right-content">
+                        <!-- <h2>Contact</h2> -->
+                        <p class="big" id="contact">Say hi! I'm on <a href="mailto: caroyn.y.zhou@gmail.com">email</a> & <a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a> & <a href='https://medium.com/@yixinzho' target="_blank">Medium</a> & <a href="https://www.instagram.com/cycyzhou/" target="_blank">Instagram</a>. </p>
+                        <footer>Carolyn Zhou • 2019</footer>
+                    </div>
+                <!-- </div> -->
             </div>
-        <!-- </div> -->
     </body>
 
 </html>

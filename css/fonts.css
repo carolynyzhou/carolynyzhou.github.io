@@ -7,7 +7,7 @@
 @font-face {
     font-family: Small Title;
     src: url("../fonts/Montserrat-SemiBold.otf");
-    font-style: italic;
+    font-weight: 500;
 }
 
 @font-face {
