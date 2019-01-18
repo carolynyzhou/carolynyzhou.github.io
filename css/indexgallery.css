@@ -25,7 +25,7 @@
 
 /*portfolio grid items*/
 .portfolio {
-    margin-bottom: 3em;
+    margin-bottom: 6%;
 }
 
 .accactivity {
@@ -33,19 +33,19 @@
 }
 
 .polly {
-    background-image: url(../images/home/polly-thumbnail2.png);
+    background-image: url(../images/home/polly.jpg);
 }
 
 .ctat {
-    background-image: url(../images/home/ctat-thumbnail.png);
+    background-image: url(../images/home/ctat.jpg);
 }
 
 .facesofdesign {
-    background-image: url(../images/home/faces_of_design-thumbnail.jpg);
+    background-image: url(../images/home/facesofdesign.jpg);
 }
 
 .goodcook {
-    background-image: url(../images/home/goodcook-thumbnail.png);
+    background-image: url(../images/home/goodcook.jpg);
 }
 
 .ptp {
@@ -53,7 +53,7 @@
 }
 
 .exploringsqhill {
-    background-image: url(../images/home/exploring_sq_hill-thumbnail.png);
+    background-image: url(../images/home/exploringsqhill.jpg);
 }
 
 .responsiverealestate {

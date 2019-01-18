@@ -43,7 +43,7 @@
     /************************************ content & text stuff **************************************/
     /*index page*/
     #index-text {
-        margin: 48% 0;
+        margin: 48% 0 49% 0;
     }
 
     .big {
@@ -52,6 +52,10 @@
 
     .index-menu {
         display: none;
+    }
+
+    .portfolio {
+        margin-bottom: 12%;
     }
 
     .portfolio article {
