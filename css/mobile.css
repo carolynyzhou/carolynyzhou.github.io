@@ -41,25 +41,29 @@
     }
 
     /************************************ content & text stuff **************************************/
-    /*index page*/
+    /********index page********/
     #index-text {
-        margin: 48% 0 49% 0;
+        /*margin: 30% 0 30% 0;*/
     }
 
     .big {
-        font-size: 2.45em;
+        font-size: 1.75em;
     }
 
     .index-menu {
-        display: none;
+        font-size: .8em;
+    }
+
+    .index-menu a {
+        margin-right: 25px;
     }
 
     .portfolio {
-        margin-bottom: 12%;
+        /*margin-bottom: 2em;*/
     }
 
     .portfolio article {
-        height: 164px;
+        height: 160px;
     }
 
     .overlay-text {
@@ -68,13 +72,23 @@
         margin-left: 22.5%;
     }
 
-    /*case study content*/
+    .overlay-subtitle {
+        font-size: .9em;
+        margin-top: .5em;
+    }
+
+    .smaller {
+        /*font-size: 1.5em;*/
+    }
+
+
+    /********case study content********/
     .h2-section-wrapper {
-        padding-top: .5em;
+        margin-bottom: 3em;
     }
 
     hr {
-        margin: 1em 0;
+        margin: 1em 0 1.5em 0;
     }
 
     .left-text-column, .right-text-column {
@@ -87,9 +101,7 @@
 
     /*general text*/
     h1 {
-        font-size: 3.5em;
-        font-weight: 400;
-        margin-bottom: .5em;
+        font-size: 3em;
     }
 
     p {
@@ -108,6 +120,16 @@
     .bullet-list {
         margin-bottom: .875em;
     }
+
+    footer {
+        /*width: 100%;*/
+        /*margin: 0 0 1em 0;*/
+        /*display: block;*/
+    }
+/*
+    .email {
+        text-align: left;
+    }*/
 
     /************************************ image stuff ************************************/
 
@@ -141,7 +163,7 @@
     }
 
     .img-caption img {
-        margin-bottom: 0;
+        /*margin-bottom: 0;*/
     }
 
     /************************************ specific stuff ************************************/

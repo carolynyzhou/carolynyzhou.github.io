@@ -8,7 +8,6 @@
         top: 0;
         height: 100%;
         width: 40%;
-        /*padding: 0 0 0 12%;*/
         overflow: auto;
         transition: .25s;
         z-index: 10;
@@ -16,6 +15,18 @@
 
     #index-text {
         margin: 22% 0 24% 0;
+    }
+
+    .portfolio {
+        margin-bottom: 2.5em;
+    }
+
+    .portfolio article {
+        height: 240px;
+    }
+
+    .smaller {
+        margin-bottom: 1em;
     }
 
     /*text sections become one column*/
@@ -37,7 +48,19 @@
         margin: 0;
     }
 
+    .date {
+        margin-top: 0em;
+    }
+
     /*portolfio content text*/
+    h1 {
+        font-size: 5em;
+    }
+
+    hr {
+        margin: 3em 0;
+    }
+
     .two-columns-one-row {
         width: 100%;
         margin-left: 0;
@@ -58,10 +81,12 @@
         margin: 0;
     }
 
-    hr {
-        margin: 3em 0;
+
+    .h2-section-wrapper {
+        margin-bottom: 4em;
     }
 
+    /*resume*/
     ul.resume {
         margin-bottom: 0; /*in full width, added margin bottom for the stacked right hand column. this removes that extra space*/
     }

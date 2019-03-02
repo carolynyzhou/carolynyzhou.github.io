@@ -11,8 +11,30 @@
         left: 50%;
     }
 
+    #index-text {
+        /*margin: 24% 0;*/
+    }
+
+    .big {
+        font-size: 2.5em;
+    }
+
+    .portfolio article {
+        height: 210px;
+    }
+
+    .portfolio {
+        margin-bottom: 2em;
+    }
+
+    /*other*/
+    .smaller {
+        /*font-size: 1.5em;*/
+    }
+
     h1 {
-        font-size: 5em;
+        font-size: 4em;
+        /*line-height: 1.15em;*/
     }
 
 }

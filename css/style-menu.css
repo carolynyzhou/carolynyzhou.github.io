@@ -14,8 +14,8 @@
 .menu-wrapper {
     background-color: #fff;
     position: fixed;
-    top: 0;
-    height: 100%;
+    top: -10%;
+    height: 120%;
     width: 30%;
     left: 100%;
     padding: 0 0 0 10%;
@@ -39,12 +39,27 @@
     box-shadow: -3px 0px 10px -5px #ccc;
 }
 
+/******************************* menu text *******************************/
+
+a {
+    transition: all 150ms ease-out;
+}
+
 #menu-logo {
     font-family: "Small Title", "Arial", sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-left: 10%;
+}
+
+#menu-logo a {
+    text-decoration: none;
+    color: #6A7881;
+}
+
+#menu-logo a:hover {
+    color: #A1B6C4;
 }
 
 .menu a {
@@ -53,8 +68,8 @@
 }
 
 .menu a:hover {
-    color: #496fa3;
-    border-bottom: 1px dotted #496fa3;
+    color: #11619C;
+    border-bottom: 1px dotted #11619C;
 }
 
 .submenu {
@@ -63,7 +78,7 @@
 }
 
 #menu-selected {
-    color: #bbb;
+    color: #A1B6C4;
 }
 
 /******************* hamburger icon *******************/
@@ -83,7 +98,7 @@
 
 .toggle-button .menu-bar {
     position: absolute;
-    border: 3px solid #666;
+    border: 2px solid #6A7881;
     border-top: none;
     border-right: none;
     width: 90%;
@@ -116,22 +131,11 @@
     transition: .3s;
 }
 
-/******************************* nav menu side bar *******************************/
-
 .toggle-button {
     /*display: none;*/
 }
 
-a {
-    transition: all 300ms ease-out;
-}
-
-#menu-logo a {
-    text-decoration: none;
-    color: #626262;
-}
-
-/******************************* portolfio menu items *******************************/
+/******************************* Work subitems *******************************/
 
 .menu-sidebar .menu-item-has-children {
     position: relative;

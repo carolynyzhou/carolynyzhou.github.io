@@ -1,11 +1,11 @@
 #index-text {
-    margin: 25% 0 27% 0;
+    margin: 24% 0 24% 0;
 }
 
 .big {
     font-size: 3em;
-    line-height: 1.5em;
-    padding-bottom: .75em;
+    line-height: 1.4em;
+    padding-bottom: .5em;
 }
 
 .index-menu {
@@ -14,19 +14,12 @@
 }
 
 .index-menu a {
-    margin: 0 25px;
+    margin-right: 50px;
     position: relative;
     border-bottom: none;
 }
 
-#index-link-about {
-    margin-left: 0;
-}
-
 /*portfolio grid items*/
-.portfolio {
-    margin-bottom: 6%;
-}
 
 .accactivity {
     /*background-image: url();*/
@@ -71,7 +64,7 @@
 
 .portfolio article {
     background-color: #f0f0fa;
-    height: 340px; /*must set height*/
+    height: 280px; /*must set height*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -86,16 +79,16 @@
 /*overlay*/
 .overlay {
     position: absolute;
-    top, bottom, left, right: 0;
+    /*top, bottom, left, right: 0;*/
     height: 100%;
     width: 100%;
-    opacity: 0;
-    transition: .2s ease;
-    background-color: white;
+    opacity: .6;
+    transition: .3s ease;
+    background-color: #f8f8fa;
 }
 
 .container:hover .overlay {
-    opacity: 1;
+    opacity: .9;
 }
 
 .overlay-text {
@@ -109,12 +102,25 @@
 }
 
 .overlay-title {
-    color: #777;
-    margin-bottom: .125em;
+    color: #74838C;
+    margin-bottom: 0em;
 }
 
 .overlay-subtitle {
     font-family: "Small Title", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #6D7B85;
+}
+
+.portfolio {
+    margin-bottom: 3em;
+}
+
+/*other*/
+.smaller {
+    font-size: 1.5em;
     line-height: 1.4em;
-    color: #888;
+    margin-bottom: 2em;
+    /*width: 40%;*/
 }

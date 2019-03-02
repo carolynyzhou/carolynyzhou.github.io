@@ -19,17 +19,23 @@ header {
 h1 {
     font-family: "Title", sans-serif;
     font-size: 6em;
-    line-height: 1.2em;
+    line-height: 1.25em;
     /*text-transform: uppercase;*/
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: .5em;
+}
+
+h2, h3 {
+    font-size: .9em;
+    line-height: 1.65em;
 }
 
 /*line height and font size*/
-h2, h3, h4, p, figcaption, footer, ul {
+h4, p, figcaption, footer, ul {
     font-size: 1em;
     line-height: 1.65em;
 }
+
 
 h2 {
     /*title of section, left hand column*/
@@ -38,7 +44,7 @@ h2 {
     text-transform: uppercase;
     margin: 0 0 .5em 0;
     letter-spacing: 0.05em;
-    color: #333;
+    color: #6A7881;
 }
 
 .left-title h2 {
@@ -46,12 +52,16 @@ h2 {
     text-align: right;
 }
 
+.h2-section-wrapper {
+    margin-bottom: 3em;
+}
+
 h3 {
     /*paragraph title*/
     font-family: "Small Title", sans-serif;
     /*font-weight: 500;*/
     margin-bottom: .5em;
-    color: #444;
+    color: #454545;
 }
 
 .h3-section {
@@ -75,16 +85,17 @@ h4 {
 p {
     color: #333;
     padding-bottom: 1em;
+    letter-spacing: .03em;
 }
 
 a {
-    transition: all 300ms ease-out;
+    transition: all 150ms ease-out;
 }
 
 figcaption {
     line-height: 1.5em;
     padding-top: .5em;
-    color: #666;
+    color: #727272;
 }
 
 blockquote {
@@ -117,19 +128,25 @@ blockquote:after {
 
 
 footer {
-    margin-top: 2em;
-    color: #777;
+    color: #6A7881;
+    /*width: 49%;*/
+    /*display: inline-block;*/
 }
+
+/*.email {
+    text-align: right;
+    float: right;
+}*/
 
 .main-content a {
     text-decoration: none;
-    color: #496fa3;
-    border-bottom: 1px dotted #496fa3;
+    color: #11619C;
+    border-bottom: 1px dotted #11619C;
 }
 
 .main-content a:hover {
-    border-bottom: 1px dotted #ccc;
-    color: #bbb;
+    border-bottom: 1px dotted #A1B6C4;
+    color: #A1B6C4;
 }
 
 .bold {
@@ -145,13 +162,7 @@ hr {
     border-color: #ddd;
 }
 
-
-/****************************************** index page stuff ******************************************/
-#portfolio-main {
-
-}
-
-/*portfolio full content stuff*/
+/****************************************** project page content stuff ******************************************/
 
 /*sizing section where non-portfolio-title/non-gallery content goes*/
 /*.body-content { */
@@ -161,6 +172,10 @@ hr {
     /*vertical-align: top;*/
     /*margin: 0 16.67%;*/
 /*}*/
+
+.date {
+    margin-top: 1em;
+}
 
 .left-title {
     display: inline-block;
@@ -196,17 +211,13 @@ ul {
     color: #333;
 }
 
-
-
+/*bullet points*/
 #bullet {
     margin-left: 1em;
 }
 
-/*bullet points*/
 .bullet-list {
     list-style-type: disc;
-    /*margin-left: 2%;*/
-    /*width: 98%;*/
     margin-bottom: 1.125em;
 }
 
@@ -303,10 +314,6 @@ ul {
 }
 
 .outline-for-white-bg {
-    box-shadow: 0 1px 2px #ccc;
-}
-
-#outline-for-white-bg {
     box-shadow: 0 1px 2px #ccc;
 }
 
@@ -444,30 +451,3 @@ ul.resume {
     width: 42%;
 }
 
-/*linkedin*/
-
-/*ibm*/
-.grid-iterations {
-    box-shadow: 0 2px 6px #ccc;
-}
-
-#mobile-grid {
-    width: 28%;
-}
-
-#tablet-grid {
-    width: 67%;
-}
-
-#icons-1 {
-    margin-right: 1em;
-}
-
-/*ptp*/
-#ptp-bg-1 {
-    width: 29%;
-}
-
-#ptp-bg-2 {
-    width: 65%;
-}

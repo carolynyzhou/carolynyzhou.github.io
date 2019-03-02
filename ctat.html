@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CTAT Redesign</title>
+        <title>CTAT Rewrite</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <!-- styles -->
@@ -32,20 +32,20 @@
                 <!-- main nav bar -->
                 <div class="menu-wrapper">
                     <ul class="menu-items">
-                        <li class="menu-item-has-children"><a href="index.html">Work</a>
+                        <li class="menu-item-has-children"><a href="index.html">Portfolio</a>
                             <span class="sidebar-menu-arrow"></span>
                             <ul class="submenu">
                                 <li><a href="polly.html">POLLY</a></li>
-                                <li><a href="ctat.html" id='menu-selected'>CTAT</a></li>
-                                <li><a href="facesofdesign.html">Faces of Design</a></li>
+                                <li><a href="ctat.html" id='menu-selected'>CTAT Rewrite</a></li>
                                 <li><a href="goodcook.html">GoodCook</a></li>
-                                <li><a href="exploringsqhill.html">Exploring Squirrel Hill</a></li>
                                 <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
+                                <li><a href="facesofdesign.html">Faces of Design</a></li>
+                                <li><a href="exploringsqhill.html">Exploring Squirrel Hill</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="freelance.html">Freelance</a></li>
                         <li><a href="sketchbook.html">Sketchbook</a></li>
-                        <li><a href="mailto: caroyn.y.zhou@gmail.com">Contact Now</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
 
         <!-- content -->
         <div class="main-content">
-            <h1>CTAT</h1>
+            <h1>CTAT Rewrite</h1>
             <div class="body-content">
                 <div class="two-columns-one-row">
                     <div class="left-text-column">
@@ -97,6 +97,9 @@
                         </ul>
                     </div>
                 </div>
+                <div class="right-content">
+                    <footer class="date">Spring 2018</footer>
+                </div>
 
                 <hr>
 
@@ -121,8 +124,8 @@
 
                         <div class="h3-section">
                             <h3>Redesign Components</h3>
-                            <p>Our deliverables included a redesigned <span class="bold">website</span>, a <span class="bold">tutor gallery</span> and a series of <span class="bold">tutorials</span> intended for inexperienced CTAT users. We focused on guiding users to explore and learn about cognitive tutors, because we found through research that better understanding of CTAT led to greater interest in learning (and potentially adopting) the software.</p>
-                            <p>The style and language of the site aims to be approachable and soothing. The tutor gallery allows newcomers to see and interact with tutors made with CTAT, demonstrating what they can do. The tutorials are designed to teach users how to use CTAT and what its benefits are.</p>
+                            <p>Our deliverables included a redesigned <span class="bold">website</span>, a <span class="bold">tutor gallery</span> and a series of <span class="bold">tutorials</span> intended for inexperienced CTAT users. The style and language of the site aims to be approachable and soothing; the gallery allows newcomers to see and interact with tutors made with CTAT, demonstrating what they can do; and the tutorials are designed to teach users about using CTAT and its benefits.</p>
+                            <p>We focused on guiding users to explore and learn about cognitive tutors, because we found through research that better understanding of CTAT led to greater interest in learning (and potentially adopting) the software.</p>
                             <figure class="img-caption">
                                 <img src="images/ctat/UImap.png">
                                 <figcaption>Nagivation from the home page to other pages.</figcaption>
@@ -143,7 +146,7 @@
                         <!-- key findings -->
                         <div class="h3-section">
                             <h3>Key Findings</h3>
-                            <p>Through competitive analysis and interviews with professors and other stakeholders, we learned about problem-writing processes and useful features for educational technologies. CTAT is an extremely powerful tool, but we identified 3 main problems facing both new and experienced users:</p>
+                            <p>Through competitive analysis and interviews with professors, we learned about problem-writing processes and useful features for educational technologies. CTAT is an extremely powerful tool, but we identified 3 main problems facing both new and experienced users:</p>
                             <ul class="bullet-list">
                                 <li id="bullet"><span class="bold">Technical limitations:</span> CTAT's bare-bones interface creates an unintuitive, frustrating user experience and makes the software feel unappealing to use.</li>
                                 <li id="bullet"><span class="bold">Difficulty with learning and problem-shooting the software:</span> the lack of comprehensive online documentation or an online community is a substantial barrier for users who cannot troubleshoot.</li>
@@ -168,17 +171,17 @@
                         <!-- goals -->
                         <div class="h3-section">
                             <h3>Design Goals</h3>
-                            <p>We categorized the main points from our research into three stages of use. Recognizing that we had little control over CTAT’s user experience and existing code base, we opted to focus on informing users about the software and teaching them to use it, deriving our design goals:</p> 
+                            <p>We categorized the main points from our research into three stages: pre-, initial and regular usage. Recognizing that we had little control over CTAT’s user experience and existing code base, we opted to focus on informing users about the software and teaching them to use it, deriving our design goals:</p> 
                             <ul class="bullet-list numbered-list">
-                                <li>To help users understand the value of CTAT (pre-use)</li>
-                                <li>To redesign tutorials for better onboarding (initial use)</li> 
+                                <li id="bullet">To help users <span class="bold">understand the value</span> of CTAT (pre-use)</li>
+                                <li id="bullet">To <span class="bold">onboard</span> users with better tutorials (initial use)</li>
                             </ul>
                             <img src="images/ctat/affinity-lofi.jpg">
                         </div>
 
                         <!-- lo fi -->
                         <div class="h3-section">
-                            <h3>Lo-Fi Prototype</h3>
+                            <h3>Lo-Fi Prototypes</h3>
                             <p>Initially, we focused on designing new tutorials. CTAT’s current tutorial is text-heavy and difficult to navigate, but we hypothesized that effective tutorials would provide better a understanding of CTAT, which we had found increased users’ willingness to learn more.</p>
                             <p>We tested two tutorial formats: 1) text-based instructions with screenshots, and 2) spoken instructions with a demonstration of the step, using paper. We asked users to follow our tutorials to build a tutor interface for a simple math problem, and what they understood CTAT to be after completing the task.</p>
                             <div class="two-column img-caption">
@@ -191,7 +194,7 @@
 
                         <!-- mid fi goals -->
                         <div class="h3-section">
-                            <h3>Mid-Fi Prototype</h3>
+                            <h3>Mid-Fi Prototypes</h3>
                             <p>We found that there were advantages and disadvantages to each format. Text provided better explanations, but demonstrations were easier to follow. In the mid-fi stage, we worked to find a good balance between the two formats for better learning and retention.</p>
                             <!-- <div class="two-column"> -->
                             <figure class="img-caption">
@@ -205,9 +208,9 @@
                         <!-- hi fi goals -->
                         <div class="h3-section">
                             <h3>User Testing Results</h3>
-                            <p>Compared to CTAT's current text-and-images based tutorial, our step breakdown and more visual format felt more approachable to people. We organized the feedback we received to identify specific areas to improve for our next round.</p>
+                            <p>Compared to CTAT's current tutorial, our information breakdown and more visual format felt more approachable to people. We organized the feedback we received to identify specific areas to improve for our next round.</p>
                             <img src="images/ctat/affinity-midfi.jpg" id="image-before-text">
-                            <p>In addition, we realized that <span class="bold">the tutorial alone was not enough to educate users about CTAT</span>. We wanted to build a website around the tutorials to provide more context for users first. The combined feedback led to the final iterations shown at the top of the page.</p>
+                            <p>In addition, we realized that the tutorial alone was not enough to educate users about CTAT. We wanted to build a website around the tutorials to <span class="bold">provide more context</span> for users first. The combined feedback led to the final iterations shown at the top of the page.</p>
                             <!-- <img src="images/ctat/web-home.png" class="outline-for-white-bg"> -->
                             <div class="quote-wrapper">
                                 <blockquote>The [tutorial] made me want to know more. If it only uses a few things to make something decent, I want to know what else it can do.</blockquote>
@@ -293,7 +296,7 @@
             </div>
             <!-- footer -->
             <div class="right-content">
-                <footer>Spring 2018</footer>
+                <footer><a href="index.html">Back to Work</a></footer>
             </div>
         </div>
 
