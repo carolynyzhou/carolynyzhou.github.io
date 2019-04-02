@@ -20,46 +20,41 @@
 }
 
 /*portfolio grid items*/
-
 .accactivity {
-    /*background-image: url();*/
+    background-image: url(../images/index/accactivity.png);
 }
 
 .polly {
-    background-image: url(../images/home/polly.jpg);
+    background-image: url(../images/index/polly.jpg);
 }
 
 .ctat {
-    background-image: url(../images/home/ctat.jpg);
+    background-image: url(../images/index/ctat.jpg);
 }
 
 .facesofdesign {
-    background-image: url(../images/home/facesofdesign.jpg);
+    background-image: url(../images/index/aiga.png);
 }
 
 .goodcook {
-    background-image: url(../images/home/goodcook.jpg);
+    background-image: url(../images/index/goodcook.jpg);
 }
 
-.ptp {
-    background-image: url(../images/home/ptp-thumbnail.jpg);
-}
+/*.ptp {
+    background-image: url(../images/index/ptp-thumbnail.jpg);
+}*/
 
-.exploringsqhill {
-    background-image: url(../images/home/exploringsqhill.jpg);
-}
+/*.exploringsqhill {
+    background-image: url(../images/index/exploringsqhill.jpg);
+}*/
 
 .responsiverealestate {
-    background-image: url(../images/home/responsive-thumbnail.png);
+    background-image: url(../images/index/responsive-thumbnail.png);
 }
-
+/*
 .linkedin {
-    background-image: url(../images/home/linkedin-thumbnail.jpg);
-}
-
-.sketchbook {
-    background-image: url(../images/home/sketchbook.jpg);
-}
+    background-image: url(../images/index/linkedin-thumbnail.jpg);
+}*/
 
 
 .portfolio article {
@@ -88,7 +83,7 @@
 }
 
 .container:hover .overlay {
-    opacity: .9;
+    opacity: .95;
 }
 
 .overlay-text {
@@ -102,7 +97,7 @@
 }
 
 .overlay-title {
-    color: #677580;
+    color: #606b74;
     margin-bottom: 0em;
 }
 
@@ -110,7 +105,7 @@
     font-family: "Small Title", "Arial", sans-serif;
     font-size: 1em;
     line-height: 1.5em;
-    color: #6D7B85;
+    color: #454545;
 }
 
 .portfolio {
@@ -123,4 +118,8 @@
     line-height: 1.4em;
     margin-bottom: 2em;
     /*width: 40%;*/
+}
+
+.unpublished {
+    color: #aeb4bd;
 }

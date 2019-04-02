@@ -14,6 +14,44 @@ header {
     margin-bottom: 5em;
 }
 
+/******************************* menu *******************************/
+
+#menu-logo {
+    font-family: "Small Title", "Arial", sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: 10%;
+}
+
+#menu-logo a {
+    text-decoration: none;
+    color: #454545;
+}
+
+#menu-logo a:hover {
+    color: #aeb4bd;
+}
+
+.menu a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #aeb4bd;
+    border-bottom: 1px solid #aeb4bd;
+}
+
+.submenu {
+    margin: 0 0 0 1.5em;
+    font-size: 1em;
+}
+
+#menu-selected {
+    color: #1F3A95;
+}
+
 /****************************************** text stuff ******************************************/
 /*general text styling*/
 h1 {
@@ -44,7 +82,7 @@ h2 {
     text-transform: uppercase;
     margin: 0 0 .5em 0;
     letter-spacing: 0.05em;
-    color: #677580;
+    color: #606b74;
 }
 
 .left-title h2 {
@@ -89,7 +127,7 @@ p {
 }
 
 a {
-    transition: all 150ms ease-out;
+    transition: all 100ms ease-out;
 }
 
 figcaption {
@@ -129,8 +167,6 @@ blockquote:after {
 
 footer {
     color: #6A7881;
-    /*width: 49%;*/
-    /*display: inline-block;*/
 }
 
 /*.email {
@@ -140,13 +176,13 @@ footer {
 
 .main-content a {
     text-decoration: none;
-    color: #11619C;
-    border-bottom: 1px dotted #11619C;
+    color: #1F3A95;
+    border-bottom: 1px solid #1F3A95;
 }
 
 .main-content a:hover {
-    border-bottom: 1px dotted #A1B6C4;
-    color: #A1B6C4;
+    border-bottom: 1px solid #aeb4bd;
+    color: #aeb4bd;
 }
 
 .bold {
@@ -237,6 +273,10 @@ ul {
     right: 0;
     height: 100%;
     width: 100%;
+}
+
+#carousel-img {
+    margin-bottom: 0;
 }
 
 .carousel-button {
@@ -408,7 +448,7 @@ ul.resume {
 }
 
 #cube-final {
-    margin: 2em 0;
+    /*margin: 2em 0;*/
 }
 
 /*polly*/
