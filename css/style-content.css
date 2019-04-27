@@ -69,11 +69,10 @@ h2, h3 {
 }
 
 /*line height and font size*/
-h4, p, figcaption, footer, ul {
+h4, p, footer, ul {
     font-size: 1em;
     line-height: 1.65em;
 }
-
 
 h2 {
     /*title of section, left hand column*/
@@ -131,9 +130,12 @@ a {
 }
 
 figcaption {
+    font-size: .9em;
     line-height: 1.5em;
     padding-top: .5em;
-    color: #727272;
+    color: #767676;
+    font-style: italic;
+
 }
 
 blockquote {
@@ -353,7 +355,7 @@ ul {
     margin-bottom: 1.75em;
 }
 
-.outline-for-white-bg {
+#outline-for-white-bg {
     box-shadow: 0 1px 2px #ccc;
 }
 
