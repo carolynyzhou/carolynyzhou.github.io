@@ -17,8 +17,12 @@
         margin: 22% 0 24% 0;
     }
 
+    .big {
+        font-size: 2.5em;
+    }
+
     .portfolio {
-        margin-bottom: 2.5em;
+        margin-bottom: 2em;
     }
 
     .portfolio article {
@@ -30,6 +34,10 @@
     }
 
     /*text sections become one column*/
+    .subheader {
+        padding-bottom: .875em;
+    }
+
     .left-title {
         display: block;
         width: 100%;
@@ -48,42 +56,20 @@
         margin: 0;
     }
 
-    .date {
-        margin-top: 0em;
-    }
-
     /*portolfio content text*/
     h1 {
-        font-size: 5em;
+        font-size: 4em;
+        margin-bottom: .5em;
     }
-
-    hr {
-        margin: 3em 0;
-    }
-
-    .two-columns-one-row {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .two-columns-one-row ul {
-        padding-bottom: 1.125em;
-    }
-
-    .left-text-column, .right-text-column {
-        width: 100%;
-        display: block;
-        margin-left: 0;
-    }
-
-    .column-1, .column-2 {
-        width: 100%;
-        margin: 0;
-    }
-
 
     .h2-section-wrapper {
         margin-bottom: 4em;
+    }
+
+    /*sketchbook*/
+    .column-1, .column-2 {
+        width: 100%;
+        margin: 0;
     }
 
     /*resume*/
