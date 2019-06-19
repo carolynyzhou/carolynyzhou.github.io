@@ -2,46 +2,83 @@
 
     /******************* menu stuff **********************/
 
-    .menu {
-        line-height: 1em;
-        z-index: 1;
+
+    .nav {
+        font-size: .75em;
     }
 
-    .menu-show {
-        left: 50%;
+    #intro {
+        margin: 40% auto 0 auto;
     }
 
-    #index-text {
-        /*margin: 24% 0;*/
+    .big {
+        font-size: 2.5em;
     }
 
-    .index-menu a {
-        margin-right: 40px;
+    .bio {
+        font-size: 1.5em;
     }
 
     .portfolio article {
-        height: 210px;
+        height: 240px;
     }
 
-    .portfolio {
-        margin-bottom: 2em;
+    .portfolio article:hover {
+        height: 260px;
     }
 
-    /*other*/
-    .smaller {
-        /*font-size: 1.5em;*/
+    #other-work {
+        width: 100%;
+        height: 186px;
+    }
+
+    #overlay-text-other {
+        left: 20%;
+    }
+
+    .overlay-title {
+        margin-top: .2em;
+    }
+
+    
+    /*project pages*/
+    .writeup {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     h1 {
-        font-size: 4em;
-        /*line-height: 1.15em;*/
+        font-size: 3em;
+        line-height: 1.25em;
     }
 
-    /*.left-text-column, .right-text-column {
-        width: 100%;
+    /*text sections become one column*/
+    .left-title {
         display: block;
+        width: 100%;
+        line-height: 1.4em;
+        float: none;
+    }
+
+    .left-title h2 {
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .right-content {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    hr {
+        margin: 3em 0;
+    }
+
+    .big-image {
+        width: 100%;
         margin-left: 0;
-    }*/
+    }
 
     .right-text-column {
         width: 45%;
@@ -49,5 +86,11 @@
         margin-left: 8%;
         vertical-align: top;
         margin-bottom: 1em;
+    }
+    
+    /*sketchbook*/
+    .column-1, .column-2 {
+        width: 100%;
+        margin: 0;
     }
 }

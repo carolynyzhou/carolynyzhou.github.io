@@ -3,73 +3,44 @@
 @media screen and (max-width: 1024px) {
     
     /*hamburger menu*/
-    .menu-wrapper {
-        position: fixed;
-        top: 0;
-        height: 100%;
-        width: 40%;
-        overflow: auto;
-        transition: .25s;
-        z-index: 10;
-    }
 
-    #index-text {
-        margin: 22% 0 24% 0;
+    #intro {
+        margin: 30% auto 0 auto;
     }
 
     .big {
-        font-size: 2.5em;
-    }
-
-    .portfolio {
-        margin-bottom: 2em;
+        width: 60%;
     }
 
     .portfolio article {
-        height: 240px;
+        height: 300px;
     }
 
-    .smaller {
-        margin-bottom: 1em;
+    .portfolio article:hover {
+        height: 320px;
     }
 
-    /*text sections become one column*/
-    .subheader {
-        padding-bottom: .875em;
+    /*project page*/
+    .writeup {
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 8em;
     }
 
-    .left-title {
-        display: block;
-        width: 100%;
-        line-height: 1.4em;
-        float: none;
-    }
-
-    .left-title h2 {
-        padding-top: 0;
-        text-align: left;
-    }
-
+    /*make middle column (main writeup) wider*/
     .right-content {
-        display: block;
-        width: 100%;
-        margin: 0;
+        width: 60%;
+        margin: 0 0 0 20%;
     }
 
     /*portolfio content text*/
     h1 {
         font-size: 4em;
-        margin-bottom: .5em;
+        width: 100%;
     }
 
     .h2-section-wrapper {
         margin-bottom: 4em;
-    }
-
-    /*sketchbook*/
-    .column-1, .column-2 {
-        width: 100%;
-        margin: 0;
     }
 
     /*resume*/

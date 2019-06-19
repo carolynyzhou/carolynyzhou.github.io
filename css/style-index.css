@@ -1,27 +1,39 @@
-#index-text {
-    margin: 24% 0 24% 0;
+#intro {
+    height: 60vh;
+    margin: 20% auto 0 auto;
+    /*transform: translate(-50%, -50%);*/
 }
 
 .big {
     font-size: 3em;
     line-height: 1.4em;
     padding-bottom: .5em;
+    letter-spacing: .8px;
+    width: 50%;
 }
 
 .index-menu {
     font-family: "Small Title", sans-serif;
+    font-size: .9em;
     line-height: 1.6em;
 }
 
 .index-menu a {
-    margin-right: 50px;
+    margin-right: 8px;
     position: relative;
-    border-bottom: none;
 }
 
-/*portfolio grid items*/
-.accactivity {
-    background-image: url(../images/index/accactivity.png);
+#say-hi {
+    margin-left: 30px;
+}
+
+#index-social a {
+    margin-right: 20px;
+}
+
+/*portfolio*/
+.accountactivity {
+    /*background-image: url(../images/index/accactivity.png);*/
 }
 
 .polly {
@@ -40,31 +52,40 @@
     background-image: url(../images/index/goodcook.jpg);
 }
 
-/*.ptp {
-    background-image: url(../images/index/ptp-thumbnail.jpg);
-}*/
-
 .wayfinding {
     background-image: url(../images/index/wayfinding.jpg);
 }
 
 .responsiverealestate {
-    background-image: url(../images/index/responsive-thumbnail.png);
+    background-image: url(../images/index/responsive.png);
 }
-/*
-.linkedin {
-    background-image: url(../images/index/linkedin-thumbnail.jpg);
-}*/
 
+.portfolio {
+    margin-bottom: 3em;
+}
 
 .portfolio article {
     background-color: #f0f0fa;
-    height: 280px; /*must set height*/
+    height: 350px; /*must set height*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
     width: 100%;
     margin-left: 0;
+}
+
+.portfolio article:hover {
+    height: 370px;
+    transition: 200ms ease-out;
+}
+
+#other-work {
+    width: 50%;
+    height: 300px;
+}
+
+#overlay-text-other {
+    left: 30%;
 }
 
 .container {
@@ -77,15 +98,12 @@
     /*top, bottom, left, right: 0;*/
     height: 100%;
     width: 100%;
-    opacity: .6;
+    opacity: 1;
     transition: .3s ease;
     background-color: #f8f8fa;
 }
 
-.container:hover .overlay {
-    opacity: .95;
-}
-
+/*text*/
 .overlay-text {
     text-align: left;
     position: absolute;
@@ -97,29 +115,71 @@
 }
 
 .overlay-title {
-    color: #606b74;
-    margin-bottom: 0em;
+    color: #748291;
+    margin-bottom: 0;
+    margin-top: .2em;
 }
 
 .overlay-subtitle {
     font-family: "Small Title", "Arial", sans-serif;
-    font-size: 1em;
+    font-size: .9em;
+    color: #606b74;
+}
+
+.container:hover .overlay {
+    opacity: .8;
+}
+
+.container:hover .overlay-title {
+    color: #333;
+}
+
+
+.container:hover .unpublished {
+    color: #748291;
+}
+
+/*about*/
+#about {
+    background-color: #262c30;
+    padding: 2em 0 1em 0;
+}
+
+#about p, li, h3 {
+    color: white;
+}
+
+#about h2 {
+    color: #c2c7ce;
+    margin-bottom: 1em;
+}
+
+#about a {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#about a:hover {
+    color: #698AFF;
+    border-bottom: 2px solid #698AFF;
+}
+
+.bio {
+    font-size: 2em;
     line-height: 1.5em;
-    color: #454545;
+    letter-spacing: .75px;
 }
 
-.portfolio {
-    margin-bottom: 3em;
+/*resume*/
+.experience {
+    color: #666;
+    margin-bottom: .5em;
 }
 
-/*other*/
-.smaller {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    margin-bottom: 2em;
-    /*width: 40%;*/
+ul.skills {
+    margin-bottom: 1.5em;
 }
 
-.unpublished {
-    color: #aeb4bd;
+.skills {
+    color: #666;
 }

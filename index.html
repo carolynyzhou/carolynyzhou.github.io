@@ -15,213 +15,315 @@
         <link rel="stylesheet" type="text/css" href="css/850px.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- fonts -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- js -->
-        <script src="js/main.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/show-menu.js"></script>
         <script src="js/smoothscroll.js" type="text/javascript"></script>
         <!-- favicon -->
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     </head>
 
     <body>
-        <header>
-            <!-- nav menu -->
-            <nav class="menu" id="menu">
-                <div class="menu-wrapper">
-                    <ul class="menu-items">
-                        <li class="menu-item-has-children"><a href="index.html" id='menu-selected'>Portfolio</a>
-                            <span class="sidebar-menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="polly.html">POLLY</a></li>
-                                <li><a href="ctat.html">CTAT Rewrite</a></li>
-                                <li><a href="goodcook.html">GoodCook</a></li>
-                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
-                                <li><a href="wayfinding.html">Wayfinding</a></li>
-                                <li><a href="facesofdesign.html">Faces of Design</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="freelance.html">Freelance</a></li>
-                        <li><a href="sketchbook.html">Sketchbook</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-
-                <!-- hamburger menu -->
-                <div class="toggle-button">
-                    <div class="menu-bar menu-bar-top"></div>
-                    <div class="menu-bar menu-bar-middle"></div>
-                    <div class="menu-bar menu-bar-bottom"></div>
-                </div>
-
-                <!-- logo -->
-                <div id="menu-logo">
-                    <a href="index.html">Carolyn Zhou</a>
-                </div>
-            </nav>
-        </header>
-
-        <!-- portfolio gallery -->
-        <div class="main-content" id="portfolio-main">
-            <!-- <div class="body-content"> -->
-            <div class="right-content">
-                <div class="h3-section" id="index-text">
-                    <p class="big">Hi! I'm Carolyn.</p><p class="big">Right now I'm designing digital banking experiences at PNC.</p>
-                    <div class="index-menu">
-                        
-                        <a href="#portfolio">View Work</a>
-                        <a href="about.html">About Me</a>
-                        <a href="#contact">Say Hi</a>
-                    </div>
-                </div>
-                
+        <!-- logo -->
+        <a id="first-logo" href="index.html">CZ</a>
+        <a  href="index.html">
+            <div class="diamond"><p id="logo">CZ</p></div>
+        </a>
+        <!-- nav menu -->
+        <ul class="nav">
+            <li><a href="index.html#portfolio">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <!-- hamburger menu -->
+        <div class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+        </div>
+        <!-- slideout nav menu -->
+        <ul class="slideout-nav">
+            <div class="slideout-wrapper">
+                <li class="nav-item"><a href="index.html#portfolio">Work</a></li>
+                <li class="nav-item"><a href="index.html#about">About</a></li>
+                <li class="nav-item"><a href="index.html#contact">Contact</a></li>
             </div>
-            <!-- </div> -->
+        </ul>
+
+
+        <!-- intro -->
+        <div class="content">
+            <div id="intro">
+                <h2 class="">Hi, I'm Carolyn —</h2>
+                <p class="big">I'm currently designing digital banking experiences at PNC.</p>
+                <div class="index-menu">
+                    <a href="#portfolio">View My Work</a><div class="triangle-down"></div>
+                    <a id="say-hi" href="#contact">Say Hi</a><div class="triangle-down"></div>
+                </div>
+            </div>
+        
         </div>
 
-            <section class="portfolio" id="portfolio">
-
-                <article class="accactivity">
-                    <a href="accactivity.html">
-                        <div class="container">
-                            <div class="overlay" style="opacity: .96"></div>
-                            <div class="overlay-text">
-                                <h1 class="overlay-title unpublished">
-                                    Account Activity
-                                </h1>
-                                <h3 class="overlay-subtitle">
-                                    <i class="fas fa-lock"></i>  2019 — PNC Bank — Mobile Design 
-                                </h3>
-                            </div>
+        <!-- PORTFOLIO -->
+        <section class="portfolio" id="portfolio">
+            <!-- account activity -->
+            <!-- <article class="accountactivity" id="unpublished">
+                <a href="">
+                    <div class="container">
+                        <div class="overlay"></div>
+                        <div class="overlay-text">
+                            <h3 class="">2018-2019 — PNC — Coming Soon <i class="fas fa-lock"></i></h3>
+                            <h1 class="overlay-title unpublished">
+                                Reworking Account Activity for Virtual Wallet
+                            </h1>
                         </div>
-                    </a>
-                </article>
-
-                <article class="polly">
-                    <a href="polly.html">
-                        <div class="container">
-                            <div class="overlay"></div>
-                                <div class="overlay-text">
-                                    <h1 class="overlay-title">
-                                        POLLY
-                                    </h1>
-                                    <h3 class="overlay-subtitle">
-                                        2018 — Design Capstone — Print & Mobile Design
-                                    </h3>
-                                </div>
-                            <!-- </div> -->
-                        </div>
-                    </a>
-                </article>
-
-                <article class="ctat">
-                    <a href="ctat.html">
-                        <div class="container">
-                            <div class="overlay"></div>
-                                <div class="overlay-text">
-                                    <h1 class="overlay-title">
-                                        CTAT Rewrite
-                                    </h1>
-                                    <h3 class="overlay-subtitle">
-                                        2018 — Client — Research, UX Design
-                                    </h3>
-                                </div>
-                            <!-- </div> -->
-                        </div>
-                    </a>
-                </article>
-
-                <article class="goodcook">
-                    <a href="goodcook.html">
-                        <div class="container">
-                            <div class="overlay"></div>
-                                <div class="overlay-text">
-                                    <h1 class="overlay-title">
-                                        GoodCook
-                                    </h1>
-                                    <h3 class="overlay-subtitle">
-                                        2016 — System Thinking & Branding
-                                    </h3>
-                                </div>
-                            <!-- </div> -->
-                        </div>
-                    </a>
-                </article>
-
-                <article class="responsiverealestate">
-                    <a href="responsiverealestate.html">
-                        <div class="container">
-                            <div class="overlay"></div>
-                                <div class="overlay-text">
-                                    <h1 class="overlay-title">
-                                        Responsive Real Estate
-                                    </h1>
-                                    <h3 class="overlay-subtitle">
-                                        2017 — Data Visualization
-                                    </h3>
-                                </div>
-                            <!-- </div> -->
-                        </div>
-                    </a>
-                </article>
-
-                <article class="wayfinding">
-                    <a href="wayfinding.html">
-                        <div class="container">
-                            <div class="overlay"></div>
-                            <div class="overlay-text">
-                                <h1 class="overlay-title">
-                                    Wayfinding
-                                </h1>
-                                <h3 class="overlay-subtitle">
-                                    2017 — UX & Voice Input
-                                </h3>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="facesofdesign">
-                    <a href="facesofdesign.html">
-                        <div class="container">
-                            <div class="overlay"></div>
-                                <div class="overlay-text">
-                                    <h1 class="overlay-title">
-                                        Faces of Design
-                                    </h1>
-                                    <h3 class="overlay-subtitle">
-                                        2017 — Interactive Data Visualization
-                                    </h3>
-                                </div>
-                            <!-- </div> -->
-                        </div>
-                    </a>
-                </article>
-            </section>
-
-            <div class="main-content">
-                <p class="smaller">I also take on <a href="freelance.html">side jobs</a> and <a href="sketchbook.html">draw for fun</a>.</p>
-            <!-- </div> -->
-
-            <hr>
-
-            <!-- <div class="main-content"> -->
-                <div class="right-content" id="contact">
-                    <!-- <h2>Contact</h2> -->
-                    <div class="left-text-column">
-                        <h3>Email</h3>
-                        <p>carolyn.y.zhou@gmail.com</p>
                     </div>
-                    <div class="right-text-column">
-                        <h3>Social</h3>
-                        <p><a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a> • <a href='https://medium.com/@yixinzho' target="_blank">Medium</a> • <a href="https://www.instagram.com/cycyzhou/" target="_blank">Instagram</a></p>
+                </a>
+            </article> -->
+            <!-- polly -->
+            <article class="polly">
+                <a href="polly.html">
+                    <div class="container">
+                        <div class="overlay"></div>
+                        <div class="overlay-text">
+                            <h3 class="overlay-subtitle">2018 — Capstone — Print, Mobile design</h3>
+                            <h1 class="overlay-title">
+                                Easing medical translation for non-professionals
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="ctat">
+                <a href="ctat.html">
+                    <div class="container">
+                        <div class="overlay"></div>
+                        <div class="overlay-text">
+                            <h3 class="overlay-subtitle">2018 — Client — Design research, UX</h3>
+                            <h1 class="overlay-title">
+                                Onboarding instructors to create cognitive tutors
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="goodcook">
+                <a href="goodcook.html">
+                    <div class="container">
+                        <div class="overlay"></div>
+                        <div class="overlay-text">
+                            <h3 class="overlay-subtitle">
+                                2016 — System Thinking, Branding
+                            </h3>
+                            <h1 class="overlay-title">
+                                Empowering college students to eat healthy
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- <article class="wayfinding">
+                <a href="wayfinding.html">
+                    <div class="container">
+                        <div class="overlay"></div>
+                        <div class="overlay-text">
+                            <h3 class="overlay-subtitle">
+                                2017 — UX & Voice Input
+                            </h3>
+                            <h1 class="overlay-title">
+                                Guiding visitors to discover a neighborhood
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </article> -->
+
+            <article class="responsiverealestate">
+                <a href="responsiverealestate.html">
+                    <div class="container">
+                        <div class="overlay"></div>
+                        <div class="overlay-text">
+                            <h3 class="overlay-subtitle">
+                                2017 — Data Visualization
+                            </h3>
+                            <h1 class="overlay-title">
+                                Analyzing Facebook's use of screen space
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- <article class="facesofdesign">
+                <a href="facesofdesign.html">
+                    <div class="container">
+                        <div class="overlay"></div>
+                        <div class="overlay-text">
+                            <h3 class="overlay-subtitle">
+                                2017 — Interactive Data Visualization
+                            </h3>
+                            <h1 class="overlay-title">
+                                Vizualizing census data on design careers
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </article> -->
+
+            <div class="row">
+                <article class="freelance column" id="other-work">
+                    <a href="freelance.html">
+                        <div class="container">
+                            <div class="overlay"></div>
+                                <div class="overlay-text" id="overlay-text-other">
+                                    <h3 class="overlay-subtitle">
+                                        Ongoing — Various Clients & Media
+                                    </h3>
+                                    <h1 class="overlay-title">
+                                        Freelance
+                                    </h1>
+                                    
+                                </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="sketchbook column" id="other-work">
+                    <a href="sketchbook.html">
+                        <div class="container">
+                            <div class="overlay"></div>
+                            <div class="overlay-text">
+                                <h3 class="overlay-subtitle">
+                                    Ongoing (forever)
+                                </h3>
+                                <h1 class="overlay-title">
+                                    Sketchbook
+                                </h1>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <div id="about">
+            <div class="content">
+                <div class="h3-section">
+                    <div class="right-content">
+                        <h2 class="">About Me —</h2>
+                        <p class="bio">Design is my career and my hobby. Right now I'm focused on digital interfaces and accessibility, but I always carry a passion for illustration and storytelling.</p>
+                    </div>
+                </div>
+                <!-- education -->
+                <div class="h2-section-wrapper">
+                    <!-- <div class="left-title">
+                        <h2>Education</h2>
+                    </div>-->
+                    <div class="right-content"> 
+                        <div class="h3-section">
+                            <h2>Education</h2>
+                            <h3>Carnegie Mellon University</h3>
+                            <ul class="">
+                                <li>Class of 2018</li>
+                                <li>Bachelor of <a href="https://design.cmu.edu/" target="_blank">Design</a> & Bachelor of <a href="https://www.hcii.cmu.edu/academics/hci-undergraduate/major" target="_blank">Human-Computer Interaction</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- experience -->
+                <div class="h2-section-wrapper">
+                    <!-- <div class="left-title">
+                        <h2>Experience</h2>
+                    </div> -->
+                    <div class="right-content"> 
+                        <div class="h3-section">
+                            <h2>Experience</h2>
+                            <!-- pnc -->
+                            <h3>Since Oct. 2017 — PNC — Experience Designer</h3>
+                            <p class="experience">Leading and supporting the design of Virtual Wallet mobile and online experiences.</p>
+                            <!-- pnc -->
+                            <!-- <h3>Summer 2017 — PNC — Intern</h3>
+                            <p class="experience">Employed design thinking to critically examine the experience of tablet use in retail banking.</p> -->
+                            <!-- bits -->
+                            <!-- <h3>Summer 2016 — BIT Systems — Intern</span></h3>
+                            <p class="experience">Rapidly prototyped and tested dashboard designs to optimize the display of metrics and spatial data.</p> -->
+                            <!-- ladymarry -->
+                            <!-- <h3>Summer 2015 — LadyMarry — Intern</span></h3>
+                            <p class="experience">Redesigned Android and iOS interfaces to improve visual and navigational flow for a wedding planning startup.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- skills -->
+                <div class="h2-section-wrapper">
+                    <!-- <div class="left-title">
+                        <h2>Skills</h2>
+                    </div> -->
+                    <div class="right-content">
+                        <div class="h3-section">
+                            <h2>Skills</h2>
+                            <div class="two-columns-one-row skills">
+                                <div class="left-text-column">
+                                    <!-- development -->
+                                    <h3>Development</h3>
+                                    <ul class="skills">
+                                        <li>User-centered research</li>
+                                        <li>User-centered design</li>
+                                        <li>Systems thinking</li>
+                                        <li>Rapid prototyping</li>
+                                        <li>Wireframing</li>
+                                        <li>Storyboarding</li>
+                                        <li>Illustration</li>
+                                        <li>Web development</li>
+                                    </ul>
+                                </div>
+                                <div class="right-text-column">
+                                    <!-- tools -->
+                                    <h3>Tools</h3>
+                                    <ul class="skills">
+                                        <li>Ps, Ai, Id, Ae, Xd</li>
+                                        <li>Sketch</li>
+                                        <li>Principle</li>
+                                        <li>Unity</li>
+                                    </ul>
+                                    <!-- languages -->
+                                    <h3>Languages</h3>
+                                    <ul class="skills">
+                                        <li>HTML/CSS/JS</li>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h3-section">
+                            <p>You can also <a href="https://drive.google.com/file/d/159_mPRiXHM53hImcPxcgoyFBgkoSKPCZ/view?usp=sharing" target="_blank">download</a> a PDF of my résumé.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="content" id="contact">
+            <div id="intro">
+                <h2 class="">Say Hi! —</h2>
+                <p class="big">I'm looking for full time positions and chats over coffee.</p>
+                <div class="index-menu" id="index-social">
+                    <a class="" href="mailto:carolyn.y.zhou@gmail.com" target="_blank">Email</a>
+                    <a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/cycyzhou/" target="_blank">Instagram</a>
+                    <a href='https://medium.com/@yixinzho' target="_blank">Medium</a>
+                </div>
+            </div>
+        
+        </div>
+
     </body>
 
 </html>

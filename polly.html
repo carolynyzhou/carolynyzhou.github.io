@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>POLLY</title>
+        <title>Hi, I'm Carolyn</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <!-- styles -->
@@ -14,84 +14,55 @@
         <link rel="stylesheet" type="text/css" href="css/850px.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- fonts -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- js -->
-        <script src="js/main.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
+        <script src="js/show-menu.js" type="text/javascript"></script>
         <!-- favicon -->
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     </head>
     <body>
-        <header>
-            <!-- nav menu -->
-            <div class="menu">
-                <!-- main nav bar -->
-                <div class="menu-wrapper">
-                    <ul class="menu-items">
-                        <li class="menu-item-has-children"><a href="index.html">Portfolio</a>
-                            <span class="sidebar-menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="polly.html" id='menu-selected'>POLLY</a></li>
-                                <li><a href="ctat.html">CTAT Rewrite</a></li>
-                                <li><a href="goodcook.html">GoodCook</a></li>
-                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
-                                <li><a href="wayfinding.html">Wayfinding</a></li>
-                                <li><a href="facesofdesign.html">Faces of Design</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="freelance.html">Freelance</a></li>
-                        <li><a href="sketchbook.html">Sketchbook</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
+        <!-- logo -->
+        <a id="first-logo" href="index.html">CZ</a>
+        <a  href="index.html">
+            <div class="diamond"><p id="logo">CZ</p></div>
+        </a>
+        
+        <!-- nav menu -->
+        <ul class="nav">
+            <li><a href="index.html#portfolio">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <!-- hamburger menu -->
+        <div class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+        </div>
+        <!-- slideout nav menu -->
+        <ul class="slideout-nav">
+            <div class="slideout-wrapper">
+                <li class="nav-item"><a href="index.html#portfolio">Work</a></li>
+                <li class="nav-item"><a href="index.html#about">About</a></li>
+                <li class="nav-item"><a href="index.html#contact">Contact</a></li>
             </div>
-            <div class="clear"></div>
-            <!-- hamburger menu -->
-            <span class="toggle-button">
-                <div class="menu-bar menu-bar-top"></div>
-                <div class="menu-bar menu-bar-middle"></div>
-                <div class="menu-bar menu-bar-bottom"></div>
-            </span>
-            
-            <!-- logo -->
-            <div id="menu-logo">
-                <a href="index.html">Carolyn Zhou</a>
-            </div>
-        </header>
+        </ul>
 
         <!-- content -->
-        <div class="main-content">
-            <h1>POLLY</h1>
-            <div class="body-content">
+        <div class="content writeup">
+            <h1>Easing medical translation for non-professionals</h1>
                 <div class="right-content">
                     <div class="left-text-column">
                         <h2>Challenge</h2>
-                        <p>To equip Low English Proficiency (LEP) patients and their caretakers with the information and resources to request quality translation services in healthcare settings.</p>
+                        <p>To inform and equip caretakers of Low English Proficiency (LEP) patients with the resources to request quality translation services in healthcare settings.</p>
                     </div>
                     <div class="right-text-column">
                         <h2>Outcome</h2>
-                        <p>Our product, POLLY, facilitates communication between LEP patients and their doctors by providing training and services to those acting as non-professional translators.</p>
+                        <p>POLLY, a service that facilitates communication between LEP patients, doctors and caretakers with training and requesting services.</p>
                     </div>
-                <!-- <div class="two-columns">
-                    <div class="left-text-column">
-                        <h2>Role</h2>
-                        <ul>
-                            <li>Designer</li>
-                            <li>Researcher</li>
-                        </ul>
-                    </div>
-                    <div class="right-text-column">
-                        <h2>Collaborators</h2>
-                        <ul>
-                            <li>Lily Kim (designer)</li>
-                            <li>Helen Kim (developer)</li>
-                            <li>Sophie Zhao (developer)</li>
-                        </ul>
-                    </div>
-                </div> -->
                     <p class="subheader"><span class="subheader-title">Role</span> Researcher, Designer</p>
                     <p class="subheader"><span class="subheader-title">Team</span> <a href="http://lilysykim.com/">Lily Kim</a> (designer), Helen Kim (developer), Sophie Zhao (developer)</p>
                 </div>
@@ -107,22 +78,25 @@
                         <!-- overview explanation -->
                         <div class="h3-section">
                             <!-- <h3>Background</h3> -->
-                            <p>Inaccuracies in medical translation can lead to misinformed, dangerous decisions about a patient's health. Despite this risk, patients often ask unqualified family members or caretakers to fill in as "ad hoc" translators instead of a professional. Through our research, we identified factors that contribute to this problen and sought to alleviate them for the ad hoc translator.</p>
-                            <p>We designed 2 touchpoints. The first is a <span class="bold">pocket course</span> that provides users with professional tips for medical interpretation. It would be found in waiting rooms or doctor’s offices to introduce users to POLLY and direct them to the <span class="bold">mobile app</span>. The app offers POLLY's full services, allowing users to send requests for professional translators, translate more effectively, and track the patient's medical activity.</p>
-                        </div> 
-                        <div class="h3-section">
-                            <div class="two-column">
-                                <img src="images/polly/pocket_course-final.png" class="left-image" id="pc-final">
-                                <img src="images/polly/app-final.png" id="polly-app">
-                            </div>
+                            <p>Inaccurate medical translation can lead to misinformed and dangerous decisions about a patient's health, yet patients often ask unqualified friends or family to fill in as "ad hoc" translators instead of requesting a professional. Through our research, we identify factors that contribute to this problem and seek to alleviate them.</p>
+
+                            <p>We designed 2 touchpoints: 1) a <span class="bold">pocket course</span> that provides users with professional tips for medical interpretation, and would be found in waiting rooms or doctor’s offices to introduce people to POLLY and direct them to the mobile app.</p>
+                            <p>2) The <span class="bold"> mobile app</span> offers POLLY's full services, allowing users to send requests for professional translators, translate more effectively, and track the patient's medical activity.</p>
                         </div>
                     </div>
+                    <div class="h3-section big-image">
+                        <div class="two-column">
+                            <img src="images/polly/pocket_course-final.png" class="left-image" id="pc-final">
+                            <img src="images/polly/app-final.png" id="polly-app">
+                        </div>
+                    </div> 
+                    
                 </div>
                 <hr>
                 <!-- target users -->
                 <div class="h2-section-wrapper">
                     <div class="left-title">
-                        <h2>Users</h2>
+                        <h2>Target Users</h2>
                     </div>
                     <div class="right-content">
                         <!-- user needs -->
@@ -140,15 +114,14 @@
                                 </ul>
                                 <h3>User Needs</h3>
                                 <ul class="bullet-list">
+                                    <li id="bullet">More effective translation and communication with doctors and with the patient</li>
                                     <li id="bullet">To be informed about language services in health care</li>
-                                    <li id="bullet">Training to effectively help translate</li>
-                                    <li id="bullet">Better communication with doctors and with the patient</li>
-                                    <li id="bullet">Doctor-patient confidentiality</li>
+                                    <li id="bullet">Trust in doctor-patient confidentiality</li>
                                 </ul>
                             </div>
 
-                            <h3>Goals & Challenges</h3>
-                            <p>Our target users are family members of LEP patients who step in as "ad hoc" translators during doctor's appointments. Typically English is still their primary language, so they may feel frustrated or ill-equipped to translate technical terminology. They want better options, or relief from the role.</p>
+                            <!-- <h3>Goals & Challenges</h3> -->
+                            <p>Our users are <span class="bold">family members of LEP patients</span> who accompany them to doctor's appointments to act as "ad hoc" translators. Typically English is their primary language, so they feel frustrated or ill-equipped to translate medical terminology. They want better translation options, or relief from the role.</p>
                         </div>
                     </div>
                     <hr>
@@ -161,28 +134,39 @@
                         <div class="h3-section">
                         <!-- Interviews -->
                             <h3>Ad Hoc Interviews</h3>
-                            <p>We found that second generation children often translated for older family members. As immigrants, many LEP patients also carry “at-risk” status (uninsured, undocumented, or of low-SES background), making medical visits even more stressful. Further, many had never even been offered proper translation services during visits. The family often wasn't aware of their options, or if they were they didn't feel comfortable with having a stranger translate.</p>
+                            <p>Speaking with people who have acted as non-professional translators, we learned more about who our users are and factors that increase stress during medical visits.</p>
+                            <ul class="bullet-list">
+                                <li id="bullet">Second generation children often translate for older family members.</li>
+                                <li id="bullet">As immigrants, many LEP patients carry “at-risk” status (uninsured, undocumented, or of low-SES background).</li>
+                                <li id="bullet">Many patients had never been offered proper translation services, so they weren't even aware of the option.</li>
+                                <li id="bullet">If they were aware, they might not feel comfortable with having a stranger translate.</li>
+                            </ul>
                             <div class="quote-wrapper">
                                 <blockquote>My parents thought I was more legit [than a professional translator]. And they trust me; if I mess up, they know it wasn't on purpose.</blockquote>
-                                <figcaption>— Son of an immigrant mother</figcaption>
+                                <figcaption>Son of an immigrant mother</figcaption>
                             </div>
                         </div>
                         <!-- expert interviews -->
                         <div class="h3-section">
                             <h3>Expert Interviews</h3>
-                            <p>We saw great diversity in how health centers handled medical translation, depending on the community surrounding them. Doctors working in medically underserved areas seemed more knowledgeable about immigrant needs. Additionally, some clinics were much stricter than others on consulting professional translators and had more efficient systems to reach them.</p>
+                            <p>Conversely, we found differing viewpoints when speaking with medical experts.</p>
+                            <ul class="bullet-list">
+                                <li id="bullet">Some clinics were much stricter than others on only consulting professional translators. They tended to have more efficient systems to reach them.</li>
+                                <li id="bullet">Health centers handle medical translation differently depending on the community around them. For example, in areas with high immigrant populations, doctors may use the services of local, non-professional translators.</li>
+                                
+                            </ul>
                             <div class="quote-wrapper">
                                 <blockquote>Family members will put their own spin on things. If they don't understand what the physician is saying, they'll skip it. We use family as a last resort.</blockquote>
-                                <figcaption>— Manager of Patient Experience at UPMC St. Margaret</figcaption>
+                                <figcaption>Manager of Patient Experience at UPMC St. Margaret</figcaption>
                             </div>
                         </div>
                         <div class="h3-section">
                             <h3>Research Analysis</h3>
-                            <p>We identified common points of stress for caretakers <span class="bold">before, during, and after</span> most appointments: when setting appointments, when translating, and when retrieving the patient’s treatment or following up with a specialist. This process helped us identify scenarios into which we might introduce a design intervention.</p>
+                            <p>We identified common points of stress for caretakers <span class="bold">before, during, and after</span> appointments: setting appointments, translating, retrieving the patient’s prescription or following up with a specialist.</p>
                             <div class="two-column img-caption">
                                 <img src="images/polly/research-affinity.JPG">
-                                <img src="images/polly/research-map.jpg" class="right-image">
-                                <figcaption>Searching for patterns and common pain points.</figcaption>
+                                <img src="images/polly/research-map.jpg" class="last-img">
+                                <figcaption>Searching for patterns and pain points to identify opportunities for a design intervention.</figcaption>
                             </div>
                         </div>
                     </div>
@@ -196,15 +180,15 @@
                         <!-- pocket course -->
                         <div class="h3-section">
                             <h3>Pocket Course Development</h3>
-                            <p>With our research in mind, we decided one of the best things we could do was to keep ad hoc translators well-informed about their rights to quality care and a professional translator, as well as best practices should they find themselves in a translator role.</p>
-                            <p>We crafted a “crash course” filled with interpretation tips from professionals, designed to feel reassuring and fit in the user’s pocket. Our development process involved test prints, paper prototypes, and drafting content.</p>
+                            <p>With these takeaways in mind, we decided our design should keep ad hoc translators well-informed about their rights to quality care and a professional translator, as well as best practices for translation.</p>
+                            <p>We crafted a “crash course” filled with interpretation tips from professionals, designed to feel reassuring and fit in the user’s pocket. </p>
                             <div class="two-column">
                                 <img src="images/polly/pc_it-1.JPG" class="left-image">
-                                <img src="images/polly/pc_it-2.JPG" class="right-image">
+                                <img src="images/polly/pc_it-2.JPG" class="last-img">
                             </div>
                             <figure class="img-caption">
                                 <img src="images/polly/pc_it-3.JPG">
-                                <figcaption>Prototypes and test prints. We even translated the course into other languages to test out our designs with other writing systems.</figcaption>
+                                <figcaption>Our development process involved test prints, paper prototypes, and drafting content. We even designed the course in other languages to test our designs with other writing systems.</figcaption>
                             </figure>
                         </div>
                         <!-- app dev -->
@@ -213,7 +197,7 @@
                             <p>The app’s purpose was to offer users more abundant resources in digital form. As one of 2 designers I conducted research to determine helpful app features and to test usability, created wireframes and user flow, wrote copy, and created assets.</p>
                             <div class="two-column">
                                 <img src="images/polly/lofi.jpg">
-                                <img src="images/polly/midfi.png" class="right-image">
+                                <img src="images/polly/midfi.png" class="last-img">
                                 <!-- <img src="images/polly/hifi.png" id="polly-hifi"> -->
                             </div>
                             <figure class="img-caption">
@@ -250,19 +234,19 @@
                                 <figcaption>UI map, color coded by feature.</figcaption>
                             </figure>
                             <h4>Requesting a Translator</h4>
-                            <div class="three-column">
+                            <div class="three-column polly-final">
                                 <img src="images/polly/app_request.gif">
                                 <img src="images/polly/app_request1.png">
                                 <img src="images/polly/app_request2.png">
                             </div>
                             <h4>Viewing Patient Profiles</h4>
-                            <div class="three-column">
+                            <div class="three-column polly-final">
                                 <img src="images/polly/app_profiles.gif">
                                 <img src="images/polly/app_profiles1.png">
                                 <img src="images/polly/app_profiles2.png">
                             </div>
                             <h4>Interpretation 101 and Dictionary</h4>
-                            <div class="three-column">
+                            <div class="three-column polly-final">
                                 <img src="images/polly/app_resources.gif">
                                 <img src="images/polly/app_resources1.png">
                                 <img src="images/polly/app_resources2.png">
@@ -298,14 +282,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
             <!-- footer -->
             <div class="right-content">
                 <footer>
-                    <a href="index.html">Back to Portfolio</a>
+                    <div class="triangle-left"></div><a href="index.html"> Back to Portfolio</a>
                 </footer>
             </div>
-                
+            <hr>
+
+            <div class="social">
+                <a href="mailto:carolyn.y.zhou@gmail.com" target="_blank">Email</a>
+                <a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/cycyzhou/" target="_blank">Instagram</a>
+                <a href='https://medium.com/@yixinzho' target="_blank">Medium</a>
+            </div>
+
         </div>
 
     </body>

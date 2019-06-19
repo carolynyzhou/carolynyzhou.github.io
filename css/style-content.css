@@ -1,115 +1,89 @@
+/**************************** structure *****************************/
 body {
-    margin: 5% 0;
     text-rendering: optimizeLegibility;
     background-color: #f8f8fa;
 }
 
-.main-content {
+.content {
     display: block;
     vertical-align: top;
-    margin: 0 10%;
+    margin: 5% 10%;
+    /*margin: 0;*/
 }
 
-header {
-    margin-bottom: 4em;
+.writeup {
+    margin-top: 10em;
 }
 
-/******************************* menu *******************************/
-
-#menu-logo {
-    font-family: "Small Title", "Arial", sans-serif;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-left: 10%;
+.column {
+    float: left;
+    width: 50%;
 }
 
-#menu-logo a {
-    text-decoration: none;
-    color: #454545;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-#menu-logo a:hover {
-    color: #aeb4bd;
-}
-
-.menu a {
-    color: #333333;
-    text-decoration: none;
-}
-
-.menu a:hover {
-    color: #aeb4bd;
-    border-bottom: 1px solid #aeb4bd;
-}
-
-.submenu {
-    margin: 0 0 0 1.5em;
-    font-size: 1em;
-}
-
-#menu-selected {
-    color: #1F3A95;
-}
-
-/****************************************** text stuff ******************************************/
+/**************************** text stuff *****************************/
 /*general text styling*/
 h1 {
-    font-family: "Title", sans-serif;
-    font-size: 6em;
-    line-height: 1.125em;
+    font-family: "Body", sans-serif;
+    font-size: 5em;
+    line-height: 1.1em;
+    letter-spacing: .5px;
     color: #333;
-    margin-bottom: .25em;
+    margin-bottom: .75em;
+    width: 80%;
 }
 
 h2, h3 {
     font-size: .9em;
-    line-height: 1.65em;
+    line-height: 1.6em;
 }
-
 
 /*line height and font size*/
 h4, p, footer, ul {
     font-size: 1em;
-    line-height: 1.65em;
+    line-height: 1.6em;
 }
 
 h2 {
     /*title of section, left hand column*/
     font-family: "Small Title", sans-serif;
-    /*font-weight: 500;*/
     text-transform: uppercase;
     margin: 0 0 .5em 0;
     letter-spacing: 0.05em;
-    color: #606b74;
+    color: #606574;
 }
 
 .subheader {
-    padding-bottom: .5em;
+    padding-bottom: 1em;
 }
 
 .subheader-title {
     font-family: "Small Title", sans-serif;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: .5px;
     font-size: .9em;
-    color: #606b74;
+    color: #606574;
     margin-right: 1em;
 }
 
 .left-title h2 {
     margin-top: 0;
-    /*text-align: right;*/
 }
 
 .h2-section-wrapper {
     margin-bottom: 3em;
 }
 
+/*paragraph title*/
 h3 {
-    /*paragraph title*/
+
     font-family: "Small Title", sans-serif;
-    /*font-weight: 500;*/
     margin-bottom: .5em;
     color: #333333;
 }
@@ -121,15 +95,13 @@ h3 {
 /*elements using Canela*/
 h4, p, figcaption, footer, ul {
     font-family: "Body", sans-serif;
-    letter-spacing: .025em;
+    letter-spacing: .6px;
     position: relative;
     vertical-align: baseline;
     width: 100%;
 }
 
 h4 {
-    /*color: #767676;*/
-    /*font-weight: 500;*/
     font-style: italic;
     margin-bottom: .5em;
 }
@@ -137,11 +109,6 @@ h4 {
 p {
     color: #333;
     padding-bottom: 1em;
-    letter-spacing: .03em;
-}
-
-a {
-    transition: all 100ms ease-out;
 }
 
 figcaption {
@@ -156,10 +123,10 @@ figcaption {
 blockquote {
     font-family: "Body", sans-serif;
     font-style: italic;
-    font-size: 2.25em;
-    color: #1F3A95;
+    font-size: 2.5em;
+    color: #606574;
     line-height: 1.3em;
-    letter-spacing: .03em;
+    letter-spacing: .5px;
 }
 
 blockquote:before {
@@ -173,33 +140,74 @@ blockquote:after {
 }
 
 .quote-wrapper {
-    margin: 1.5em 2.5em;
+    margin: 2em 0;
+    border-left: 3px solid #606574;
+    padding-left: 3em;
 }
 
 .quote-wrapper figcaption {
-    font-size: 1em;
+    font-family: "Small Title", sans-serif;
+    font-size: .8em;
     font-style: normal;
+    letter-spacing: 0;
+    padding-top: 1em;
 }
-
 
 footer {
-    color: #6A7881;
 }
 
-/*.email {
-    text-align: right;
-    float: right;
+a {
+    text-decoration: none;
+    color:#375CDC;
+    cursor: pointer;
+    transition: all 100ms ease-out;
+    border-bottom: none;
+}
+
+a:hover {
+    border-bottom: 2px solid #375CDC;
+}
+
+/*
+.body-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #375CDC;
+    transition: width .3s;
+}
+
+.body-link:hover::after {
+    width: 100%;
+    transition: width .1s;
 }*/
 
-.main-content a {
+
+.heavy-link {
+    display: inline-block;
     text-decoration: none;
-    color: #1F3A95;
-    border-bottom: 1px solid #1F3A95;
+    color: #375CDC;
+    transition: all 100ms ease-out;
 }
 
-.main-content a:hover {
-    border-bottom: 1px solid #aeb4bd;
-    color: #aeb4bd;
+.heavy-link::after {
+    content: "";
+    position: absolute;
+    background-color: #030C17;
+    width: 0;
+    height: 24px;
+    left: -5px;
+    top: -5px;
+    z-index: -1;
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+.heavy-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+    color: white;
 }
 
 .bold {
@@ -207,39 +215,36 @@ footer {
 }
 
 br {
-    line-height: 1.75em;
+    line-height: 1.5em;
 }
 
 hr {
-    /*margin: 3em 20%;*/
-    margin: 3em 0;
-    border-color: #ddd;
+    margin: 3em 25% 3em 0;
+    /*margin: 3em 0;*/
+    border-color: #eee;
 }
 
-/****************************************** project page content stuff ******************************************/
-
-/*sizing section where non-portfolio-title/non-gallery content goes*/
-/*.body-content { */
-    /*below is when all body content is in one column, left title not pulled out to the side*/
-    /*width: 66.6%;*/
-    /*display: block;*/
-    /*vertical-align: top;*/
-    /*margin: 0 16.67%;*/
-/*}*/
-
-.date {
-    margin-top: 1em;
+.social {
+    font-family: "Small Title", sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
 }
+
+.social a {
+    margin-right: 20px;
+}
+
+/**************************** project page content stuff *****************************/
 
 .left-title {
     display: inline-block;
-    width: 15%;
+    width: 20%;
     float: left;
 }
 
 .right-content {
-    width: 60%; /*total of page width is 6/10 with 2/10 margins*/
-    margin: 0 0 0 20%;
+    width: 50%; /*total of page width is 1/2 with 1/4 margins*/
+    margin: 0 0 0 25%;
 }
 
 .left-text-column {
@@ -275,7 +280,7 @@ ul {
     margin-bottom: 1.125em;
 }
 
-.numbered-list {
+.number-list {
     list-style-type: decimal;
 }
 
@@ -320,10 +325,18 @@ ul {
     right: 0;
 }
 
-/****************************************** image stuff ******************************************/
+/**************************** image stuff *****************************/
 
+img {
+    width: 100%;
+}
 /*full image in body column*/
-.h2-section-wrapper img {
+/*.h2-section-wrapper img {
+    width: 80%;
+    margin-left: 10%;
+}*/
+
+.big-image {
     width: 80%;
     margin-left: 10%;
 }
@@ -340,21 +353,21 @@ ul {
     width: 48%;
 }
 
-.right-image {
+.last-img {
     float: right;
 }
 
 .three-column img {
     display: inline-block;
-    width: 30.9%;
-    margin: 0 1% 1.75em .5%;
+    width: 31.5%;
+    margin: 0 .5% 1.75em .5%;
     vertical-align: top;
 }
 
 .four-column img {
     display: inline-block;
-    width: 22.9%;
-    margin: 0 1% 1.75em .5%;
+    width: 23%;
+    margin: 0 .5% 1.75em .5%;
     vertical-align: top;
 }
 
@@ -367,18 +380,41 @@ ul {
     margin-bottom: 1.75em;
 }
 
-#drop-shadow {
+.dropshadow {
     box-shadow: 0 1px 2px #ccc;
 }
 
-/****************************************** video iframe ******************************************/
+/*triangle icons*/
+.triangle-left {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #375CDC;
+    border-bottom: 5px solid transparent;
+    margin-right: .5em;
+}
+
+.triangle-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #375CDC;
+    padding-bottom: 2px;
+}
+
+
+/**************************** video iframe *****************************/
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
     height: 0;
     /*added by me*/
-    margin-bottom: 3em;
+    margin-bottom: 3em;/*
+    width: 80%;
+    margin-left: 10%;*/
 }
 
 .video-wrapper iframe {
@@ -389,75 +425,29 @@ ul {
     height: 100%;
 }
 
-/******************************************page-specific stuff******************************************/
-/**about**/
-#me {
-    margin-bottom: 1em; 
-}
-
-/*resume*/
-.resume {
-    display: block;
-    list-style-type: none;
-    font-family: "Body", sans-serif;
-    line-height: 1.75em;
-    vertical-align: baseline;
-    color: #666;
-}
-
-.experience li {
-    margin-bottom: 1em;
-}
-
-ul.resume {
-    margin-bottom: 1.25em;
-}
-
-.skills h3 {
-    padding-top: 0;
-    margin-top: 0;
-}
+/****************************page-specific stuff*****************************/
 
 /*sketchbook "masonry"*/
-#sketchbook-body {
-    width: 100%;
-    display: block;
-    vertical-align: top;
-}
-
-.column-1, .column-2 {
+.sketchbook-left, .sketchbook-right {
     display: inline-block;
     width: 49%;
-    /*margin-right: 1.5%;*/
 }
 
-.column-1 {
+.sketchbook-left {
     float: left;
 }
 
-.column-2 {
+.sketchbook-right {
     float: right;
 }
 
-.column-1 img, .column-2 img {
-    width: 100%;
+.sketchbook-left img, .sketchbook-right img {
     margin-bottom: 3%;
 }
-
-
-/*goodcook*/
-
-
-/*ctat*/
-
 
 /*faces of design*/
 .faces-survey-questions {
     margin-top: 2.4em;
-}
-
-#cube-final {
-    /*margin: 2em 0;*/
 }
 
 /*polly*/
@@ -486,17 +476,3 @@ ul.resume {
 #polly-hifi {
     width: 34%;
 }
-
-/*exploring sq hill*/
-#foodie-gif {
-    width: 20%;
-}
-
-#time-gif {
-    width: 30%;
-}
-
-#map-gif {
-    width: 42%;
-}
-

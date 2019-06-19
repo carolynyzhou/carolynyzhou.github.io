@@ -18,82 +18,68 @@
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- js -->
-        <script src="js/main.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/show-menu.js"></script>
 
         <!-- favicon -->
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     </head>
 
     <body>
-        <header>
-            <!-- nav menu -->
-            <div class="menu">
-                <!-- main nav bar -->
-                <div class="menu-wrapper">
-                    <ul class="menu-items">
-                        <li class="menu-item-has-children"><a href="index.html">Portfolio</a>
-                            <span class="sidebar-menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="polly.html">POLLY</a></li>
-                                <li><a href="ctat.html">CTAT Rewrite</a></li>
-                                <li><a href="goodcook.html">GoodCook</a></li>
-                                <li><a href="responsiverealestate.html">Responsive Real Estate</a></li>
-                                <li><a href="wayfinding.html">Wayfinding</a></li>
-                                <li><a href="facesofdesign.html">Faces of Design</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="freelance.html">Freelance</a></li>
-                        <li><a href="sketchbook.html" id='menu-selected'>Sketchbook</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
+        <!-- logo -->
+        <a id="first-logo" href="index.html">CZ</a>
+        <a  href="index.html">
+            <div class="diamond"><p id="logo">CZ</p></div>
+        </a>
+        
+        <!-- nav menu -->
+        <ul class="nav">
+            <li><a href="index.html#portfolio">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <!-- hamburger menu -->
+        <div class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+        </div>
+        <!-- slideout nav menu -->
+        <ul class="slideout-nav">
+            <div class="slideout-wrapper">
+                <li class="nav-item"><a href="index.html#portfolio">Work</a></li>
+                <li class="nav-item"><a href="index.html#about">About</a></li>
+                <li class="nav-item"><a href="index.html#contact">Contact</a></li>
             </div>
-            <div class="clear"></div>
-            <!-- hamburger menu -->
-            <span class="toggle-button">
-                <div class="menu-bar menu-bar-top"></div>
-                <div class="menu-bar menu-bar-middle"></div>
-                <div class="menu-bar menu-bar-bottom"></div>
-            </span>
-            
-            <!-- logo -->
-            <div id="menu-logo">
-                <a href="index.html">Carolyn Zhou</a>
-            </div>
-        </header>
+        </ul>
 
         <!-- portfolio gallery -->
-        <div class="main-content" id="sketchbook-main-right">
-            <div class="body-content" id="sketchbook-body">
-                <div class="column-1">
-                    <img src="images/sketchbook/girl_ink.jpg">
-                    <img src="images/sketchbook/bird.jpg">
-                    <img src="images/sketchbook/girl_flowers.jpg">
-                    <img src="images/sketchbook/bun.jpg">
-                    <img src="images/sketchbook/girl_color.jpg">
-                    <img src="images/sketchbook/detective_pikachu.PNG">
-                    <img src="images/sketchbook/summer.jpg">
-                    <img src="images/sketchbook/cylindertown.jpg">
-                    <img src="images/sketchbook/DSC_6719.jpg">
-                    <img src="images/sketchbook/starbucks.jpg">
-                </div>
-
-                <div class="column-2">
-                    <img src="images/sketchbook/venice.jpg">
-                    <img src="images/sketchbook/flowers_hair.jpg">
-                    <img src="images/sketchbook/alma.jpg">
-                    <img src="images/sketchbook/mini_brian.jpg">
-                    <img src="images/sketchbook/airport.jpg">
-                    <img src="images/sketchbook/bee.jpg">
-                    <img src="images/sketchbook/frill_lizard.jpg">
-                    <img src="images/sketchbook/old_man.jpg">
-                    <img src="images/sketchbook/canada_dry.jpg">
-                    <img src="images/sketchbook/apple.jpg">
-                </div>
+        <div class="">
+            <div class="sketchbook-left">
+                <img src="images/sketchbook/girl_ink.jpg">
+                <img src="images/sketchbook/bird.jpg">
+                <img src="images/sketchbook/girl_flowers.jpg">
+                <img src="images/sketchbook/bun.jpg">
+                <img src="images/sketchbook/girl_color.jpg">
+                <img src="images/sketchbook/detective_pikachu.PNG">
+                <img src="images/sketchbook/summer.jpg">
+                <img src="images/sketchbook/cylindertown.jpg">
+                <img src="images/sketchbook/DSC_6719.jpg">
+                <img src="images/sketchbook/starbucks.jpg">
             </div>
 
+            <div class="sketchbook-right">
+                <img src="images/sketchbook/venice.jpg">
+                <img src="images/sketchbook/flowers_hair.jpg">
+                <img src="images/sketchbook/alma.jpg">
+                <img src="images/sketchbook/mini_brian.jpg">
+                <img src="images/sketchbook/airport.jpg">
+                <img src="images/sketchbook/bee.jpg">
+                <img src="images/sketchbook/frill_lizard.jpg">
+                <img src="images/sketchbook/old_man.jpg">
+                <img src="images/sketchbook/canada_dry.jpg">
+                <img src="images/sketchbook/apple.jpg">
+            </div>
         </div>
 
 
