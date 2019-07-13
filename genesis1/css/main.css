@@ -55,7 +55,7 @@ h1 {
     color: white;
     font-weight: 300;
     background-color: #1e1e1e;
-    padding: 10% 0;
+    padding: 10% 0 15% 0;
 }
 
 #verse2 p {
@@ -122,7 +122,6 @@ h1 {
     color: #666666;
     line-height: 1.4;
 }
-
 
 #anditwasso, #anditwasso-inverse {
     width: 100%;
@@ -514,5 +513,5 @@ footer {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: goldenrod;
+    color: darkgoldenrod;
 }
