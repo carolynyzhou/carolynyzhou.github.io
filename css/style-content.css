@@ -391,7 +391,7 @@ img {
     border-top: 5px solid transparent;
     border-right: 5px solid #375CDC;
     border-bottom: 5px solid transparent;
-    margin-right: .5em;
+    margin-right: .4em;
 }
 
 .triangle-down {
@@ -402,6 +402,7 @@ img {
     border-right: 5px solid transparent;
     border-top: 5px solid #375CDC;
     padding-bottom: 2px;
+    margin-left: .3em;
 }
 
 
