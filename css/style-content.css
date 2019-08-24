@@ -182,6 +182,13 @@ a:hover {
     transition: width .1s;
 }*/
 
+a.btn {
+    text-decoration: none;
+}
+
+a.btn:hover {
+    text-decoration: none;
+}
 
 .heavy-link {
     display: inline-block;
