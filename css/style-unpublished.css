@@ -1,0 +1,150 @@
+/**************************** structure *****************************/
+body {
+    text-rendering: optimizeLegibility;
+    background-color: #262c30;
+}
+
+.content {
+    display: block;
+    vertical-align: top;
+    margin: 5% 10%;
+    /*margin: 0;*/
+}
+
+.writeup {
+    margin-top: 10em;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/**************************** text stuff *****************************/
+/*general text styling*/
+h1 {
+    font-family: "Body", sans-serif;
+    font-size: 5em;
+    line-height: 1.1em;
+    letter-spacing: .5px;
+    color: #fff;
+    margin-bottom: .75em;
+    width: 80%;
+}
+
+h2, h3 {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+/*line height and font size*/
+h4, p, footer, ul {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+h2 {
+    /*title of section, left hand column*/
+    font-family: "Small Title", sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 .5em 0;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+
+.h2-section-wrapper {
+    margin-bottom: 3em;
+}
+
+/*paragraph title*/
+h3 {
+
+    font-family: "Small Title", sans-serif;
+    margin-bottom: .5em;
+    color: #fff;
+}
+
+.h3-section {
+    margin-bottom: 2em;
+}
+
+/*elements using Canela*/
+p, footer {
+    font-family: "Body", sans-serif;
+    letter-spacing: .6px;
+    position: relative;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+p {
+    color: #e1e1e8;
+    padding-bottom: 1em;
+}
+
+hr {
+    margin: 3em 25% 3em 0;
+    border-color: #eee;
+}
+
+footer {
+    width: auto;
+}
+
+/**************************** links ****************************/
+
+a {
+    text-decoration: none;
+    color:#e1e1e8;
+    cursor: pointer;
+    transition: all 100ms ease-out;
+    border-bottom: 2px solid #fff;
+}
+
+a:hover {
+    color: #698AFF;
+    border-bottom: 2px solid #698AFF;
+}
+
+
+.triangle-left-white {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid white;
+    border-bottom: 5px solid transparent;
+    margin-right: .4em;
+}
+/*
+footer:hover .triangle-left-white {
+    transition: all 100ms ease-out;
+    border-right: 5px solid #698AFF;
+}*/
+
+.social {
+    font-family: "Small Title", sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+}
+
+.social a {
+    margin-right: 20px;
+    border-bottom: none;
+}
+
+/**************************** page content stuff *****************************/
+
+.right-content {
+    width: 50%; /*total of page width is 1/2 with 1/4 margins*/
+    margin: 0 0 0 25%;
+}
+
