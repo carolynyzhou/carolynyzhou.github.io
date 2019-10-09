@@ -33,7 +33,7 @@ h1 {
     font-family: "Body", sans-serif;
     font-size: 5em;
     line-height: 1.1em;
-    letter-spacing: .5px;
+    letter-spacing: .75px;
     color: #333;
     margin-bottom: .75em;
     width: 80%;
@@ -95,7 +95,7 @@ h3 {
 /*elements using Canela*/
 h4, p, figcaption, footer, ul {
     font-family: "Body", sans-serif;
-    letter-spacing: .6px;
+    letter-spacing: .7px;
     position: relative;
     vertical-align: baseline;
     width: 100%;
