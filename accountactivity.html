@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hi, I'm Carolyn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/style-menu.css">
+        <link rel="stylesheet" type="text/css" href="css/style-content.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="css/850px.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <!-- fonts -->
+        
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+        <script src="js/show-menu.js" type="text/javascript"></script>
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    </head>
+    <body>
+        <!-- logo -->
+        <a id="first-logo" href="index.html">CZ</a>
+        <a  href="index.html">
+            <div class="diamond"><p id="logo">CZ</p></div>
+        </a>
+        
+        <!-- nav menu -->
+        <ul class="nav">
+            <li><a href="index.html#portfolio">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <!-- hamburger menu -->
+        <div class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+        </div>
+        <!-- slideout nav menu -->
+        <ul class="slideout-nav">
+            <div class="slideout-wrapper">
+                <li class="nav-item"><a href="index.html#portfolio">Work</a></li>
+                <li class="nav-item"><a href="index.html#about">About</a></li>
+                <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+            </div>
+        </ul>
+
+        <!-- content -->
+        <div class="content writeup">
+            <h1>Redesigning mobile Virtual Wallet accounts</h1>
+                <div class="right-content">
+                    <div class="left-text-column">
+                        <h2>Challenge</h2>
+                        <p>Redesign Account Activity in PNC’s mobile app to incorporate additional content for Virtual Wallet accounts.</p>
+                    </div>
+                    <div class="right-text-column">
+                        <h2>Outcome</h2>
+                        <p>New insights and banking tools included for VW accounts, as well as improved hierarchy and usability for all accounts in the app.</p>
+                    </div>
+                    <p class="subheader"><span class="subheader-title">Role</span>Design Lead</p>
+                    <p class="subheader"><span class="subheader-title">Team</span> Product Manager (VW team), Developer Team</p>
+                </div>
+
+                <hr>
+
+                <!-- overview -->
+                <div class="h2-section-wrapper">
+                    <div class="left-title">
+                        <h2>Overview</h2>
+                    </div>
+                    <div class="right-content">
+                        <!-- overview explanation -->
+                        <div class="h3-section">
+                            <!-- <h3>Background</h3> -->
+                            <p>This project was part of a larger initiative to combine PNC's two mobile apps: one for “general” customers, and one for customers with <a href="https://www.pnc.com/en/personal-banking/virtual-wallet-overview.html">Virtual Wallet</a>, a special set of accounts and banking tools.</p>
+                            <img src="images/pnc/app_convergence.png">
+                            <p>The general app provides basic account info (i.e. account balance, transactions), while the Virtual Wallet app supports <span class="bold">additional banking features</span> included with the product. Poor marketing was causing confusion among customers about which app to download.</p>
+                            <p>To unify PNC's mobile banking strategy, my team worked with the PNC Mobile team to bring Virtual Wallet features into the latter's app. My task was to incorporate new content into the <span class="bold">Account Activity</span> section.</p>
+                        </div>
+                    </div>
+                    <div class="big-image img-caption">
+                        <img src="images/pnc/final_context.jpg">
+                        <figcaption>A user checks his funds in his new Account Activity after indulging a bit on brunch.</figcaption>
+                    </div>
+                </div>
+                <hr>
+                <!-- research -->
+                <div class="h2-section-wrapper">
+                    <div class="left-title">
+                        <h2>Research</h2>
+                    </div>
+                    <div class="right-content">
+                        
+                        <div class="h3-section">
+                        <!-- Interviews -->
+                            <h3>Initial Interviews</h3>
+                            <p>To start, I sought to find out how people generally manage their finances with Account Activity. These were informal interviews with colleagues, friends and family.</p>
+                            <p>A common thread people shared was visiting Account Activity to see <span class='bold'>what else they need to do</span>, whether viewing data or moving money. This led me to set <span class='bold'>navigation to management tools</span> as a primary goal of the redesign.</p>
+                        </div>
+                        <div class="h3-section">
+                            <div class="img-caption">
+                                <img src="images/pnc/hub.png">
+                                <figcaption>Account Activity is a "hub" for banking activity.</figcaption>
+                            </div>
+                        </div>
+                        
+                    <!-- target users -->
+                        <div class="h3-section">
+                            <h3>Target User</h3>
+                            <!-- user needs -->
+                            <p>Because of the broad range of user needs, I defined a target user to help focus our direction (who is most benefitted by the changes we're making? who do we want to appeal to?).</p>
+                            <div class="left-text-column">
+                                <img src="images/pnc/user.jpg">
+                            </div>
+                            <div class="right-text-column">
+                                <h3>Profile</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Age: 30-40</li>
+                                    <li id="bullet">Middle class workers & families</li>
+                                    <li id="bullet">Rents or owns a home</li>
+                                    <li id="bullet">Tech-savvy</li>
+                                </ul>
+                                <h3>User Needs</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Be financially responsible (i.e. pay bills)</li>
+                                    <li id="bullet">Save for short- and long-term financial goals</li>
+                                </ul>
+                            </div>
+                            <!-- summary -->
+                            <p>This user is often busy and appreciates the ability to bank on-the-go. He likes banking with the VW tools, but has the PNC app instead of the VW app where the tools are.</p>
+                            <div class="quote-wrapper">
+                                <blockquote>I'd use [the tools] in my Virtual Wallet, but I have to go on my computer to do anything.</blockquote>
+                                <figcaption>Virtual Wallet customer with only the PNC app</figcaption>
+                            </div>
+                        </div>
+                        <div class="h3-section">
+                        <!-- Card Sort -->
+                            <h3>Organizing Content</h3>
+                            <p>I performed tasks like card sorts and paper prototype tests to learn about customers' mental models of their VW tools and accounts. This process involved bottom-up (sorting by users) and top-down (testing designs I made) research.</p>
+                            <div class="three-column img-caption">
+                                <img src="images/pnc/cardsort-1.JPG">
+                                <img src="images/pnc/cardsort-2.jpg">
+                                <img src="images/pnc/cardsort-3.JPG">
+                                <figcaption>People often grouped short-term (spending) and long-term (saving) tools together, and associated them with checking and savings accounts respectively.</figcaption>
+                            </div>
+                            <div class="two-column img-caption">
+                                <img src="images/pnc/paper-1.jpg">
+                                <img src="images/pnc/paper-2.jpg" class="last-img">
+                                <figcaption>Allowing testers to rearrange paper tiles revealed that they valued certain features more, like account balance and transactions.</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="h2-section-wrapper">
+                    <!-- research -->
+                    <div class="left-title">
+                        <h2>Design</h2>
+                    </div>
+                    <div class="right-content">
+                        
+                        <div class="h3-section">
+                        <!-- Wireframes -->
+                            <h3>Development</h3>
+                            <p>Moving into higher-fidelity mockups, I began testing UI elements, visual components, interactions and navigation. Some example questions:</p>
+                            <ul class="bullet-list">
+                                <li id="bullet">Is important content the most visible/discoverable?</li>
+                                <li id="bullet">How do users interact with components on the screen?</li>
+                                <li id="bullet">Pagination vs. Scroll? Icons vs. Widgets? Color contrast?</li>
+                            </ul>
+                        </div>
+
+                            <!-- lo fi -->
+                            <!-- <div class="three-column">
+                                <img src="images/pnc/lofi-1.png" class="dropshadow">
+                                <img src="images/pnc/lofi-2.png" class="dropshadow">
+                                <img src="images/pnc/lofi-3.png" class="dropshadow">
+                            </div> -->
+
+                        <!-- exploration 1 -->
+                        <div class="h3-section">
+                            <h3>Exploration: Tabbed Pages</h3>
+                            <p>Content organized across pages (shown right: 3 tabs on the same screen)</p>
+                            <div class="three-column">
+                                <img src="images/pnc/midfi-tab1.png" class="dropshadow">
+                                <img src="images/pnc/midfi-tab2.png" class="dropshadow">
+                                <img src="images/pnc/midfi-tab3.png" class="dropshadow">
+                            </div>
+                            <div class="left-text-column">
+                                <h3>Pros</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Less content below the fold</li>
+                                    <li id="bullet">Content is distinctly organized</li>
+                                </ul>
+                            </div>
+                            <div class="right-text-column">
+                                <h3>Cons</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Tools are less discoverable on the second page</li>
+                                    <li id="bullet">Presentation of widgets is overwhelming</li>
+                                    <li id="bullet">Difficult to assign page names</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- exploration 2 -->
+                        <div class="h3-section">
+                            <h3>Exploration: Carousel</h3>
+                            <p>Content grouped by function into carousel groups</p>
+                            <img src="images/pnc/midfi-carousel.png">
+                            <div class="left-text-column">
+                                <h3>Pros</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Brings functional organization to content</li>
+                                    <li id="bullet">Balance of horizontal and vertical navigation</li>
+                                </ul>
+                            </div>
+                            <div class="right-text-column">
+                                <h3>Cons</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Content didn’t fit well into this structure</li>
+                                    <li id="bullet">More technical challenges to building carousel cards</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- exploration 3 -->
+                        <div class="h3-section">
+                            <h3>Exploration: VW Toolbar</h3>
+                            <p>Presentation of VW tools in a "tool bar" (i.e. icons, widgets, etc.)</p>
+                            <div class="three-column">
+                                <img src="images/pnc/midfi-tools1.png" class="dropshadow">
+                                <img src="images/pnc/midfi-tools2.png" class="dropshadow">
+                                <img src="images/pnc/midfi-tools3.png" class="dropshadow">
+                            </div>
+                            <div class="left-text-column">
+                                <h3>Pros</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Icons make tools easy to find and identify</li>
+                                    <li id="bullet">Managing one tool at a time feels less overwhelming</li>
+                                </ul>
+                            </div>
+                            <div class="right-text-column">
+                                <h3>Cons</h3>
+                                <ul class="bullet-list">
+                                    <li id="bullet">Mini widgets don’t show enough to be useful</li>
+                                    <li id="bullet">Tappable bar and widgets sometimes don’t look interactive</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="h3-section">
+                            <h3>Iconography</h3>
+                            <p>For the tool icons, I designed them to match the style of existing icons in the app. I opted to add color, borrowed from VW brand guidelines, to color-code each account's tool set and bring familiarity for VW customers in a new app.</p>
+                            <img src="images/pnc/icons.png">
+                            <!-- <img src="images/pnc/final-icons.png"> -->
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- final -->
+                <div class="h2-section-wrapper">
+                    <div class="left-title">
+                        <h2>Final Screens</h2>
+                    </div>
+                    <div class="right-content">
+                        <div class="h3-section">
+                            <p>Below are the final pages for each of VW's account pages. Each account serves a different role (checking, checking with interest, high-yield savings, and credit card) so they feature <span class="bold"> unique tool sets designed to support their purposes</span>.</p>
+                        </div>
+                    </div>
+                        
+                    <div class="four-column big-image">
+                        <img src="images/pnc/final_spend.png" class="dropshadow">
+                        <img src="images/pnc/final_reserve.png" class="dropshadow">
+                        <img src="images/pnc/final_growth.png" class="dropshadow">
+                        <img src="images/pnc/final_card.png" class="dropshadow">
+                    </div>
+                    <br>
+                    <div class="right-content">
+                        <div class="h3-section">
+                            <h3>User Flow</h3>
+                            <p>This flow shows the key Account Activity screens and how they connect. Scroll down for more detail on what I changed on each screen.</p>
+                        </div>
+                    </div>
+                    <div class="big-image">
+                        <img src="images/pnc/flow1.png">
+                    </div>
+
+                    <div class="right-content">
+                        <!-- landing page -->
+                        <div class="h3-section">
+                            <h3>Account Page</h3>
+                            <ul class="bullet-list">
+                                <li id="bullet">Created clearer visual hierarchy</li>
+                                <li id="bullet">Introduced the "tool bar" component, icons and interaction</li>
+                            </ul>
+                            <div class="two-column">
+                                <img src="images/pnc/old-account.png" class="dropshadow">
+                                <img src="images/pnc/final-account.gif" class="last-img dropshadow">
+                            </div>
+                        </div>
+                        <div class="row"></div>
+                        <!-- drawer -->
+                        <div class="h3-section">
+                            <h3>Account Details</h3>
+                            <ul class="bullet-list">
+                                <li id="bullet">Reduced clutter by hiding less-used information</li>
+                                <li id="bullet">Added lines for visual grouping</li>
+                            </ul>
+                            <div class="two-column">
+                                <img src="images/pnc/old-details.png" class="dropshadow">
+                                <img src="images/pnc/final-details.png" class="last-img dropshadow">
+                            </div>
+                        </div>
+                        <!-- transactions -->
+                        <div class="h3-section">
+                            <h3>Transactions</h3>
+                            <ul class="bullet-list">
+                                <li id="bullet">Introduced VW-exclusive “Category” detail</li>
+                                <li id="bullet">Increased real estate usage with full width list</li>
+                            </ul>
+                            <div class="two-column">
+                                <img src="images/pnc/old-transactions.png" class="dropshadow">
+                                <img src="images/pnc/final-transactions.png" class="last-img dropshadow">
+                            </div>
+                        </div>
+                        <!-- transactions details -->
+                        <div class="h3-section">
+                            <h3>Transactions Details</h3>
+                            <ul class="bullet-list">
+                                <li id="bullet">Introduced “Edit category” functionality</li>
+                                <li id="bullet">Layout allows for future detail items</li>
+                            </ul>
+                            <div class="two-column">
+                                <img src="images/pnc/old-transactiondetails.png" class="dropshadow">
+                                <img src="images/pnc/final-transactiondetails.png" class="last-img dropshadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="h2-section-wrapper">
+                    <div class="left-title">
+                        <h2>Learning Outcomes</h2>
+                    </div>
+                    <div class="right-content">
+                        <div class="h3-section">
+                            <ul class="bullet-list">
+                                <li id="bullet">Working closely with PM’s and developers</li>
+                                <li id="bullet">Designing for edge cases and error states</li>
+                                <li id="bullet">Collaborating with internal teams about coexisting products</li>
+                                <li id="bullet">Navigating constraints set by pre-existing patterns</li>
+                                <li id="bullet">Rapidly prototyping with Sketch, InVision, InVision Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- footer -->
+            <div class="right-content">
+                <footer>
+                    <a href="index.html"><div class="triangle-left"></div> Back to Portfolio</a>
+                </footer>
+            </div>
+            <hr>
+
+            <div class="social">
+                <a class="" href="mailto:carolyn.y.zhou@gmail.com" target="_blank">Email</a>
+                <a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a>
+                <a href="https://www.behance.net/carolynzhou" target="_blank">Behance</a>
+                <a href='https://medium.com/@yixinzho' target="_blank">Medium</a>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

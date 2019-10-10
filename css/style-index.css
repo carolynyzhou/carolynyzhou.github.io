@@ -1,6 +1,6 @@
 #intro {
-    height: 60vh;
-    margin: 20% auto 0 auto;
+    height: 80vh;
+    margin: 25% auto 0 auto;
     /*transform: translate(-50%, -50%);*/
 }
 
@@ -33,7 +33,7 @@
 
 /*portfolio*/
 .accountactivity {
-    background-image: url(../images/index/accactivity_b.png);
+    background-image: url(../images/index/accactivity.png);
 }
 
 .polly {
@@ -56,12 +56,20 @@
     background-image: url(../images/index/wayfinding.jpg);
 }
 
-.responsiverealestate {
+.screenspace {
     background-image: url(../images/index/responsive.png);
 }
 
+.freelance {
+    background-image: url(../images/index/freelance.jpg);
+}
+
+.sketchbook {
+    background-image: url(../images/index/sketchbook.jpg);
+}
+
 .portfolio {
-    margin-bottom: 3em;
+    /*margin-bottom: 3em;*/
 }
 
 .portfolio article {
@@ -74,10 +82,10 @@
     margin-left: 0;
 }
 
-.portfolio article:hover {
+/*.portfolio article:hover {
     height: 370px;
     transition: 200ms ease-out;
-}
+}*/
 
 #other-work {
     width: 50%;
@@ -142,7 +150,7 @@
 /*about*/
 #about {
     background-color: #262c30;
-    padding: 2em 0 1em 0;
+    padding: 5em 0 4em 0;
 }
 
 #about p, li, h3 {
