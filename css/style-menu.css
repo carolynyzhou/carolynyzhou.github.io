@@ -36,7 +36,7 @@
     opacity: 1;
     left: 30px;
     top: 30px;
-    color: black;
+    color: #282828;
     border-bottom: none;
 }
 
@@ -67,6 +67,13 @@
 
 .nav a {
     border-bottom: none;
+    color: #282828;
+}
+
+.nav a:hover {
+    color: #375CDC;
+    border-bottom: none;
+
 }
 
 .nav li {
@@ -143,7 +150,8 @@
 
 .slideout-wrapper {
     font-family: "Small Title", sans-serif;
-    line-height: 2em;
+    font-size: ..8em;
+    line-height: 3em;
     text-align: center;
     padding:50% 25%;
 }

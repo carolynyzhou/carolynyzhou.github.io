@@ -43,12 +43,16 @@
     }
 
     .index-menu {
-        padding-top: 2em;
-        /*font-size: .9em;*/
+        padding-top: 1em;
     }
 
+    .bio, .resume {
+        width: 100%;
+    }
+
+
     #say-hi, #more-on-me {
-        margin-left: 5px;
+        margin-left: 12px;
     }
 
     .portfolio {
@@ -56,11 +60,7 @@
     }
 
     .portfolio article {
-        height: 190px;
-    }
-
-    .portfolio article:hover {
-        height: 210px;
+        height: 200px;
     }
 
     .overlay-text {
@@ -78,6 +78,10 @@
         left: 18%;
     }
 
+    #other-work {
+        height: 120px;
+    }
+
     /********case study content********/
     .h2-section-wrapper {
         margin-bottom: 2em;
@@ -93,7 +97,7 @@
 
     /*general text*/
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
         margin-bottom: 1em;
     }
 

@@ -1,6 +1,7 @@
 #intro {
-    height: 80vh;
-    margin: 25% auto 0 auto;
+    height: 60vh;
+    margin: 20% auto 0 auto;
+    /*align-items: center;*/
     /*transform: translate(-50%, -50%);*/
 }
 
@@ -14,7 +15,7 @@
 
 .index-menu {
     font-family: "Small Title", sans-serif;
-    font-size: .9em;
+    font-size: .8em;
     line-height: 1.6em;
 }
 
@@ -27,9 +28,6 @@
     margin-left: 30px;
 }
 
-#index-social a {
-    margin-right: 20px;
-}
 
 /*portfolio*/
 .accountactivity {
@@ -149,7 +147,7 @@
 
 /*about*/
 #about {
-    background-color: #262c30;
+    background-color: #282828;
     padding: 5em 0 4em 0;
 }
 
@@ -158,24 +156,30 @@
 }
 
 #about h2 {
-    color: #c2c7ce;
-    margin-bottom: 1em;
+    color: #b2b7be;
+    margin-bottom: .5em;
 }
 
 #about a {
+    padding-bottom: .1em;
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 #about a:hover {
     color: #698AFF;
-    border-bottom: 2px solid #698AFF;
+    border-bottom: 1px solid #698AFF;
 }
 
 .bio {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5em;
     letter-spacing: .75px;
+    width: 50%;
+}
+
+.resume {
+    width: 60%;
 }
 
 /*resume*/
@@ -184,10 +188,11 @@
     margin-bottom: .5em;
 }
 
-ul.skills {
-    margin-bottom: 1.5em;
+#contact {
+    margin-top: 5em;
 }
 
-.skills {
-    color: #666;
+#index-social {
+    margin-right: 20px;
+    border-bottom: none;
 }

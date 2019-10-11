@@ -16,9 +16,6 @@
         height: 300px;
     }
 
-    .portfolio article:hover {
-        height: 320px;
-    }
 
     /*project page*/
     .writeup {
