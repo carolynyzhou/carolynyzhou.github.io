@@ -33,13 +33,16 @@
     /************************************ content & text stuff **************************************/
     /********index page********/
     #intro {
-        margin: 60% auto 0 auto;
-        height: 65vh;
+        /*padding: 4% 0;*/
+    }
+
+    .vert-center {
+        width: 92%;
+        margin-left: 4%;
     }
 
     .big {
-        font-size: 2em;
-        /*width: 100%;*/
+        /*font-size: 2em;*/
     }
 
     .index-menu {
@@ -50,9 +53,8 @@
         width: 100%;
     }
 
-
     #say-hi, #more-on-me {
-        margin-left: 12px;
+        margin-left: 15px;
     }
 
     .portfolio {
@@ -60,7 +62,7 @@
     }
 
     .portfolio article {
-        height: 200px;
+        height: 240px;
     }
 
     .overlay-text {
@@ -70,7 +72,6 @@
 
     .overlay-subtitle {
         font-size: .8em;
-        /*margin-top: .5em;*/
         width: 100%;
     }
 
@@ -79,7 +80,7 @@
     }
 
     #other-work {
-        height: 120px;
+        height: 160px;
     }
 
     /********case study content********/
@@ -97,8 +98,7 @@
 
     /*general text*/
     h1 {
-        font-size: 2.2em;
-        margin-bottom: 1em;
+        font-size: 2.5em;
     }
 
     .left-text-column, .right-text-column {

@@ -30,24 +30,24 @@ body {
 /**************************** text stuff *****************************/
 /*general text styling*/
 h1 {
-    font-family: "Body", sans-serif;
-    font-size: 5em;
+    font-family: "Title", sans-serif;
+    font-size: 6em;
     line-height: 1.1em;
-    letter-spacing: .75px;
+    letter-spacing: .01em;
     color: #333;
     margin-bottom: .75em;
-    width: 80%;
+    width: 90%;
 }
 
-h2, h3 {
-    font-size: .9em;
+h2 {
+    font-size: 1em;
     line-height: 1.6em;
 }
 
 /*line height and font size*/
-h4, p, footer, ul {
+h4, p, ul {
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.4em;
 }
 
 h2 {
@@ -55,7 +55,7 @@ h2 {
     font-family: "Small Title", sans-serif;
     text-transform: uppercase;
     margin: 0 0 .5em 0;
-    letter-spacing: 0.05em;
+    letter-spacing: 1px;
     color: #606574;
 }
 
@@ -66,8 +66,8 @@ h2 {
 .subheader-title {
     font-family: "Small Title", sans-serif;
     text-transform: uppercase;
-    letter-spacing: .5px;
-    font-size: .9em;
+    /*letter-spacing: .5px;*/
+    font-size: 16px;
     color: #606574;
     margin-right: 1em;
 }
@@ -82,20 +82,22 @@ h2 {
 
 /*paragraph title*/
 h3 {
-
     font-family: "Small Title", sans-serif;
-    margin-bottom: .5em;
-    color: #333333;
+    font-size: 16px;
+    margin-bottom: 1em;
+    color: #606574;
+    /*font-weight: 500;*/
 }
 
 .h3-section {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
-/*elements using Canela*/
-h4, p, figcaption, footer, ul {
+/*elements using GT Sectra*/
+h4, p, figcaption, ul {
     font-family: "Body", sans-serif;
-    letter-spacing: .7px;
+    font-size: 18px;
+    letter-spacing: .1px;
     position: relative;
     vertical-align: baseline;
     width: 100%;
@@ -111,61 +113,24 @@ p {
     padding-bottom: 1em;
 }
 
-figcaption {
-    font-size: .9em;
-    line-height: 1.5em;
-    padding-top: .5em;
-    color: #767676;
-    font-style: italic;
-}
-
-blockquote {
-    font-family: "Body", sans-serif;
-    font-style: italic;
-    font-size: 2.5em;
-    color: #606574;
-    line-height: 1.3em;
-    letter-spacing: .5px;
-}
-
-blockquote:before {
-    content: '"';
-    position: absolute;
-    margin-left: -.4em;
-}
-
-blockquote:after {
-    content: '"';
-}
-
-.quote-wrapper {
-    margin: 2em 0 4em 0;
-    border-left: 3px solid #606574;
-    padding-left: 3em;
-}
-
-.quote-wrapper figcaption {
-    font-family: "Small Title", sans-serif;
-    font-size: .8em;
-    font-style: normal;
-    letter-spacing: 0;
-    padding-top: 1em;
-}
 
 footer {
+    font-family: "Small Title", sans-serif;
+    font-size: .9em;
 }
 
+/*link behavior*/
 a {
     padding-bottom: .1em;
     text-decoration: none;
     color:#375CDC;
     cursor: pointer;
-    transition: all 100ms ease-out;
+    transition: all 50ms ease-out;
     border-bottom: none;
 }
 
 a:hover {
-    border-bottom: 1px solid #375CDC;
+    border-bottom: 2px solid #375CDC;
 }
 
 
@@ -219,7 +184,7 @@ br {
 }
 
 hr {
-    margin: 3em 25% 3em 0;
+    margin: 3em 0;
     /*margin: 3em 0;*/
     border-color: #eee;
 }
@@ -268,6 +233,55 @@ ul {
     font-family: "Body", sans-serif;
     vertical-align: baseline;
     color: #333;
+}
+
+figcaption {
+    font-family: "Fine", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding-top: .5em;
+    color: #767676;
+    
+}
+
+blockquote {
+    font-family: "Display", sans-serif;
+    font-style: italic;
+    font-size: 2.5em;
+    color: #606574;
+    line-height: 1.2em;
+    /*letter-spacing: .5px;*/
+}
+
+blockquote:before {
+    content: '"';
+    position: absolute;
+    margin-left: -.4em;
+}
+
+blockquote:after {
+    content: '"';
+}
+
+.quote-wrapper {
+    margin: 2em 0 4em 0;
+    border-left: 3px solid #606574;
+    padding-left: 2em;
+}
+
+.quote-wrapper figcaption {
+    font-family: "Small Title", sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    letter-spacing: 0;
+    padding-top: 1em;
+}
+
+.statistic {
+    font-style: italic;
+    font-weight: 500; 
+    color: #375CDC;
 }
 
 /*bullet points*/
@@ -330,15 +344,12 @@ ul {
 img {
     width: 100%;
 }
-/*full image in body column*/
-/*.h2-section-wrapper img {
-    width: 80%;
-    margin-left: 10%;
-}*/
 
+/*full image in body column*/
 .big-image {
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 3em;
 }
 
 /*image in right content side only*/
@@ -377,7 +388,7 @@ img {
 }
 
 .img-caption {
-    margin-bottom: 1.75em;
+    margin-bottom: 2em;
 }
 
 .dropshadow {
@@ -465,16 +476,4 @@ img {
 #polly-app {
     width: 35%;
     float: right;
-}
-
-#polly-lofi {
-    width: 26%;
-}
-
-#polly-midfi {
-    width: 34%;
-}
-
-#polly-hifi {
-    width: 34%;
 }

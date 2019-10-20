@@ -2,20 +2,22 @@
 
 @media screen and (max-width: 1024px) {
     
-    /*hamburger menu*/
-
-    #intro {
-        margin: 30% auto 0 auto;
-    }
-
+    /*index*/
     .big {
-        width: 60%;
+        font-size: 2.5em;
     }
 
     .portfolio article {
         height: 300px;
     }
 
+    #other-work {
+        height: 240px;
+    }
+
+    .resume {
+        width: 100%;
+    }
 
     /*project page*/
     .writeup {

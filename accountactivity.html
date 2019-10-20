@@ -7,7 +7,7 @@
         <!-- styles -->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
-        <link rel="stylesheet" type="text/css" href="css/style-menu.css">
+        <link rel="stylesheet" type="text/css" href="css/style-index.css">
         <link rel="stylesheet" type="text/css" href="css/style-content.css">
         
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
@@ -53,7 +53,7 @@
 
         <!-- content -->
         <div class="content writeup">
-            <h1>Redesigning mobile account activity pages</h1>
+            <h1>Redesigning mobile account pages</h1>
                 <div class="right-content">
                     <div class="left-text-column">
                         <h2>Challenge</h2>
@@ -64,7 +64,7 @@
                         <p>A new design pattern for interactive banking tools in account pages, as well as improved visual hierarchy for all account pages.</p>
                     </div>
                     <p class="subheader"><span class="subheader-title">Role</span>Design lead</p>
-                    <p class="subheader"><span class="subheader-title">Team</span> Product manager (1), Developer team</p>
+                    <p class="subheader"><span class="subheader-title">Team</span>Product manager (1), Developer team</p>
                 </div>
 
                 <hr>
@@ -81,7 +81,7 @@
                             <p>This project was part of a larger initiative to combine PNC's two mobile apps: one for “general” customers, and one for customers with <a href="https://www.pnc.com/en/personal-banking/virtual-wallet-overview.html">Virtual Wallet</a>, a special set of accounts and banking tools.</p>
                             <img src="images/pnc/app_convergence.png">
                             <p>The general app provides basic account info (i.e. account balance, transactions), while other supports Virtual Wallet-exclusive <span class="bold"> banking tools</span>. As part of an initiative to bring VW features to all PNC customers, my team worked with the PNC Mobile team to incorporate them into their app. </p>
-                            <p>My task was to redesign their pre-existing <span class="bold">Account Activity</span> experience, which would be important to transition existing customers smoothly into the other app, and for new customers to discover and engage with our tools.</p>
+                            <p>My task was to redesign their pre-existing <span class="bold">Account Activity</span> experience, which would be important for helping transition existing customers smoothly into their app, and for new customers to discover the new tools at their disposal.</p>
                         </div>
                     </div>
                     <div class="big-image img-caption">
@@ -112,7 +112,7 @@
                         <div class="h3-section">
                             <h3>Target User</h3>
                             <!-- user needs -->
-                            <p>I defined a target user to help focus our direction (who would most benefit from the changes we're making? what kind of customer are we appealing to?).</p>
+                            <p>I defined a target user to help guide our direction (who benefits most from extra banking tools? what kind of customer are we appealing to?).</p>
                             <div class="left-text-column">
                                 <img src="images/pnc/user.jpg">
                             </div>
@@ -133,26 +133,36 @@
                             <!-- summary -->
                             <p>This user is often busy and appreciates the ability to <span class="bold"> bank on-the-go</span>. He likes the VW tools, but he only has the PNC app which does not support them, because he didn't know to download the Virtual Wallet app.</p>
                             <div class="quote-wrapper">
-                                <blockquote>I would use [the tools] in my Virtual Wallet more, but I have to go on my computer to do anything.</blockquote>
+                                <blockquote>I'd use the Virtual Wallet tools all the time, except I have to go on my computer to do anything.</blockquote>
                                 <figcaption>Virtual Wallet customer</figcaption>
                             </div>
                         </div>
                         <div class="h3-section">
-                        <!-- Card Sort -->
-                            <h3>Organizing Content</h3>
-                            <p>Next I sought to learn about customers' mental models of their VW tools and accounts to implement the section's structure and hierarchy. This process involved bottom-up (sorting by users) and top-down (testing designs I made) research.</p>
-                            <div class="three-column img-caption">
+                            <h3>Information Structure</h3>
+                            <p>Next I sought to learn about customers' mental models of their VW tools and accounts, in order to implement structure and hierarchy. I recruited 10 users for each task.</p>
+                        </div>
+                        <div class="h3-section">
+                            <!-- <p>Card sort:</p> -->
+                            <div class="three-column">
                                 <img src="images/pnc/cardsort-1.JPG">
                                 <img src="images/pnc/cardsort-2.jpg">
                                 <img src="images/pnc/cardsort-3.JPG">
-                                <figcaption>Card sort with all Virtual Wallet tools and features.</figcaption>
                             </div>
+                            <div class="img-caption">
+                                <img src="images/pnc/cardsort-dendogram1.png">
+                                <figcaption>Card sorts revealed strong correlations between some features, especially account balance & transactions and the two savings tools.</figcaption>
+                            </div>
+                        </div>
+                        <div class="h3-section">
+                            <!-- <p>Paper prototypes:</p> -->
                             <div class="two-column img-caption">
                                 <img src="images/pnc/paper-1.jpg">
                                 <img src="images/pnc/paper-2.jpg" class="last-img">
-                                <figcaption>Rearrangeable paper prototypes.</figcaption>
+                                <figcaption>I asked users to rearrange my paper prototypes to suit their own personal needs. Most left the "Balances" and "Transactions" tile on the first screen.</figcaption>
                             </div>
-                            <p>Overall, users associated <span class="bold">spending tools with their checking</span> account, and <span class="bold">goal/investment tools with savings</span>. Allowing users to arrange their own paper prototypes also revealed certain data they valued more, like <span class="bold">account balance and transactions</span>.</p>
+                        </div>
+                        <div class="h3-section">
+                            <p>Overall, users associated <span class="bold">spending tools with checking</span> accounts, and <span class="bold">investment tools with savings</span>. Proactive sorting by users also revealed certain data they valued more, like <span class="bold">account balance and transactions</span>.</p>
                         </div>
                     </div>
                 </div>
@@ -167,89 +177,84 @@
                         <div class="h3-section">
                         <!-- Wireframes -->
                             <h3>Development</h3>
-                            <p>Moving into higher-fidelity mockups, I began testing UI elements, visual components, interactions and navigation. Some example questions:</p>
+                            <p>Moving into higher-fidelity mockups, I began testing navigation, UI elements, and interactions. Some questions I sought to answer:</p>
                             <ul class="bullet-list">
                                 <li id="bullet">Is important content the most visible/discoverable?</li>
                                 <li id="bullet">How do users interact with components on the screen?</li>
-                                <li id="bullet">Pagination vs. Scroll? Icons vs. Widgets? Color contrast?</li>
+                                <li id="bullet">Pagination vs. Scroll?</li>
+                                <li id="bullet">Icons vs. Widgets?</li>
                             </ul>
+                            <p>Below are some ideas I explored and tested (mostly in think-aloud usability tests, conducted by research team).</p>
                         </div>
-
-                            <!-- lo fi -->
-                            <!-- <div class="three-column">
-                                <img src="images/pnc/lofi-1.png" class="dropshadow">
-                                <img src="images/pnc/lofi-2.png" class="dropshadow">
-                                <img src="images/pnc/lofi-3.png" class="dropshadow">
-                            </div> -->
 
                         <!-- exploration 1 -->
                         <div class="h3-section">
                             <h3>Exploration: Carousel</h3>
-                            <p>Content grouped by function into carousel groups</p>
+                            <!-- <p>Content grouped by function into carousel rows</p> -->
                             <img src="images/pnc/midfi-carousel.png">
                             <div class="left-text-column">
                                 <h3>Pros</h3>
                                 <ul class="bullet-list">
-                                    <li id="bullet">Brings functional organization to content</li>
-                                    <li id="bullet">Balance of horizontal and vertical navigation</li>
+                                    <li id="bullet">Ties function in to organization</li>
                                 </ul>
                             </div>
                             <div class="right-text-column">
                                 <h3>Cons</h3>
                                 <ul class="bullet-list">
-                                    <li id="bullet">Content didn’t fit well into this structure</li>
-                                    <li id="bullet">More technical challenges to building carousel cards</li>
+                                    <li id="bullet">Some content may be out of sight, out of mind</li>
+                                    <li id="bullet">Cannot compare data across cards in the same group, which is sometimes useful</li>
+                                    <!-- <li id="bullet">Variable carousel cards present more technical challenges to build</li> -->
                                 </ul>
                             </div>
+                            <p>Overall usability score: <span class="bold">5.9/7</span></p>
+                            <p class="statistic">"I wish I could see my Money Bar and balance at the same time, or my spending next to my transactions."</p>
+
                         </div>
                         <!-- exploration 2 -->
                         <div class="h3-section">
                             <h3>Exploration: Tabbed Pages</h3>
-                            <p>Content organized across pages (shown below: 3 tabs on the same screen)</p>
-                            <div class="three-column">
-                                <img src="images/pnc/midfi-tab1.png" class="dropshadow">
-                                <img src="images/pnc/midfi-tab2.png" class="dropshadow">
-                                <img src="images/pnc/midfi-tab3.png" class="dropshadow">
-                            </div>
+                            <!-- <p>Content organized across pages</p> -->
+                            <img src="images/pnc/midfi-tabs.png">
                             <div class="left-text-column">
                                 <h3>Pros</h3>
                                 <ul class="bullet-list">
-                                    <li id="bullet">Less content below the fold</li>
-                                    <li id="bullet">Content is distinctly organized</li>
+                                    <li id="bullet">Shorter pages, less below the fold</li>
                                 </ul>
                             </div>
                             <div class="right-text-column">
                                 <h3>Cons</h3>
                                 <ul class="bullet-list">
-                                    <li id="bullet">Tools are less discoverable on the second page</li>
-                                    <li id="bullet">Navigating multiple pages feels unnecessarily complicated</li>
-                                    <li id="bullet">Difficult to assign page names</li>
+                                    <li id="bullet">A lot of content is out of sight under other tabs</li>
+                                    <li id="bullet">Difficult to assign page names to match user expectations</li>
                                 </ul>
                             </div>
+                            <p>Overall usability score: <span class="bold">6.5/7</span></p>
+                            <p class="statistic">"I didn't know what to expect under some of the tabs before I tapped. For instance, I don't think 'Account' is the right name for that last one."</p>
                         </div>
                         <!-- exploration 3 -->
                         <div class="h3-section">
-                            <h3>Exploration: VW Toolbar</h3>
-                            <p>Presentation of VW tools in a "tool bar" (using icons, mini-widgets, etc.)</p>
+                            <h3>Exploration: Tool Bar</h3>
+                            <p>(iterations using mini-widgets, icons, etc. to present VW tools)</p>
                             <div class="three-column">
                                 <img src="images/pnc/midfi-tools1.png" class="dropshadow">
                                 <img src="images/pnc/midfi-tools2.png" class="dropshadow">
-                                <img src="images/pnc/midfi-tools3.png" class="dropshadow">
+                                <img src="images/pnc/midfi-tools4.png" class="dropshadow">
                             </div>
                             <div class="left-text-column">
                                 <h3>Pros</h3>
                                 <ul class="bullet-list">
-                                    <li id="bullet">Icons make tools easy to find and identify</li>
-                                    <li id="bullet">Managing one tool at a time feels less overwhelming</li>
+                                    <li id="bullet">Gives quick visual snapshot of financial activity</li>
                                 </ul>
                             </div>
                             <div class="right-text-column">
                                 <h3>Cons</h3>
                                 <ul class="bullet-list">
-                                    <li id="bullet">Half-sized widgets don’t show enough to be useful</li>
-                                    <li id="bullet">Tappable bar and widgets sometimes don’t look interactive</li>
+                                    <li id="bullet">Less data able to be presented at once</li>
+                                    <li id="bullet">Users sometimes can't tell what is interactive</li>
                                 </ul>
                             </div>
+                            <p>Overall usability score: <span class="bold">6.7/7</span></p>
+                            <p class="statistic">"I love the icons! They make it easy to spot the tools right away."</p>
                         </div>
 
                         <div class="h3-section">
@@ -258,7 +263,7 @@
                             <img src="images/pnc/icons.png">
                             <!-- <img src="images/pnc/final-icons.png"> -->
                         </div>
-                        <p>Through feedback gathered from stakeholders and users, I gleaned parts that worked well and continued to refine them. Some highlights include the <span class="bold">enlarged account balance</span>, the <span class="bold">tool bar</span> component, and a <span class="bold">single page</span> layout.</p>
+                        <p>Through feedback gathered from stakeholders and users, I learned what parts worked well and continued to refine them. Some highlights include the <span class="bold">enlarged account balance</span>, the <span class="bold">tool bar</span> component, and the <span class="bold">single page</span> layouts.</p>
                     </div>
                 </div>
                 <hr>
@@ -350,16 +355,16 @@
 
                 <div class="h2-section-wrapper">
                     <div class="left-title">
-                        <h2>Learning Outcomes</h2>
+                        <h2>Results</h2>
                     </div>
                     <div class="right-content">
                         <div class="h3-section">
                             <ul class="bullet-list">
-                                <li id="bullet">Working closely with PM’s and developers</li>
-                                <li id="bullet">Designing for edge cases and error states</li>
-                                <li id="bullet">Collaborating with internal teams about coexisting products</li>
-                                <li id="bullet">Navigating constraints set by pre-existing patterns</li>
-                                <li id="bullet">Rapidly prototyping with Sketch, InVision, InVision Studio</li>
+                                <li id="bullet">New visual page layout applied to account pages for 8.3 million users</li>
+                                <li id="bullet">Tool bar design introduced for 4.8 million Virtual Wallet accounts</li>
+                                <li id="bullet">Learning to navigate relationships between coexisting products</li>
+                                <li id="bullet">Learning to work with the constraints of pre-existing patterns</li>
+                                <li id="bullet">Improved ability to rapidly prototype with Sketch and InVision Studio</li>
                             </ul>
                         </div>
                     </div>

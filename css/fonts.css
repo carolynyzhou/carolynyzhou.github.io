@@ -1,29 +1,55 @@
 @font-face {
     font-family: Title;
-    src: url("../fonts/Canela-Medium.otf");
+    src: url("../fonts/noe-display-bold.ttf");
     font-style: normal;
 }
 
 @font-face {
     font-family: Small Title;
-    src: url("../fonts/Montserrat-Medium.otf");
-    font-weight: 400;
+    src: url("../fonts/GT-Pressura-Regular.TTF");
+    /*font-weight: 400;*/
 }
 
 @font-face {
     font-family: Body;
-    src: url("../fonts/Canela-Light.otf");
+    src: url("../fonts/GT-Sectra-Book.OTF");
     font-weight: normal;
 }
 
 @font-face {
     font-family: Body;
-    src: url("../fonts/Canela-LightItalic.otf");
+    src: url("../fonts/GT-Sectra-Book-Italic.OTF");
     font-style: italic;
 }
 
 @font-face {
     font-family: Body;
-    src: url("../fonts/Canela-Medium.otf");
+    src: url("../fonts/GT-Sectra-Bold.OTF");
     font-weight: 500;
+}
+
+@font-face {
+    font-family: Body;
+    src: url("../fonts/GT-Sectra-Medium-Italic.OTF");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Display;
+    src: url("../fonts/GT-Sectra-Display-Regular.OTF");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Display;
+    src: url("../fonts/GT-Sectra-Display-Regular-Italic.OTF");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Fine;
+    src: url("../fonts/GT-Sectra-Fine-Book-Italic.OTF");
+    font-style: italic;
 }

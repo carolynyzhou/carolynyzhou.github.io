@@ -1,16 +1,195 @@
+/******************************* logo *******************************/
+
+.diamond {
+    width: 10px;
+    height: 10px;
+    background-color: #375CDC;
+    padding: 8px;
+    position: fixed;
+    left: 24px;
+    top: 23px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s ease-out;
+    z-index: 2;
+}
+
+#logo, #first-logo {
+    font-family: "Small Title", "Arial", sans-serif;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}
+
+#logo {
+    color: white;
+    left: 5px;
+    top: 3px;
+    display: none;
+}
+
+#first-logo {
+    opacity: 1;
+    left: 30px;
+    top: 30px;
+    color: #282828;
+    border-bottom: none;
+}
+
+.diamond:hover {
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: 100ms ease-out;
+    opacity: 1;
+}
+
+.diamond:hover > #logo {
+    transform: rotate(-45deg);
+    display: block;
+}
+
+/******************************* nav menu side bar *******************************/
+
+.nav {
+    font-family: "Small Title", sans-serif;
+    font-size: .75em;
+    position: fixed;
+    text-align: right;
+    right: 30px;
+    top: 30px;
+    width: 15%;
+    z-index: 10;
+}
+
+.nav a {
+    border-bottom: none;
+    color: #282828;
+}
+
+.nav a:hover {
+    color: #375CDC;
+    border-bottom: none;
+
+}
+
+.nav li {
+    padding-bottom: .5em;
+}
+
+
+/******************* hamburger icon *******************/
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.toggle-button {
+    position: fixed;
+    width: 25px;
+    height: 16px;
+    transition: .25s;
+    z-index: 10;
+}
+
+.toggle-button .menu-bar {
+    position: absolute;
+    border: 2px solid #282828;
+    border-top: none;
+    border-right: none;
+    width: 90%;
+    /*transition: .5s;*/
+}
+
+.toggle-button .menu-bar-top {
+    top: 0;
+}
+
+.toggle-button .menu-bar-middle {
+    top: 50%;
+}
+
+.toggle-button .menu-bar-bottom {
+    top: 100%;
+}
+
+.button-open .menu-bar-top {
+    transform: rotate(45deg) translate(5px, 6px);
+    transition: .15s;
+}
+.button-open .menu-bar-middle {
+    transform: translate(0px);
+    transition: .1s ease-in;
+    opacity: 0;
+}
+.button-open .menu-bar-bottom {
+    transform: rotate(-45deg) translate(5px, -6px);
+    transition: .15s;
+}
+
+.toggle-button {
+    display: none;
+    z-index: 99;
+}
+
+/*menu*/
+.slideout-nav {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: -200%;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    overflow: auto;
+    transition: 300ms ease-out;
+    z-index: 10;
+
+}
+
+.slideout-wrapper {
+    font-family: "Small Title", sans-serif;
+    font-size: .9em;
+    line-height: 3em;
+    text-align: center;
+    /*padding:50% 25%;*/
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.nav-show {
+    top: 0;
+}
+
+ul.slideout-nav {
+
+}
+
+/********************************************************* index page *********************************************************/
+
 #intro {
-    height: 60vh;
-    margin: 20% auto 0 auto;
-    /*align-items: center;*/
-    /*transform: translate(-50%, -50%);*/
+    height: 100vh;
+}
+
+.vert-center {
+    position: absolute;
+    margin-left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
 }
 
 .big {
+    font-family: "Display", sans-serif;
     font-size: 3em;
-    line-height: 1.4em;
+    line-height: 1.2em;
     padding-bottom: .5em;
-    letter-spacing: .8px;
-    width: 50%;
+    letter-spacing: .1px;
+    
 }
 
 .index-menu {
@@ -72,27 +251,18 @@
 
 .portfolio article {
     background-color: #f0f0fa;
-    height: 350px; /*must set height*/
+    height: 400px; /*must set height*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
     width: 100%;
-    margin-left: 0;
+    /*margin-left: 0;*/
 }
 
 /*.portfolio article:hover {
     height: 370px;
     transition: 200ms ease-out;
 }*/
-
-#other-work {
-    width: 50%;
-    height: 300px;
-}
-
-#overlay-text-other {
-    left: 30%;
-}
 
 .container {
     height: 100%;
@@ -132,6 +302,17 @@
     color: #606b74;
 }
 
+
+#other-work {
+    width: 50%;
+    /*height: 300px;*/
+}
+
+#overlay-text-other {
+    left: 30%;
+    /*width: 40%;*/
+}
+
 .container:hover .overlay {
     opacity: .8;
 }
@@ -151,7 +332,7 @@
     padding: 5em 0 4em 0;
 }
 
-#about p, li, h3 {
+#about p, h3 {
     color: white;
 }
 
@@ -163,7 +344,7 @@
 #about a {
     padding-bottom: .1em;
     color: #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 #about a:hover {
@@ -172,14 +353,15 @@
 }
 
 .bio {
+    font-family: "Display", sans-serif;
     font-size: 1.5em;
-    line-height: 1.5em;
-    letter-spacing: .75px;
+    line-height: 1.3em;
+    letter-spacing: .5px;
     width: 50%;
 }
 
 .resume {
-    width: 60%;
+    width: 50%;
 }
 
 /*resume*/
