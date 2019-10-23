@@ -52,6 +52,8 @@
         </ul>
 
         <!-- content -->
+        <div class="hero pnc"></div>
+
         <div class="content writeup">
             <h1>Enhancing mobile account pages</h1>
                 <div class="right-content">
@@ -84,10 +86,6 @@
                             <p>My task was to redesign their pre-existing <span class="bold">Account Activity</span> experience, which would help transition VW customers smoothly into a different app, and for other customers to discover the new tools at their disposal.</p>
                         </div>
                     </div>
-                    <div class="big-image img-caption">
-                        <img src="images/pnc/final_context.jpg">
-                        <figcaption>The redesigned account screen boldly displays the newly incorporated Virtual Wallet tools.</figcaption>
-                    </div>
                 </div>
                 <hr>
                 <!-- research -->
@@ -118,8 +116,7 @@
                                 <h3>Profile</h3>
                                 <ul class="bullet-list">
                                     <li id="bullet">Age: 30-40</li>
-                                    <li id="bullet">Middle class workers & families</li>
-                                    <li id="bullet">Rents or owns a home</li>
+                                    <li id="bullet">Middle-upper class</li>
                                     <li id="bullet">Tech-savvy</li>
                                 </ul>
                                 <h3>User Needs</h3>
@@ -142,15 +139,13 @@
                         <div class="h3-section">
                             <!-- <p>Card sort:</p> -->
                             <div class="two-column">
-                                <img src="images/pnc/cardsort-2.JPG">
+                                <img src="images/pnc/cardsort-1.JPG">
                                 <!-- <img src="images/pnc/cardsort-2.jpg"> -->
                                 <img src="images/pnc/cardsort2-2.JPG" class="last-img">
-                            </div><!-- 
-                            <div class="two-column">
-                                <img src="images/pnc/cardsort2-1.JPG">
-                                <img src="images/pnc/cardsort2-2.JPG" class="last-img">
-                            </div> -->
-                            <p class="statistic">2 rounds of 5 card sorts revealed strong correlations between certain features (account balance & transactions: 80%), and between featues and accounts.</p>
+                            </div>
+                            <div class="stat-wrapper">
+                                <p class="statistic">2 rounds of 5 card sorts revealed strong correlations between features (account balance & transactions: 80%), and between featues and accounts (goals with Savings: 100%).</p>
+                            </div>
                         </div>
                         <div class="h3-section">
                             <!-- <p>Paper prototypes:</p> -->
@@ -158,7 +153,9 @@
                                 <img src="images/pnc/paper-1.jpg">
                                 <img src="images/pnc/paper-2.jpg" class="last-img">
                             </div>
-                            <p class="statistic">8 out of 10 users left "Balances" and "Transactions" on the first screen in paper prototype tests, where I asked users to rearrange content to suit their own needs.</p>
+                            <div class="stat-wrapper">
+                                <p class="statistic">8 out of 10 users left "Balances" and "Transactions" on the first screen in paper prototype tests, where I asked users to rearrange content to suit their needs.</p>
+                            </div>
                         </div>
                         <div class="h3-section">
                             <p>Overall, users associated <span class="bold">spending tools with checking</span> accounts, and <span class="bold">investment tools with savings</span>. Proactive sorting by users also revealed certain data they valued more, like <span class="bold">account balance and transactions</span>.</p>
@@ -176,18 +173,20 @@
                         <div class="h3-section">
                         <!-- Wireframes -->
                             <h3>Development</h3>
-                            <p>With higher-fidelity mockups, I began testing navigation, UI, and interactions that would make users feel <span class="bold">capable, efficient and delighted</span> when banking.</p><!-- 
-                            <ul class="bullet-list">
-                                <li id="bullet">Is important content the most visible/discoverable?</li>
-                                <li id="bullet">What is the best way to present all the data (pagination vs. scroll? icons vs. widgets?)</li>
-                            </ul> -->
+                            <p>With higher-fidelity mockups, I began testing navigation, UI, and interactions that would make users feel <span class="bold">capable, efficient and delighted</span> when banking.</p>
                             <p>Below are some ideas I explored and tested (conducted by a research team, testing for <span class="bold">task completion, ease of use</span> and <span class="bold">visual appeal</span>).</p>
                         </div>
 
                         <!-- exploration 1 -->
                         <div class="h3-section">
                             <h3>Exploration: Carousel</h3>
-                            
+                            <div class="stat-wrapper">
+                                <ul class="bullet-list">
+                                    <li id="bullet">Task completion: <span class="bold"> 66%</span></li>
+                                    <li id="bullet">Ease of navigation: <span class="bold">4.9/7</span></li>
+                                    <li id="bullet">Visual Appeal: <span class="bold">6.1/7</span></li>
+                                </ul>
+                            </div>
                             <!-- <p>Content grouped by function into carousel rows</p> -->
                             <img src="images/pnc/midfi-carousel.png">
                             <!-- <div class="left-text-column">
@@ -202,18 +201,23 @@
                                     <li id="bullet">Cannot compare data across cards in the same group, which is sometimes useful</li>
                                 </ul>
                             </div> -->
-                            <p class="statistic">Task completion: 66%; Usability: 4.9/7; Appeal: 6.1/7</p>
-                            <div class="quote-wrapper">
+                            
+                            <!-- <div class="quote-wrapper">
                                 <blockquote>The tools and data feel mixed up. I don't know where to look to find something.</blockquote>
                                 <figcaption>Non-PNC participant, testing carousels</figcaption>
-                            </div>
-                            <!-- <p class="statistic">"I wish I could see my Money Bar and balance at the same time, or my Spending next to my transactions."</p> -->
+                            </div> -->
 
                         </div>
                         <!-- exploration 2 -->
                         <div class="h3-section">
                             <h3>Exploration: Tabbed Pages</h3>
-                            
+                            <div class="stat-wrapper">
+                                <ul class="bullet-list">
+                                    <li id="bullet">Task completion: <span class="bold"> 80%</span></li>
+                                    <li id="bullet">Ease of navigation: <span class="bold">5.5/7</span></li>
+                                    <li id="bullet">Visual Appeal: <span class="bold">5.4/7</span></li>
+                                </ul>
+                            </div>
                             <!-- <p>Content organized across pages</p> -->
                             <img src="images/pnc/midfi-tabs.png">
                             <!-- <div class="left-text-column">
@@ -229,21 +233,27 @@
                                     <li id="bullet">Difficult to assign page names to match user expectations</li>
                                 </ul>
                             </div> -->
-                            <!-- <p class="statistic">"I didn't know what to expect under some of the tabs before I tapped. For instance, I don't think 'Account' is the right name for that last one."</p> -->
-                            <p class="statistic">Task completion: 80%; Usability: 5.5/7; Appeal: 5.4/7</p>
+                            
+                            <!-- 
                             <div class="quote-wrapper">
                                 <blockquote>There's a lot hidden...I'm having to hunt for things.</blockquote>
                                 <figcaption>Non-PNC participant, testing tabs</figcaption>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- exploration 3 -->
                         <div class="h3-section">
                             <h3>Exploration: Tool Bar</h3>
-                            
+                            <div class="stat-wrapper">
+                                <ul class="bullet-list">
+                                    <li id="bullet">Task completion: <span class="bold"> 100%</span></li>
+                                    <li id="bullet">Ease of navigation: <span class="bold">6.5/7</span></li>
+                                    <li id="bullet">Visual Appeal: <span class="bold">6.2/7</span></li>
+                                </ul>
+                            </div>
                             <div class="three-column">
                                 <img src="images/pnc/midfi-tools1.png" class="dropshadow">
+                                <img src="images/pnc/midfi-tools3.png" class="dropshadow">
                                 <img src="images/pnc/midfi-tools4.png" class="dropshadow">
-                                <img src="images/pnc/midfi-tools5.png" class="dropshadow">
                             </div>
                             <!-- <div class="left-text-column">
                                 <h3>Pros</h3>
@@ -258,7 +268,7 @@
                                     <li id="bullet">Users sometimes can't tell what is interactive</li>
                                 </ul>
                             </div> -->
-                            <p><span class="statistic">Task completion: 100%; Usability: 6.5/7; Appeal: 6.2/7</span></p>
+                            
                             <div class="quote-wrapper">
                                 <blockquote>Everything I need is on one page. I could easily manage the account without leaving this screen.</blockquote>
                                 <figcaption>Non-PNC participant, testing icons toolbar</figcaption>

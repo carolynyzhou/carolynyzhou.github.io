@@ -11,6 +11,15 @@ body {
     /*margin: 0;*/
 }
 
+.hero {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .writeup {
     margin-top: 10em;
 }
@@ -32,15 +41,17 @@ body {
 h1 {
     font-family: "Title", sans-serif;
     font-size: 6em;
-    line-height: 1.1em;
+    /*line-height: 1.1em;*/
     letter-spacing: .01em;
     color: #333;
     margin-bottom: .75em;
     width: 90%;
 }
 
-h2 {
+h2, h3, .subheader-title {
     font-size: 1em;
+    font-family: "Small Title", sans-serif;
+    line-height: 1.4em;
 }
 
 /*line height and font size*/
@@ -49,13 +60,12 @@ h4, p, ul {
     line-height: 1.4em;
 }
 
-h2 {
+h2, .subheader-title {
     /*title of section, left hand column*/
-    font-family: "Small Title", sans-serif;
     text-transform: uppercase;
     margin: 0 0 .5em 0;
-    letter-spacing: 1px;
-    color: #606574;
+    letter-spacing: .5px;
+    color: #72767d;
 }
 
 .subheader {
@@ -63,11 +73,8 @@ h2 {
 }
 
 .subheader-title {
-    font-family: "Small Title", sans-serif;
-    text-transform: uppercase;
-    /*letter-spacing: .5px;*/
     font-size: 16px;
-    color: #606574;
+    color: #72767d;
     margin-right: 1em;
 }
 
@@ -81,11 +88,10 @@ h2 {
 
 /*paragraph title*/
 h3 {
-    font-family: "Small Title", sans-serif;
-    font-size: 16px;
+    /*font-size: 16px;*/
     margin-bottom: 1em;
-    color: #606574;
-    /*font-weight: 500;*/
+    color: #333;
+    letter-spacing: -.25px;
 }
 
 .h3-section {
@@ -103,8 +109,10 @@ h4, p, figcaption, ul, ol {
 }
 
 h4 {
-    font-style: italic;
+    font-weight: 500;
     margin-bottom: .5em;
+    color: #333;
+
 }
 
 p {
@@ -122,14 +130,14 @@ footer {
 a {
     padding-bottom: .1em;
     text-decoration: none;
-    color:#375CDC;
+    color:#577CfC;
     cursor: pointer;
     transition: all 50ms ease-out;
     border-bottom: none;
 }
 
 a:hover {
-    border-bottom: 2px solid #375CDC;
+    border-bottom: 2px solid #577CfC;
 }
 
 
@@ -138,7 +146,7 @@ a:hover {
     display: inline-block;
     width: 0;
     height: 1.5px;
-    background: #375CDC;
+    background: #577CfC;
     transition: width .3s;
 }
 
@@ -147,31 +155,6 @@ a:hover::after {
     transition: width .1s;
 }*/
 
-.heavy-link {
-    display: inline-block;
-    text-decoration: none;
-    color: #375CDC;
-    transition: all 100ms ease-out;
-}
-
-.heavy-link::after {
-    content: "";
-    position: absolute;
-    background-color: #030C17;
-    width: 0;
-    height: 24px;
-    left: -5px;
-    top: -5px;
-    z-index: -1;
-    display: inline-block;
-    transition: 0.2s ease;
-}
-
-.heavy-link:hover::after {
-    width: 100%;
-    transition: width .3s;
-    color: white;
-}
 
 /*lists*/
 ul, ol {
@@ -258,7 +241,7 @@ figcaption {
     font-size: 16px;
     line-height: 1.4em;
     padding-top: .5em;
-    color: #767676;
+    color: #72767d;
     
 }
 
@@ -266,25 +249,25 @@ blockquote {
     font-family: "Display", sans-serif;
     font-style: italic;
     font-size: 2.5em;
-    color: #606574;
+    color: #333;
     line-height: 1.2em;
     letter-spacing: 0;
 }
 
 blockquote:before {
-    content: '"';
+    content: '“';
     position: absolute;
     margin-left: -.4em;
 }
 
 blockquote:after {
-    content: '"';
+    content: '”';
 }
 
 .quote-wrapper {
     margin: 2em 0 4em 0;
-    border-left: 3px solid #606574;
-    padding-left: 2em;
+    border-left: 3px solid #363636;
+    padding-left: 3em;
 }
 
 .quote-wrapper figcaption {
@@ -295,12 +278,18 @@ blockquote:after {
     padding-top: 1em;
 }
 
+.stat-wrapper {
+    margin: 2em 0 3em 0;
+    border-left: 3px solid #363636;
+    padding-left: 2em;
+}
+
 .statistic {
     font-style: italic;
     font-weight: 500; 
-    color: #375CDC;
+    color: #333;
+    padding-bottom: 0;
 }
-
 
 /*carousel*/
 .container {
@@ -405,7 +394,7 @@ img {
     width: 0;
     height: 0;
     border-top: 4px solid transparent;
-    border-right: 4px solid #375CDC;
+    border-right: 4px solid #577CfC;
     border-bottom: 4px solid transparent;
     margin-right: .4em;
     margin-bottom: .1em;
@@ -417,7 +406,7 @@ img {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid #375CDC;
+    border-top: 4px solid #577CfC;
     padding-bottom: 2px;
     margin-left: .3em;
 }

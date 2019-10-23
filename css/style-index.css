@@ -3,7 +3,7 @@
 .diamond {
     width: 10px;
     height: 10px;
-    background-color: #375CDC;
+    background-color: #242424;
     padding: 8px;
     position: fixed;
     left: 24px;
@@ -35,7 +35,7 @@
     opacity: 1;
     left: 30px;
     top: 30px;
-    color: #282828;
+    color: #242424;
     border-bottom: none;
 }
 
@@ -66,11 +66,11 @@
 
 .nav a {
     border-bottom: none;
-    color: #282828;
+    color: #242424;
 }
 
 .nav a:hover {
-    color: #375CDC;
+    color: #5070f5;
     border-bottom: none;
 
 }
@@ -95,7 +95,7 @@
 
 .toggle-button .menu-bar {
     position: absolute;
-    border: 2px solid #282828;
+    border: 2px solid #242424;
     border-top: none;
     border-right: none;
     width: 90%;
@@ -209,48 +209,50 @@ ul.slideout-nav {
 
 
 /*portfolio*/
-.accountactivity {
-    background-image: url(../images/index/pnc.png);
+.pnc {
+    background-image: url(../images/pnc/hero-image.jpg);
 }
-
 .polly {
-    background-image: url(../images/index/polly.jpg);
+    background-image: url(../images/polly/hero-image.jpg);
 }
-
 .ctat {
-    background-image: url(../images/index/ctat.jpg);
+    background-image: url(../images/ctat/hero-image.jpg);
 }
 
-.facesofdesign {
+.designcensus {
     background-image: url(../images/index/aiga.png);
 }
 
 .goodcook {
-    background-image: url(../images/index/goodcook.png);
+    background-image: url(../images/goodcook/hero-image.jpeg);
 }
 
 .wayfinding {
-    background-image: url(../images/index/wayfinding.jpg);
+    background-image: url(../images/wayfinding/wayfinding.jpg);
 }
 
 .screenspace {
-    background-image: url(../images/index/responsive.png);
+    background-image: url(../images/screenspace/hero.png);
 }
 
 .freelance {
-    background-image: url(../images/index/freelance.jpg);
+    background-image: url(../images/freelance/pgh-point-state.jpg);
 }
 
 .sketchbook {
-    background-image: url(../images/index/sketchbook.jpg);
+    background-image: url(../images/sketchbook/sketchbook.jpg);
 }
 
 .portfolio {
     /*margin-bottom: 3em;*/
 }
 
+.portfolio a:hover {
+    /*margin-bottom: 3em;*/
+    border-bottom: 0;
+}
+
 .portfolio article {
-    background-color: #f0f0fa;
     height: 380px; /*must set height*/
     background-position: center;
     background-repeat: no-repeat;
@@ -270,7 +272,6 @@ ul.slideout-nav {
 /*overlay*/
 .overlay {
     position: absolute;
-    /*top, bottom, left, right: 0;*/
     height: 100%;
     width: 100%;
     opacity: 1;
@@ -290,7 +291,7 @@ ul.slideout-nav {
 }
 
 .overlay-title {
-    color: #707b84;
+    color: #5070f5;
     margin-bottom: 0;
     margin-top: .2em;
 }
@@ -298,9 +299,8 @@ ul.slideout-nav {
 .overlay-subtitle {
     font-family: "Small Title", "Arial", sans-serif;
     font-size: .9em;
-    color: #606b74;
+    color: #787888;
 }
-
 
 #other-work {
     width: 50%;
@@ -314,7 +314,7 @@ ul.slideout-nav {
 
 /*hover over portfolio item*/
 .container:hover .overlay {
-    opacity: .75;
+    opacity: .8;
 }
 
 .container:hover .overlay-title {
@@ -323,7 +323,7 @@ ul.slideout-nav {
 
 /*about*/
 #about {
-    background-color: #282828;
+    background-color: #242424;
     padding: 5em 0 4em 0;
 }
 
@@ -332,19 +332,19 @@ ul.slideout-nav {
 }
 
 #about h2 {
-    color: #b2b7be;
+    color: #b2b6bd;
     margin-bottom: .5em;
 }
 
 #about a {
     padding-bottom: .1em;
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    color: #779CfC;
+    /*border-bottom: 2px solid #fff;*/
 }
 
 #about a:hover {
-    color: #698AFF;
-    border-bottom: 1px solid #698AFF;
+    color: #779CfC;
+    border-bottom: 2px solid #779CfC;
 }
 
 .bio {

@@ -1,7 +1,7 @@
 @media screen and (max-width: 414px) {
     
     .content {
-        margin: 10% 4%;
+        margin: 18% 4% 10% 4%;
     }
 
     /******************************************* menu stuff *******************************************/
@@ -129,12 +129,17 @@
 
     .quote-wrapper {
         margin: 1.5em 0;
-        border-left: 3px solid #606574;
-        padding-left: 1.5em;
+        /*border-left: 3px solid #606574;*/
+        padding-left: 1.75em;
+    }
+
+    .stat-wrapper {
+        margin: 1.5em 0;
+        padding-left: 1em;
     }
 
     footer {
-        margin-bottom: 2em;
+        margin-bottom: 4em;
     }
 
     /************************************ image stuff ************************************/
