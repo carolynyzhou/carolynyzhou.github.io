@@ -151,7 +151,7 @@
 .slideout-wrapper {
     font-family: "Small Title", sans-serif;
     font-size: .9em;
-    line-height: 3em;
+    line-height: 2.5em;
     text-align: center;
     /*padding:50% 25%;*/
     position: absolute;
@@ -159,6 +159,15 @@
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
+}
+
+.slideout-wrapper a {
+    color: #333;
+}
+
+.slideout-wrapper a:hover {
+    color: #5070f5;
+    border-bottom: none;
 }
 
 .nav-show {
@@ -220,11 +229,11 @@ ul.slideout-nav {
 }
 
 .designcensus {
-    background-image: url(../images/designcensus/aiga.png);
+    background-image: url(../images/designcensus/hero.jpg);
 }
 
 .goodcook {
-    background-image: url(../images/goodcook/1_831Fr2jWjYHAajvd94sBZw.jpg);
+    background-image: url(../images/goodcook/hero.jpg);
 }
 
 .wayfinding {
@@ -232,7 +241,7 @@ ul.slideout-nav {
 }
 
 .screenspace {
-    background-image: url(../images/screenspace/hero.png);
+    background-image: url(../images/screenspace/hero.jpg);
 }
 
 .freelance {
@@ -249,7 +258,7 @@ ul.slideout-nav {
 
 .portfolio a:hover {
     /*margin-bottom: 3em;*/
-    border-bottom: 0;
+    border-bottom: none;
 }
 
 .portfolio article {

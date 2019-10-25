@@ -313,15 +313,16 @@ blockquote:after {
     background-color: #eee;
     border: none;
     color: #333;
-    padding: 1em .5em;
+    padding: 2em 1em;
     text-align: center;
     display: inline-block;
     font-size: 1em;
     cursor: pointer;
     position: absolute;
-    top: 47%;
+    top: 50%;
+    transform: translateY(-50%);
     opacity: .5;
-    transition: .3s ease;
+    transition: .25s ease;
 }
 
 .container:hover .carousel-button {
