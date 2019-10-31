@@ -236,10 +236,10 @@ ul.slideout-nav {
     background-image: url(../images/goodcook/hero.jpg);
 }
 
-.wayfinding {
+/*.wayfinding {
     background-image: url(../images/wayfinding/wayfinding.jpg);
 }
-
+*/
 .screenspace {
     background-image: url(../images/screenspace/hero.jpg);
 }
@@ -302,7 +302,6 @@ ul.slideout-nav {
 .overlay-title {
     color: #5070f5;
     margin-bottom: 0;
-    margin-top: .2em;
 }
 
 .overlay-subtitle {
