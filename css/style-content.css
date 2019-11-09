@@ -285,10 +285,13 @@ blockquote:after {
 }
 
 .statistic {
+    padding-bottom: 0;
+}
+
+.stat-emphasis {
     font-style: italic;
     font-weight: 500; 
     color: #333;
-    padding-bottom: 0;
 }
 
 /*carousel*/
