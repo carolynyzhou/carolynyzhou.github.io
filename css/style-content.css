@@ -117,7 +117,7 @@ h4 {
 
 p {
     color: #333;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 
@@ -139,21 +139,6 @@ a {
 a:hover {
     border-bottom: 2px solid #577CfC;
 }
-
-
-/*a::after {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 1.5px;
-    background: #577CfC;
-    transition: width .3s;
-}
-
-a:hover::after {
-    width: 100%;
-    transition: width .1s;
-}*/
 
 
 /*lists*/
@@ -285,7 +270,7 @@ blockquote:after {
 }
 
 .statistic {
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .stat-emphasis {
@@ -400,8 +385,8 @@ img {
     border-top: 4px solid transparent;
     border-right: 4px solid #577CfC;
     border-bottom: 4px solid transparent;
-    margin-right: .4em;
     margin-bottom: .1em;
+    margin-right: 1em;
 }
 
 .triangle-down {
@@ -412,7 +397,7 @@ img {
     border-right: 4px solid transparent;
     border-top: 4px solid #577CfC;
     padding-bottom: 2px;
-    margin-left: .3em;
+    margin-right: 1em;
 }
 
 

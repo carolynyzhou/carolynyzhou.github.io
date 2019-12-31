@@ -26,8 +26,8 @@
 
 #logo {
     color: white;
-    left: 5px;
-    top: 3px;
+    left: 1.4px;
+    top: 3.5px;
     display: none;
 }
 
@@ -196,7 +196,6 @@ ul.slideout-nav {
     font-family: "Display", sans-serif;
     font-size: 3em;
     line-height: 1.2em;
-    padding-bottom: .5em;
     letter-spacing: .1px;
     
 }
@@ -208,12 +207,12 @@ ul.slideout-nav {
 }
 
 .index-menu a {
-    margin-right: 8px;
+    /*margin-left: 8px;*/
     position: relative;
 }
 
-#say-hi, #more-on-me {
-    margin-left: 30px;
+#view-my-work, #more-on-me {
+    margin-right: 30px;
 }
 
 
@@ -300,7 +299,7 @@ ul.slideout-nav {
 }
 
 .overlay-title {
-    color: #5070f5;
+    color: #484848;
     margin-bottom: 0;
 }
 
@@ -326,7 +325,7 @@ ul.slideout-nav {
 }
 
 .container:hover .overlay-title {
-    color: #333;
+    color: #5070f5;
 }
 
 /*about*/
@@ -370,11 +369,11 @@ ul.slideout-nav {
 }
 
 .resume-h3 {
-    margin-bottom: 0;
+    margin-bottom: .5em;
 }
 
 .resume-dates{ /*p*/
-    padding-bottom: .5em;
+    margin-bottom: 0em;
 }
 
 #contact {
