@@ -303,6 +303,10 @@ h2, h3 {
     padding-bottom: 0;
 }
 
+h2.menu-title {
+    color: black;
+}
+
 /*line height and font size*/
 h4, p, ul {
     font-size: 1em;
