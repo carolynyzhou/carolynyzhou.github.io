@@ -220,9 +220,11 @@ ul.slideout-nav {
 .pnc {
     background-image: url(../images/pnc/hero-image.jpg);
 }
+
 .polly {
     background-image: url(../images/polly/hero-image.jpg);
 }
+
 .ctat {
     background-image: url(../images/ctat/hero-image.jpg);
 }
@@ -249,6 +251,10 @@ ul.slideout-nav {
 
 .sketchbook {
     background-image: url(../images/sketchbook/sketchbook.jpg);
+}
+
+.lessons {
+    background-image: url(../dd/images/summer.jpg);
 }
 
 .portfolio {
