@@ -245,7 +245,7 @@ ul.slideout-nav {
     background-image: url(../images/screenspace/hero.jpg);
 }
 
-.freelance {
+.shop {
     background-image: url(../images/freelance/pgh-point-state.jpg);
 }
 
@@ -253,9 +253,6 @@ ul.slideout-nav {
     background-image: url(../images/sketchbook/sketchbook.jpg);
 }
 
-.lessons {
-    background-image: url(../dd/images/summer.jpg);
-}
 
 .portfolio {
     /*margin-bottom: 3em;*/
@@ -305,7 +302,8 @@ ul.slideout-nav {
 }
 
 .overlay-title {
-    color: #484848;
+    /*color: #484848;*/
+    color: #5070f5;
     margin-bottom: 0;
 }
 
@@ -315,23 +313,23 @@ ul.slideout-nav {
     color: #787888;
 }
 
-#other-work {
+/*#other-work {
     width: 50%;
     height: 370px;
 }
 
 #overlay-text-other {
     left: 30%;
-    /*width: 40%;*/
-}
+}*/
 
 /*hover over portfolio item*/
 .container:hover .overlay {
-    opacity: .8;
+    opacity: .75;
 }
 
 .container:hover .overlay-title {
-    color: #5070f5;
+    /*color: #5070f5;*/
+    color: #333;
 }
 
 /*about*/
@@ -372,15 +370,41 @@ ul.slideout-nav {
 /*resume*/
 .resume {
     width: 50%;
+    margin-bottom: 10em;
 }
 
 .resume-h3 {
-    margin-bottom: .5em;
+    margin-bottom: .25em;
+    margin-top: 1em;
 }
 
 .resume-dates{ /*p*/
     margin-bottom: 0em;
 }
+
+
+/*etc*/
+.etc {
+    font-size: 1.5em;
+}
+
+.etc-left {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+}
+
+.etc-right {
+    width: 45%;
+    display: inline-block;
+    margin-left: 9%;
+    vertical-align: top;
+    margin-bottom: 1em;
+}
+
+
+/*contact*/
 
 #contact {
     margin-top: 5em;

@@ -1,0 +1,117 @@
+@media screen and (max-width: 414px) {
+    
+    .content {
+        margin: 18% 4% 10% 4%;
+    }
+
+    .hero {
+        height: 75vh;
+    }
+
+
+    /************************************ content & text stuff **************************************/
+    /********index page********/
+
+    .vert-center {
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    .big {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .index-menu {
+        padding-top: 1em;
+    }
+
+    #about {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+    /********case study content********/
+    .h2-section-wrapper {
+        margin-bottom: 2em;
+    }
+
+    hr {
+        margin: 1em 0 2em 0;
+    }
+
+    .left-text-column, .right-text-column {
+        margin-bottom: .5em;
+    }
+
+    /*general text*/
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .left-text-column, .right-text-column {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: .8em;
+    }
+
+    .subheader-title {
+        font-size: .8em;
+    }
+
+    p {
+    }
+
+    blockquote {
+        font-size: 1.75em;
+        line-height: 1.4em;
+    }
+
+    figcaption {
+        padding-top: 0;
+    }
+
+    .quote-wrapper {
+        margin: 1.5em 0;
+        /*border-left: 3px solid #606574;*/
+        padding-left: 1.75em;
+    }
+
+    .stat-wrapper {
+        margin: 1.5em 0;
+        padding-left: 1em;
+    }
+
+    footer {
+        margin-bottom: 4em;
+    }
+
+    /************************************ image stuff ************************************/
+
+    .h3-section img {
+        margin: 0 0 1em 0;
+    }
+
+    .left-column {
+        width: 100%;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+    .img-caption {
+        margin-bottom: 1em;
+    }
+
+    .img-caption img {
+        /*margin-bottom: 0;*/
+    }
+
+}
+

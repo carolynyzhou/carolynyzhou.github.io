@@ -1,0 +1,633 @@
+/******************************* logo *******************************/
+
+.diamond {
+    width: 10px;
+    height: 10px;
+    background-color: #242424;
+    padding: 8px;
+    position: fixed;
+    left: 24px;
+    top: 23px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s ease-out;
+    z-index: 2;
+}
+
+#logo, #first-logo {
+    font-family: "Small Title", "Arial", sans-serif;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}
+
+#logo {
+    color: white;
+    left: 1.4px;
+    top: 3.5px;
+    display: none;
+}
+
+#first-logo {
+    opacity: 1;
+    left: 30px;
+    top: 30px;
+    color: #242424;
+    border-bottom: none;
+}
+
+.diamond:hover {
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: 100ms ease-out;
+    opacity: 1;
+}
+
+.diamond:hover > #logo {
+    transform: rotate(-45deg);
+    display: block;
+}
+
+/******************************* nav menu side bar *******************************/
+
+.nav {
+    font-family: "Small Title", sans-serif;
+    font-size: .75em;
+    position: fixed;
+    text-align: right;
+    right: 30px;
+    top: 30px;
+    width: 15%;
+    z-index: 10;
+}
+
+.nav a {
+    border-bottom: none;
+    color: #242424;
+}
+
+.nav a:hover {
+    color: #5070f5;
+    border-bottom: none;
+
+}
+
+.nav li {
+    padding-bottom: .5em;
+}
+
+
+/******************* hamburger icon *******************/
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.toggle-button {
+    position: fixed;
+    width: 25px;
+    height: 16px;
+    transition: .25s;
+    z-index: 10;
+}
+
+.toggle-button .menu-bar {
+    position: absolute;
+    border: 2px solid #242424;
+    border-top: none;
+    border-right: none;
+    width: 90%;
+    /*transition: .5s;*/
+}
+
+.toggle-button .menu-bar-top {
+    top: 0;
+}
+
+.toggle-button .menu-bar-middle {
+    top: 50%;
+}
+
+.toggle-button .menu-bar-bottom {
+    top: 100%;
+}
+
+.button-open .menu-bar-top {
+    transform: rotate(45deg) translate(5px, 6px);
+    transition: .15s;
+}
+.button-open .menu-bar-middle {
+    transform: translate(0px);
+    transition: .1s ease-in;
+    opacity: 0;
+}
+.button-open .menu-bar-bottom {
+    transform: rotate(-45deg) translate(5px, -6px);
+    transition: .15s;
+}
+
+.toggle-button {
+    display: none;
+    z-index: 99;
+}
+
+/*menu*/
+.slideout-nav {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: -200%;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    overflow: auto;
+    transition: 300ms ease-out;
+    z-index: 10;
+
+}
+
+.slideout-wrapper {
+    font-family: "Small Title", sans-serif;
+    font-size: .9em;
+    line-height: 2.5em;
+    text-align: center;
+    /*padding:50% 25%;*/
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.slideout-wrapper a {
+    color: #333;
+}
+
+.slideout-wrapper a:hover {
+    color: #5070f5;
+    border-bottom: none;
+}
+
+.nav-show {
+    top: 0;
+}
+
+ul.slideout-nav {
+
+}
+
+/********************************************************* index page *********************************************************/
+
+#intro {
+    height: 100vh;
+}
+
+.vert-center {
+    position: absolute;
+    margin-left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.big {
+    width: 60%;
+    font-family: "Display", sans-serif;
+    font-size: 2em;
+    line-height: 1.3em;
+    letter-spacing: .1px;
+    
+}
+
+.index-menu {
+    font-family: "Small Title", sans-serif;
+    font-size: .8em;
+    line-height: 1.6em;
+    margin-bottom: 4em;
+}
+
+.index-menu a {
+    margin-right: 20px;
+    /*position: relative;*/
+}
+
+
+/*about*/
+#about {
+    margin-left: 25%;
+}
+
+
+#contact {
+    margin-top: 5em;
+}
+
+#index-social {
+    margin-right: 20px;
+    border-bottom: none;
+}
+
+/**************************** structure *****************************/
+body {
+    text-rendering: optimizeLegibility;
+    background-color: #f8f8fa;
+}
+
+.content {
+    display: block;
+    vertical-align: top;
+    margin: 5% 10%;
+    /*margin: 0;*/
+}
+
+.hero {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/hero.png);
+}
+
+.writeup {
+    /*margin-top: 10em;*/
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/**************************** text stuff *****************************/
+/*general text styling*/
+h1 {
+    font-family: "Title", sans-serif;
+    font-size: 6em;
+    line-height: 1.1em;
+    letter-spacing: .01em;
+    color: #333;
+    margin: 1em 0;
+    width: 90%;
+}
+
+h2, h3 {
+    font-size: 1em;
+    font-family: "Small Title", sans-serif;
+    line-height: 1.4em;
+    padding-bottom: 0;
+}
+
+h2.menu-title {
+    color: black;
+}
+
+/*line height and font size*/
+h4, p, ul {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+h2 {
+    /*title of section, left hand column*/
+    text-transform: uppercase;
+    margin: 0 0 .5em 0;
+    letter-spacing: .5px;
+    color: #72767d;
+}
+
+.subheader {
+    padding-bottom: 1em;
+}
+
+.left-title h2 {
+    margin-top: 0;
+}
+
+.h2-section-wrapper {
+    margin-bottom: 3em;
+}
+
+/*paragraph title*/
+h3 {
+    /*font-size: 16px;*/
+    margin-bottom: 1em;
+    color: #333;
+    letter-spacing: -.25px;
+}
+
+.h3-section {
+    margin-bottom: 3em;
+}
+
+/*elements using GT Sectra*/
+h4, p, figcaption, ul, ol {
+    font-family: "Body", sans-serif;
+    font-size: 18px;
+    letter-spacing: .1px;
+    position: relative;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+h4 {
+    font-weight: 500;
+    margin-bottom: .5em;
+    color: #333;
+
+}
+
+p {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+
+footer {
+    font-family: "Small Title", sans-serif;
+    font-size: .9em;
+}
+
+/*link behavior*/
+a {
+    padding-bottom: .1em;
+    text-decoration: none;
+    color:#577CfC;
+    cursor: pointer;
+    transition: all 50ms ease-out;
+    border-bottom: none;
+}
+
+a:hover {
+    border-bottom: 2px solid #577CfC;
+}
+
+
+/*lists*/
+ul, ol {
+    display: block;
+    list-style-type: none;
+    font-family: "Body", sans-serif;
+    vertical-align: baseline;
+    line-height: 1.4em;
+    color: #333;
+}
+
+.bullet-list {
+    list-style-type: disc;
+    margin-bottom: 1.2em;
+}
+
+.number-list {
+    list-style-type: decimal;
+    margin-bottom: 1.2em;
+}
+
+#bullet, #numbered {
+    margin-left: 1em;
+    margin-bottom: .25em;
+}
+
+/*other*/
+.bold {
+    font-weight: 500;
+}
+
+br {
+    line-height: 1.5em;
+}
+
+hr {
+    margin: 3em 0;
+    /*margin: 3em 0;*/
+    border-color: #eee;
+}
+
+.social {
+    font-family: "Small Title", sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+}
+
+.social a {
+    margin-right: 20px;
+}
+
+/**************************** project page content stuff *****************************/
+
+.left-title {
+    display: inline-block;
+    width: 10%;
+    float: left;
+}
+
+.right-content {
+    width: 80%; /*total of page width is 1/2 with 1/4 margins*/
+    margin: 0 0 0 10%;
+}
+
+.left-column {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+}
+
+.right-column {
+    width: 48%;
+    display: inline-block;
+    margin-left: 9%;
+    vertical-align: top;
+    margin-bottom: 1em;
+    float: right;
+}
+
+
+figcaption {
+    font-family: "Fine", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding-top: .5em;
+    color: #72767d;
+    
+}
+
+blockquote {
+    font-family: "Display", sans-serif;
+    font-style: italic;
+    font-size: 2.5em;
+    color: #333;
+    line-height: 1.2em;
+    letter-spacing: 0;
+}
+
+blockquote:before {
+    content: '“';
+    position: absolute;
+    margin-left: -.4em;
+}
+
+blockquote:after {
+    content: '”';
+}
+
+.quote-wrapper {
+    margin: 2em 0 4em 0;
+    border-left: 3px solid #363636;
+    padding-left: 3em;
+}
+
+.quote-wrapper figcaption {
+    font-family: "Small Title", sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    letter-spacing: 0;
+    padding-top: 1em;
+}
+
+.stat-wrapper {
+    margin: 2em 0 3em 0;
+    border-left: 3px solid #363636;
+    padding-left: 2em;
+}
+
+.statistic {
+    margin-bottom: 0;
+}
+
+.stat-emphasis {
+    font-style: italic;
+    font-weight: 500; 
+    color: #333;
+}
+
+/*carousel*/
+.container {
+    position: relative;
+}
+
+.mySlides {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#carousel-img {
+    margin-bottom: 0;
+}
+
+.carousel-button {
+    background-color: #eee;
+    border: none;
+    color: #333;
+    padding: 2em 1em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .5;
+    transition: .25s ease;
+}
+
+.container:hover .carousel-button {
+    opacity: 1;
+}
+
+.carousel-display-right {
+    right: 0;
+}
+
+/**************************** image stuff *****************************/
+
+img {
+    width: 100%;
+}
+
+/*full image in body column*/
+.big-image {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2em;
+}
+
+/*image in right content side only*/
+.h3-section img {
+    /*width: 100%;*/
+    margin: 0 0 1.75em 0;
+}
+
+/*multi-image columns*/
+.two-column img {
+    display: inline-block;
+    width: 48%;
+}
+
+.last-img {
+    float: right;
+}
+
+.three-column img {
+    display: inline-block;
+    width: 31.5%;
+    margin: 0 .5% 1.75em .5%;
+    vertical-align: top;
+}
+
+.four-column img {
+    display: inline-block;
+    width: 23%;
+    margin: 0 .5% 1.75em .5%;
+    vertical-align: top;
+}
+
+/*image caption*/
+.img-caption img {
+    margin-bottom: 0;
+}
+
+.img-caption {
+    margin-bottom: 2em;
+}
+
+.dropshadow {
+    box-shadow: 0 1px 2px #ccc;
+}
+
+/*triangle icons*/
+.triangle-left {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid #577CfC;
+    border-bottom: 4px solid transparent;
+    margin-bottom: .1em;
+    margin-right: 1em;
+}
+
+.triangle-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #577CfC;
+    padding-bottom: 2px;
+    margin-right: 1em;
+}

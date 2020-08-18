@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop | Carolyn Zhou</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/style-content.css"> -->
+    <!-- devices -->
+        <link rel="stylesheet" type="text/css" href="../css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="../css/850px.css">
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+        
+        <!-- fonts -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+        <script src="../js/show-menu.js"></script>
+        <script src="js/carousel.js"></script>
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+    </head>
+    <body>
+        <!-- logo -->
+        <a id="first-logo" href="index.html">CZ</a>
+        <a  href="index.html">
+            <div class="diamond"><p id="logo">CZ</p></div>
+        </a>
+        
+        <!-- nav menu -->
+        <ul class="nav">
+            <li><a href="index.html#about">Welcome</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <!-- hamburger menu -->
+        <div class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+        </div>
+        <!-- slideout nav menu -->
+        <ul class="slideout-nav">
+            <div class="slideout-wrapper">
+                
+                <li><a href="index.html#contact">Contact</a></li>
+            </div>
+        </ul>
+       
+        <!-- content -->
+        <div class="hero"></div>
+
+        <div class="content writeup">
+            <h1>My Shop</h1>
+            <div id="about" class="right-content">
+                <div class="h3-section">
+                    <h2>Welcome to My Shop!</h2>
+                    <p class="big">I draw fan art and commissions in various styles. Send me a <a href="">request</a> or browse my artwork!</p>
+	            </div>
+	        </div>
+            <hr>
+        </div>
+
+        
+        <!-- body content -->
+        <div class="content writeup">
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2 id="gallery" class="menu-title">Gallery</h2>
+                </div>
+                <div class="right-content">
+                    <div class="index-menu">
+                        <a href="#classical">Fan Art (Classical)</a>
+                        <a href="#illustrated">Fan Art (Illustrated)</a>
+                        <a href="#portrait">Portrait</a>
+                        <a href="#landscape">Landscape</a>
+                        
+                    </div>
+                </div>
+
+
+                <!-- <div class="left-title">
+                    <h2 id="classical">Classical-Style Fan Art</h2>
+                </div> -->
+                <div id="classical" class="h3-section">
+                    <img class="left-column" src="images/classical_fanart/death_star.png">
+                    <img class="right-column" src="images/classical_fanart/enterprise.JPG">
+                    <img class="left-column" src="images/classical_fanart/bobafett.JPG">
+                    <img class="right-column" src="images/classical_fanart/r2d2_c3p0.png">
+                    <!-- <img class="left-column" src="images/classical_fanart/king.JPG"> -->
+                </div>
+                <hr>
+                
+                
+                <!-- <div class="left-title">
+                    <h2 id="illustrated">Illustrated Fan Art</h2>
+                </div> -->
+                <div id="illustrated" class="h3-section">
+                    <img class="left-column" src="images/illustrated_fanart/detective_pikachu.png">
+                    <img class="right-column" src="images/illustrated_fanart/black_widow.png">
+                    <img class="left-column" src="images/illustrated_fanart/ensay_team.png">
+                    <img class="right-column" src="images/illustrated_fanart/chrison_incineroar.jpg">
+                    <div class="left-column container carousel">
+                        <img class="mySlides_1" id="carousel-img" src="images/illustrated_fanart/amgoth1.JPG">
+                        <img class="mySlides_1" id="carousel-img" src="images/illustrated_fanart/amgoth2.JPG">
+                        <img class="mySlides_1" id="carousel-img" src="images/illustrated_fanart/amgoth3.JPG">
+                        <button class="carousel-button carousel-display-left" onclick="plusDivs_1(-1)">&#10094;</button>
+                        <button class="carousel-button carousel-display-right" onclick="plusDivs_1(+1)">&#10095;</button>
+                        <figcaption>Click through to see the series</figcaption>
+                    </div>
+                    <img class="right-column" src="images/illustrated_fanart/koopa.png">
+                    
+                </div>
+                <hr> 
+
+                <!-- <div class="left-title">
+                    <h2 id="portrait">Portrait</h2>
+                </div> -->
+                <div id="portrait" class="h3-section">
+                    <img class="left-column" src="images/portrait/mom.png">
+                    <img class="right-column" src="images/portrait/noa.jpg">
+                </div>
+                <hr>
+
+                <!-- <div class="left-title">
+                    <h2 id="landscape">Landscape</h2>
+                </div> -->
+                <div id="landscape" class="h3-section">
+                    <img src="images/landscape/pgh.jpg">
+                </div>
+                <hr>
+                
+
+            <!-- footer -->
+
+            <div class="social h2-section-wrapper" id="contact">
+                <div class="left-title">
+                    <h2 class="menu-title">Contact</h2>
+                </div>
+                <div class="right-content">
+                <a class="" href="mailto:carolyn.y.zhou@gmail.com" target="_blank">Email</a>
+                <a a href="tel:6504850694">Phone</a>
+                <!-- <a href='https://www.instagram.com/cycyzhou/' target="_blank">Instagram</a> -->
+                <!-- <a href="https://www.behance.net/carolynzhou" target="_blank">Behance</a> -->
+                <!-- <a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a> -->
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
