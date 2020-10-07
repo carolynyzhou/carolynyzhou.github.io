@@ -1,12 +1,14 @@
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 850px) {
     
     .content {
         margin: 18% 4% 10% 4%;
     }
 
     .hero {
-        height: 75vh;
+        display: none;
     }
+
+
 
 
     /************************************ content & text stuff **************************************/

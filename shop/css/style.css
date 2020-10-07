@@ -59,7 +59,7 @@
     position: fixed;
     text-align: right;
     right: 30px;
-    top: 30px;
+    top: 20px;
     width: 15%;
     z-index: 10;
 }
@@ -75,10 +75,10 @@
 
 }
 
-.nav li {
+/*.nav li {
     padding-bottom: .5em;
 }
-
+*/
 
 /******************* hamburger icon *******************/
 .toggle-button:hover {
@@ -102,7 +102,7 @@
     /*transition: .5s;*/
 }
 
-.toggle-button .menu-bar-top {
+/*.toggle-button .menu-bar-top {
     top: 0;
 }
 
@@ -131,7 +131,7 @@
 .toggle-button {
     display: none;
     z-index: 99;
-}
+}*/
 
 /*menu*/
 .slideout-nav {
@@ -248,7 +248,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/hero.png);
+    background-image: url(../images/hero.jpg);
 }
 
 .writeup {
@@ -289,6 +289,10 @@ h2, h3 {
 
 h2.menu-title {
     color: black;
+}
+
+h2.header {
+    margin-bottom: 1.5em;
 }
 
 /*line height and font size*/
@@ -379,23 +383,28 @@ ul, ol {
     font-family: "Body", sans-serif;
     vertical-align: baseline;
     line-height: 1.4em;
-    color: #333;
+    margin-bottom: 1em;
+
+}
+
+li {
+    margin-bottom: .5em;
+    font-family: "Small Title", sans-serif;
+    font-size: .8em;
+}
+
+.size-caption {
+    /*font-style: italic;*/
+    color: #666;
+    /*margin-bottom: 1em;*/
 }
 
 .bullet-list {
     list-style-type: disc;
-    margin-bottom: 1.2em;
-}
-
-.number-list {
-    list-style-type: decimal;
-    margin-bottom: 1.2em;
-}
-
-#bullet, #numbered {
     margin-left: 1em;
-    margin-bottom: .25em;
 }
+
+
 
 /*other*/
 .bold {
@@ -445,7 +454,7 @@ hr {
 .right-column {
     width: 48%;
     display: inline-block;
-    margin-left: 9%;
+    /*margin-left: 9%;*/
     vertical-align: top;
     margin-bottom: 1em;
     float: right;
@@ -453,12 +462,12 @@ hr {
 
 
 figcaption {
-    font-family: "Fine", sans-serif;
-    font-style: italic;
-    font-size: 16px;
+    font-family: "Small Title", sans-serif;
+    /*font-style: italic;*/
+    font-size: .9em;
     line-height: 1.4em;
     padding-top: .5em;
-    color: #72767d;
+    /*color: #72767d;*/
     
 }
 
