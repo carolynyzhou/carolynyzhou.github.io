@@ -24,8 +24,11 @@
         width: 100%;
     }
 
+    #gallery {
+        padding-bottom: 0;
+    }
     .index-menu {
-        padding-top: 1em;
+        padding-top: 0;
     }
 
     #about {
