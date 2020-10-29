@@ -293,6 +293,7 @@ h2.menu-title {
 
 h2.header {
     margin-bottom: 1.5em;
+    text-transform: capitalize;
 }
 
 /*line height and font size*/
@@ -523,6 +524,7 @@ blockquote:after {
 /*carousel*/
 .container {
     position: relative;
+    padding-bottom: 1.5em;
 }
 
 .mySlides {
