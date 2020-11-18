@@ -217,6 +217,7 @@ ul.slideout-nav {
 /*about*/
 #about {
     margin-left: 25%;
+
 }
 
 
@@ -436,13 +437,13 @@ hr {
 
 .left-title {
     display: inline-block;
-    width: 10%;
+    width: 15%;
     float: left;
 }
 
 .right-content {
     width: 80%; /*total of page width is 1/2 with 1/4 margins*/
-    margin: 0 0 0 10%;
+    margin-left: 19%;
 }
 
 .left-column {
@@ -455,7 +456,6 @@ hr {
 .right-column {
     width: 48%;
     display: inline-block;
-    /*margin-left: 9%;*/
     vertical-align: top;
     margin-bottom: 1em;
     float: right;
