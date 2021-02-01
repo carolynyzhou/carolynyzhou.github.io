@@ -40,10 +40,6 @@
         font-size: 14vw;
     }
 
-    .index-menu {
-        padding-top: 1em;
-    }
-
     .bio, .resume, #contact {
         width: 100%;
     }
@@ -54,6 +50,10 @@
 
     .overlay-subtitle {
         /*font-size: .8em;*/
+    }
+
+    .portfolio-item {
+        margin-bottom: 3em;
     }
 
     /********case study content********/
@@ -68,10 +68,7 @@
     /*general text*/
     h1 {
         font-size: 2.5em;
-    }
-
-    h2 {
-        /*font-size: .9em;*/
+        width: 100%;
     }
 
     /*.left-column, .right-column {

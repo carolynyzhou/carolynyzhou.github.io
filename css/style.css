@@ -174,14 +174,14 @@ h1.intro {
 }
 
 #contact {
-    /*width: 50%;*/
     padding: 1em 0;
 }
-
 
 .social a {
     border-bottom: none;
 }
+
+
 
 /*contact form*/
 .contactform {
