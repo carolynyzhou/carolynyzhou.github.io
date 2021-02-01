@@ -1,0 +1,49 @@
+/************** art index page ***************/
+
+.commissions {
+    background-image: url(../images/commissions/pgh.jpg);
+}
+
+.album {
+    background-image: url(../images/album/hero.jpg);
+}
+
+.scripture {
+    background-image: url(../images/scripture/SL-genesis.jpg);
+}
+
+.shiffonco {
+    background-image: url(../images/index/shiffonco.jpg);
+}
+
+.sketchbook {
+    background-image: url(../images/sketchbook/sketchbook.jpg);
+}
+
+.portfolio a, .portfolio a:hover {
+    border-bottom: none;
+}
+
+.portfolio-item {
+    margin-bottom: 5em;
+}
+
+h1.overlay-title {
+    margin-bottom: .1em;
+}
+
+/*text*/
+.overlay-title a {
+    color: #0038f2;
+    line-height: 1em;
+}
+
+.overlay-subtitle {
+    font-family: "Body", sans-serif;
+    color: #888;
+}
+
+.overlay-title a:hover {
+    color: #aaa;
+}
+

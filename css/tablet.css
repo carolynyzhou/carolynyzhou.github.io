@@ -1,21 +1,16 @@
 /*small desktop window*/
 
 @media screen and (max-width: 1024px) {
-    
-    /*index*/
-    .big {
-        font-size: 2.5em;
+
+    .overlay-title {
+        /*font-size: 8vw;*/
     }
 
-    .portfolio article {
-        height: 300px;
+    .self {
+        margin-bottom: 2em;
     }
 
-    #other-work {
-        height: 240px;
-    }
-
-    .resume {
+    .contactform {
         width: 100%;
     }
 
@@ -34,7 +29,7 @@
 
     /*portolfio content text*/
     h1 {
-        font-size: 4em;
+        font-size: 5em;
         width: 100%;
     }
 
@@ -42,8 +37,4 @@
         margin-bottom: 4em;
     }
 
-    /*resume*/
-    ul.resume {
-        margin-bottom: 0; /*in full width, added margin bottom for the stacked right hand column. this removes that extra space*/
-    }
 }

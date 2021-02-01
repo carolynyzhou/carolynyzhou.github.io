@@ -1,0 +1,53 @@
+/************ DESIGN index page **********/
+
+/*portfolio*/
+.pnc {
+    background-image: url(../images/pnc/hero-image.jpg);
+}
+
+.polly {
+    background-image: url(../images/polly/hero-image.jpg);
+}
+
+.ctat {
+    background-image: url(../images/ctat/hero-image.jpg);
+}
+
+.designcensus {
+    background-image: url(../images/designcensus/hero.jpg);
+}
+
+.goodcook {
+    background-image: url(../images/goodcook/hero.jpg);
+}
+
+.screenspace {
+    background-image: url(../images/screenspace/hero.jpg);
+}
+
+.portfolio a, .portfolio a:hover {
+    border-bottom: none;
+}
+
+.portfolio-item {
+    margin-bottom: 5em;
+}
+
+h1.overlay-title {
+    margin-bottom: .25em;
+}
+
+/*text*/
+.overlay-title a {
+    color: #3c04dc;
+    line-height: 1em;
+}
+
+.overlay-subtitle {
+    font-family: "Body", sans-serif;
+    color: #888;
+}
+
+.overlay-title a:hover {
+    color: #aaa;
+}

@@ -1,54 +1,46 @@
 @font-face {
     font-family: Title;
-    src: url("../fonts/GT-Sectra-Display-Bold.OTF");
+    src: url("../fonts/NoeDisplay-Bold.otf");
     font-style: normal;
 }
 
 @font-face {
     font-family: Small Title;
-    src: url("../fonts/GT-Pressura-Mono-Regular.TTF");
+    src: url("../fonts/NoeDisplay-Bold.otf");
+}
+
+@font-face {
+    font-family: Quote;
+    src: url("../fonts/NoeDisplay-RegularItalic.otf");
 }
 
 @font-face {
     font-family: Body;
-    src: url("../fonts/GT-Sectra-Book.OTF");
+    src: url("../fonts/Graphik-Regular.ttf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: Body;
-    src: url("../fonts/GT-Sectra-Book-Italic.OTF");
+    src: url("../fonts/Graphik-RegularItalic.ttf");
     font-style: italic;
 }
 
 @font-face {
     font-family: Body;
-    src: url("../fonts/GT-Sectra-Bold.OTF");
+    src: url("../fonts/Graphik-Medium.ttf");
     font-weight: 500;
 }
 
 @font-face {
     font-family: Body;
-    src: url("../fonts/GT-Sectra-Bold-Italic.OTF");
+    src: url("../fonts/Graphik-Semibold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Body;
+    src: url("../fonts/Graphik-MediumItalic.ttf");
     font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: Display;
-    src: url("../fonts/GT-Sectra-Display-Regular.OTF");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Display;
-    src: url("../fonts/GT-Sectra-Display-Regular-Italic.OTF");
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: Fine;
-    src: url("../fonts/GT-Sectra-Fine-Book-Italic.OTF");
     font-style: italic;
 }

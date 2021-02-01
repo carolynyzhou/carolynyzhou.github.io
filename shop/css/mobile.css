@@ -8,32 +8,40 @@
         display: none;
     }
 
+    #logo {
+        left: 12px;
+        top: 12px;
+        position: fixed;
+    }
+    
+    .toggle-button {
+        display: block;
+        top: 12px;
+        right: 12px;
+    }
 
+    .nav {
+        display: none;
+    }
 
+    .slideout-nav {
+        display: block;
+    }
 
     /************************************ content & text stuff **************************************/
-    /********index page********/
-
-    .vert-center {
-        width: 92%;
-        margin-left: 4%;
-    }
-
-    .big {
-        font-size: 1em;
-        width: 100%;
-    }
+    /******** menu ********/
 
     #gallery {
         padding-bottom: 0;
     }
-    .index-menu {
+
+    .inline-menu {
         padding-top: 0;
     }
 
-    #about {
-        margin-left: 0;
-        width: 100%;
+    .center-content {
+        width: 100%; /*total of page width is 1/2 with 1/4 margins*/
+        margin-left: 0%;
     }
 
 
@@ -52,7 +60,7 @@
 
     /*general text*/
     h1 {
-        font-size: 2.5em;
+        /*font-size: 2.5em;*/
     }
 
     .left-text-column, .right-text-column {

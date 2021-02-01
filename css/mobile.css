@@ -5,15 +5,12 @@
     }
 
     .hero {
-        height: 75vh;
-    }
-
-    /******************************************* menu stuff *******************************************/
-    .diamond {
         display: none;
     }
 
-    #first-logo {
+    /******************************************* menu stuff *******************************************/
+
+    #logo {
         left: 12px;
         top: 12px;
         position: fixed;
@@ -22,7 +19,7 @@
     .toggle-button {
         display: block;
         top: 12px;
-        right: 10px;
+        right: 12px;
     }
 
     .nav {
@@ -31,60 +28,32 @@
 
     .slideout-nav {
         display: block;
-
     }
 
     /************************************ content & text stuff **************************************/
     /********index page********/
-    #intro {
-        /*padding: 4% 0;*/
+    .intro-subline {
+        /*font-size: 4vw;*/
     }
 
-    .vert-center {
-        width: 92%;
-        margin-left: 4%;
-    }
-
-    .big {
-        /*font-size: 2em;*/
+    .names {
+        font-size: 14vw;
     }
 
     .index-menu {
         padding-top: 1em;
     }
 
-    .bio, .resume {
+    .bio, .resume, #contact {
         width: 100%;
     }
 
-    #say-hi, #more-on-me {
-        margin-left: 15px;
-    }
-
-    .portfolio {
-        /*margin-bottom: 2em;*/
-    }
-
-    .portfolio article {
-        height: 240px;
-    }
-
-    .overlay-text {
-        width: 90%;
-        left: 18%;
+    .overlay-title {
+        /*font-size: 10vw;*/
     }
 
     .overlay-subtitle {
-        font-size: .8em;
-        width: 100%;
-    }
-
-    #overlay-text-other {
-        left: 18%;
-    }
-
-    #other-work {
-        height: 160px;
+        /*font-size: .8em;*/
     }
 
     /********case study content********/
@@ -96,35 +65,25 @@
         margin: 1em 0 2em 0;
     }
 
-    .left-text-column, .right-text-column {
-        margin-bottom: .5em;
-    }
-
     /*general text*/
     h1 {
         font-size: 2.5em;
     }
 
-    .left-text-column, .right-text-column {
+    h2 {
+        /*font-size: .9em;*/
+    }
+
+    /*.left-column, .right-column {
         width: 100%;
         display: block;
         margin-left: 0;
-    }
-
-    h2 {
-        font-size: .8em;
-    }
-
-    .subheader-title {
-        font-size: .8em;
-    }
-
-    p {
-    }
+    }*/
 
     blockquote {
         font-size: 1.75em;
-        line-height: 1.4em;
+        line-height: 1.5em;
+        letter-spacing: 0;
     }
 
     figcaption {
@@ -133,7 +92,6 @@
 
     .quote-wrapper {
         margin: 1.5em 0;
-        /*border-left: 3px solid #606574;*/
         padding-left: 1.75em;
     }
 
@@ -176,10 +134,6 @@
         margin-bottom: 1em;
     }
 
-    .img-caption img {
-        /*margin-bottom: 0;*/
-    }
-
     /************************************ specific stuff ************************************/
 
     /*polly*/
@@ -195,32 +149,14 @@
         margin-left: 5%;
     }
 
-    .polly-final img {
-        display: inline-block;
-        width: 30.9%;
-        margin: 0 1% 1.75em .5%;
-        vertical-align: top;
-        }
-
-    #affinity {
-        width: 100%;
-    }
-
-    #servicemap {
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 2em;
-    }
-
     #polly-lofi, #polly-midfi, #polly-hifi {
         width: 100%;
     }
 
-    /*freelance*/
-    #zoopix img {
+    /*sketchbook*/
+    .sketchbook-left, .sketchbook-right {
+        display: inline-block;
         width: 100%;
-        margin: .8em 0;
     }
 
 }
-

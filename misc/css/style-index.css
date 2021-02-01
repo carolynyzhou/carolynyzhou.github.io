@@ -1,0 +1,40 @@
+/************** art index page ***************/
+
+.gen1 {
+    background-image: url(../images/genesis1.png);
+}
+
+.designcensus {
+    background-image: url(../images/designcensus/hero.jpg);
+}
+
+/*.wayfinding {
+    background-image: url(../images/wayfinding/hero.jpg);
+}*/
+
+.portfolio a, .portfolio a:hover {
+    border-bottom: none;
+}
+
+.portfolio-item {
+    margin-bottom: 5em;
+}
+
+h1.overlay-title {
+    margin-bottom: .1em;
+}
+
+/*text*/
+.overlay-title a {
+    color: #f51a4d;
+    line-height: 1em;
+}
+
+.overlay-subtitle {
+    font-family: "Body", sans-serif;
+    color: #888;
+}
+
+.overlay-title a:hover {
+    color: #aaa;
+}

@@ -1,69 +1,60 @@
 @media screen and (max-width: 850px) {
 
     /******************* menu stuff **********************/
-
-    .vert-center {
-        width: 80%;
+    .intro-subline {
+        font-size: 1em;
+    }
+    .see-more {
+        width: 100%;
+        height: 4em;
+        font-size: 1em;
     }
 
-    .big {
-        font-size: 2em;
+    .left-column, .right-column {
+        width: 100%;
+        display: block;
+        margin-left: 0;
     }
 
-    #say-hi, #more-on-me {
-        /*margin-left: 15px;*/
+    .about-left, .about-right {
+        width: 100%;
     }
-
     .bio {
-        width: 100%;
-        font-size: 1.5em;
+        width: 90%;
     }
 
-    .resume {
+    .resume, .contactform {
         width: 100%;
-    }
-
-    .portfolio article {
-        height: 270px;
     }
     
-    #other-work {
-        width: 100%;
-        height: 210px;
-    }
-
-    #overlay-text-other {
-        left: 20%;
-    }
-
     .overlay-title {
-        margin-top: .2em;
+        font-size: 10vw;
     }
-
     
-    /*project pages*/
+    /******************** project pages ********************/
     .writeup {
         margin-left: 10%;
         margin-right: 10%;
     }
 
     h1 {
-        font-size: 3em;
-        /*line-height: 1.1em;*/
+        font-size: 4em;
+    }
+
+    h2, .left-title h2, .subheader-title {
+        margin-bottom: .5em;
+    }
+
+    .subheader {
+        padding-bottom: 0;
     }
 
     /*text sections become one column*/
     .left-title {
         display: block;
         width: 100%;
-        line-height: 1.4em;
         float: none;
-    }
-
-    .left-title h2 {
-        padding-top: 0;
-        padding-bottom: 1em;
-        text-align: left;
+        margin-bottom: 1em;
     }
 
     .right-content {
@@ -80,15 +71,17 @@
         width: 100%;
         margin-left: 0;
     }
-
-    .right-text-column {
-        width: 45%;
-        display: inline-block;
-        margin-left: 8%;
-        vertical-align: top;
-        margin-bottom: 1em;
-    }
     
+    /*commissions*/
+    .commission-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .commission-cta {
+        width: 100%;
+    }
+
     /*sketchbook*/
     .column-1, .column-2 {
         width: 100%;
