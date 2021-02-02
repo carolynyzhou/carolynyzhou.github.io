@@ -1,18 +1,14 @@
 @media screen and (max-width: 414px) {
     
     .content {
-        margin: 18% 4% 10% 4%;
-    }
-
-    .hero {
-        display: none;
+        margin: 10% 4%;
     }
 
     /******************************************* menu stuff *******************************************/
 
     #logo {
-        left: 12px;
-        top: 12px;
+        left: 10px;
+        top: 10px;
         position: fixed;
     }
 
@@ -44,16 +40,18 @@
         width: 100%;
     }
 
-    .overlay-title {
-        /*font-size: 10vw;*/
+    /******** portfolios ********/
+    .design-portfolio article {
+        height: 26vh; /*set height*/
     }
 
-    .overlay-subtitle {
-        /*font-size: .8em;*/
+    .art-portfolio article, .misc-portfolio article {
+        height: 20vh; /*set height*/
     }
 
-    .portfolio-item {
-        margin-bottom: 3em;
+    .overlay-text {
+        left: 4%;
+        width: 92%;
     }
 
     /********case study content********/

@@ -1,6 +1,6 @@
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 760px) {
 
-    /******************* menu stuff **********************/
+    /******************* home stuff **********************/
     .intro-subline {
         font-size: 1em;
     }
@@ -23,19 +23,20 @@
         width: 90%;
     }
 
-    .resume, .contactform {
+    .resume {
         width: 100%;
     }
     
-    .overlay-title {
-        font-size: 10vw;
+    /******************** portfolio pages *********************/
+    .design-portfolio article {
+        height: 36vh; /*set height*/
+    }
+
+    .art-portfolio article, .misc-portfolio article {
+        height: 28vh; /*set height*/
     }
     
     /******************** project pages ********************/
-    .writeup {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 
     h1 {
         font-size: 4em;

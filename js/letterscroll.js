@@ -88,14 +88,14 @@ let timeline = anime.timeline({autoplay: false})
   .add({
     targets: '.design',
     opacity: [1, 0],
-    duration: 5 * LETTER_ANIM_DURATION 
-  }, 23 * LETTER_ANIM_DURATION) 
+    duration: 8 * LETTER_ANIM_DURATION 
+  }, 27 * LETTER_ANIM_DURATION) 
   // move deisgn
   .add({
     targets: '.design',
     translateX: -5000,
-    duration: 1 * LETTER_ANIM_DURATION 
-  }, 29 * LETTER_ANIM_DURATION) 
+    duration: 1 
+  }, 31 * LETTER_ANIM_DURATION) 
   // artwork in
   .add({
     targets: '.artwork',
@@ -127,14 +127,14 @@ let timeline = anime.timeline({autoplay: false})
   .add({
     targets: '.artwork',
     opacity: [1, 0],
-    duration: 5 * LETTER_ANIM_DURATION 
-  }, 40 * LETTER_ANIM_DURATION)
+    duration: 8 * LETTER_ANIM_DURATION 
+  }, 44 * LETTER_ANIM_DURATION)
   // move art
   .add({
     targets: '.artwork',
     translateX: -5000,
-    duration: 1 * LETTER_ANIM_DURATION 
-  }, 46 * LETTER_ANIM_DURATION)  
+    duration: 1 
+  }, 48 * LETTER_ANIM_DURATION)  
   // misc in
   .add({
     targets: '.misc',

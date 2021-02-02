@@ -40,7 +40,7 @@ h1.intro {
 .names {
     font-size: 12vw;
     width: 100%;
-    /*height: 1.1em;*/
+    height: 1.1em;
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -181,78 +181,15 @@ h1.intro {
     border-bottom: none;
 }
 
-
-
-/*contact form*/
-.contactform {
-    width: 50%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-label {
-    font-family: 'Body', sans-serif;
-    font-size: .8em;
-    color: #666;
-    margin-bottom: 2em;
-}
-
-input {
-    font-family: 'Body', sans-serif;
-    color: #000;
-    margin-bottom: 2em;
-}
-
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin: 10px 0 20px 0;
-  /*margin-top: 6px;*/
-  /*margin-bottom: 16px;*/
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #000;
-  font-family: 'Body', sans-serif;
-  color: white;
-  padding: 15px 20px;
-  margin-top: 1em;
-  border: none;
-  cursor: pointer;
-}
-
-select {
-  font-family: 'Body', sans-serif;
-}
-
-input[type=submit]:hover {
-  background-color: #0038f2;
-}
-
-textarea {
-    font-family: 'Body', sans-serif;
-    font-size: .9em;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
 /**************************** structure *****************************/
 body {
     text-rendering: optimizeLegibility;
     background-color: #f8f8fa;
 }
 
+.hero {
+    display: none;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -275,8 +212,12 @@ body {
     /*margin: 0;*/
 }
 
+.project {
+    margin-top: 8%;
+}
+
 .hero {
-    height: 100vh;
+    /*height: 100vh;*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -286,7 +227,7 @@ body {
 /**************************** text stuff *****************************/
 /*general text styling*/
 h1 {
-    font-family: "Title", sans-serif;
+    font-family: "Title", serif;
     font-size: 6em;
     line-height: 1em;
     letter-spacing: .01em;

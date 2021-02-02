@@ -2,10 +2,16 @@
 
 @media screen and (max-width: 1024px) {
 
-    .overlay-title {
-        /*font-size: 8vw;*/
+    /*portfolios*/
+    .design-portfolio article {
+        height: 38vh; /*set height*/
     }
 
+    .art-portfolio article, .misc-portfolio article {
+        height: 32vh; /*set height*/
+    }
+
+    /*home*/
     .self {
         margin-bottom: 2em;
     }
@@ -15,10 +21,8 @@
     }
 
     /*project page*/
-    .writeup {
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-top: 8em;
+    .project {
+        margin-top: 12%;
     }
 
     /*make middle column (main writeup) wider*/
