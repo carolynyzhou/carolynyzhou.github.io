@@ -3,6 +3,7 @@
 .inline-menu {
     font-family: "Body", sans-serif;
     font-size: .8em;
+    line-height: 1.5em;
     font-weight: 500;
     margin-bottom: 4em;
 }
@@ -12,14 +13,10 @@
     /*position: relative;*/
 }
 
-#contact {
+#orders {
     margin-top: 4em;
 }
 
-#index-social {
-    margin-right: 20px;
-    border-bottom: none;
-}
 
 /**************************** structure *****************************/
 body {
@@ -123,7 +120,7 @@ h3 {
 
 p, ul, ol {
     font-family: "Body", sans-serif;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 1.5em;
     position: relative;
     vertical-align: baseline;
@@ -157,16 +154,6 @@ a:hover {
 
 
 /*lists*/
-ul, ol {
-    display: block;
-    list-style-type: none;
-    font-family: "Body", sans-serif;
-    vertical-align: baseline;
-    line-height: 1.4em;
-    margin-bottom: 1em;
-
-}
-
 .sizes li {
     margin-bottom: .5em;
     font-family: "Body", sans-serif;
@@ -183,7 +170,6 @@ ul, ol {
     list-style-type: disc;
     margin-left: 1em;
 }
-
 
 
 /*other*/
