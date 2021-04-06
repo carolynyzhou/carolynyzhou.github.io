@@ -43,6 +43,14 @@
     background-image: url(../misc/images/genesis1.png);
 }
 
+.clouds {
+    background-image: url(../misc/images/clouds/hero.jpg);
+}
+
+.website {
+    background-image: url(../misc/images/website/bg.jpg);
+}
+
 .designcensus {
     background-image: url(../misc/images/designcensus/hero.jpg);
 }
