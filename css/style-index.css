@@ -102,7 +102,7 @@
 }
 
 .overlay-title {
-    color: #3c04dc;
+    /*color: #3c04dc;*/
     margin-bottom: .2em;
     /*font-size: 6em;*/
     line-height: 1em;
@@ -111,6 +111,18 @@
 .overlay-subtitle {
     font-family: "Body", sans-serif;
     color: #888;
+}
+
+.design-portfolio h1 {
+    color: #3c04dc;
+}
+
+.art-portfolio h1 {
+    color: #0038f2;
+}
+
+.misc-portfolio h1 {
+    color: #f51a4d;
 }
 
 /*hover over portfolio item*/
