@@ -1,6 +1,10 @@
 /************ DESIGN index page **********/
 
 /*design*/
+.apple {
+    background-image: url(../design/images/apple/hero-image.jpg);
+}
+
 .pnc {
     background-image: url(../design/images/pnc/hero-image.jpg);
 }
