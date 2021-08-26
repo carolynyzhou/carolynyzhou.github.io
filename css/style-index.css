@@ -13,20 +13,16 @@
     background-image: url(../design/images/polly/hero-image.jpg);
 }
 
+.scripturelabs {
+    background-image: url(../design/images/scripturelabs/hero.jpg);
+}
+
+.basilweb {
+    background-image: url(../design/images/basilweb/hero.jpg);
+}
+
 .ctat {
     background-image: url(../design/images/ctat/hero-image.jpg);
-}
-
-.designcensus {
-    background-image: url(../design/images/designcensus/hero.jpg);
-}
-
-.goodcook {
-    background-image: url(../design/images/goodcook/hero.jpg);
-}
-
-.screenspace {
-    background-image: url(../design/images/screenspace/hero.jpg);
 }
 
 /*art*/
