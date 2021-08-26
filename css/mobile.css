@@ -55,6 +55,10 @@
     }
 
     /********case study content********/
+    .hero {
+        display: none;
+    }
+
     .h2-section-wrapper {
         margin-bottom: 2em;
     }
@@ -68,12 +72,6 @@
         font-size: 2.5em;
         width: 100%;
     }
-
-    /*.left-column, .right-column {
-        width: 100%;
-        display: block;
-        margin-left: 0;
-    }*/
 
     blockquote {
         font-size: 1.75em;
