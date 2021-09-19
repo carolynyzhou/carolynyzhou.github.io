@@ -26,11 +26,11 @@
 }
 
 /*art*/
-.commissions {
-    background-image: url(../art/images/commissions/pgh.jpg);
+.drawing {
+    background-image: url(../art/images/drawing/landscape_pgh.jpg);
 }
 
-.freelance {
+.graphic {
     background-image: url(../art/images/album/hero.jpg);
 }
 
@@ -50,11 +50,6 @@
 .website {
     background-image: url(../misc/images/website/bg.jpg);
 }
-
-.designcensus {
-    background-image: url(../misc/images/designcensus/hero.jpg);
-}
-
 
 
 /*set heights*/
