@@ -1,1 +1,1 @@
-This is my website. -eg
+Personal website & portfolio. -cz
