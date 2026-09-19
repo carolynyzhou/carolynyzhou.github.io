@@ -2,15 +2,15 @@
 
 /*design*/
 .apple {
-    background-image: url(../design/images/apple/hero-image.jpg);
+    background-image: url(../design/images/apple/hero.jpg);
+}
+
+.bibledojo {
+    background-image: url(../design/images/bibledojo/hero.png)
 }
 
 .pnc {
-    background-image: url(../design/images/pnc/hero-image.jpg);
-}
-
-.polly {
-    background-image: url(../design/images/polly/hero-image.jpg);
+    background-image: url(../design/images/pnc/hero.jpg);
 }
 
 .scripturelabs {
@@ -19,10 +19,6 @@
 
 .basilweb {
     background-image: url(../design/images/basilweb/hero.jpg);
-}
-
-.ctat {
-    background-image: url(../design/images/ctat/hero-image.jpg);
 }
 
 /*art*/

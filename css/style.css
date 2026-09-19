@@ -223,16 +223,16 @@ body {
 /**************************** text stuff *****************************/
 /*general text styling*/
 h1 {
-    font-family: "Title", serif;
+    font-family: "Title", sans-serif;
     font-size: 6em;
     line-height: 1em;
     letter-spacing: .01em;
-    color: #333;
+    color: #222;
     margin-bottom: .75em;
     width: 90%;
 }
 
-h2, h3, .subheader-title  {
+h2, .subheader-title  {
     font-family: 'Small Title', sans-serif;
     line-height: 1.5em;
     font-size: 1.1em;
@@ -241,8 +241,7 @@ h2, h3, .subheader-title  {
 h2, .left-title h2, .subheader-title {
     /*text-transform: uppercase;*/
     margin: 0 0 1em 0;
-    color: #aaa;
-    letter-spacing: 1px;
+    color: #333;
 }
 
 .subheader {
@@ -259,10 +258,9 @@ h2, .left-title h2, .subheader-title {
 
 /*paragraph title*/
 h3 {
-    font-family: 'Body', sans-serif;
+    font-family: 'Heading', sans-serif;
     margin-bottom: 1em;
-    color: #333;
-    font-weight: 600;
+    color: #aaa;
 }
 
 /*paragraph headed with h3 title*/
@@ -409,7 +407,7 @@ figcaption {
 
 blockquote {
     font-family: "Quote", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: -.01em;
     font-size: 2.5em;
     color: #333;
     line-height: 1.2em;
@@ -427,7 +425,7 @@ blockquote:after {
 
 .quote-wrapper {
     margin: 2em 0 4em 0;
-    border-left: 3px solid #363636;
+    border-left: 3px solid #333;
     padding-left: 3em;
 }
 
