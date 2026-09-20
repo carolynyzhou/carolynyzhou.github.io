@@ -29,11 +29,11 @@
     
     /******************** portfolio pages *********************/
     .design-portfolio article {
-        height: 28vh; /*set height*/
+        min-height: 21vh; /*floor height, grows to fit text content*/
     }
 
     .art-portfolio article, .misc-portfolio article {
-        height: 28vh; /*set height*/
+        min-height: 21vh; /*floor height, grows to fit text content*/
     }
     
     /******************** project pages ********************/

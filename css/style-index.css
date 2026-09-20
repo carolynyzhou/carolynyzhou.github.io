@@ -48,9 +48,16 @@
 }
 
 
+/*clear the fixed nav*/
+.design-portfolio, .art-portfolio, .misc-portfolio {
+    padding-top: 8%;
+}
+
 /*set heights*/
 .design-portfolio article {
-    height: 40vh; /*set height*/
+    min-height: 30vh; /*floor height, grows to fit text content*/
+    display: flex;
+    flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -58,22 +65,40 @@
 }
 
 .art-portfolio article, .misc-portfolio article {
-    height: 40vh; /*set height*/
+    min-height: 30vh; /*floor height, grows to fit text content*/
+    display: flex;
+    flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
     width: 100%;
 }
 
+/*lets .container be the direct flex item so it always fills the article*/
+.design-portfolio article > a,
+.art-portfolio article > a,
+.misc-portfolio article > a {
+    display: contents;
+}
 
 /*shared properties*/
 .container {
     height: 100%;
 }
 
+.design-portfolio .container,
+.art-portfolio .container,
+.misc-portfolio .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
 /*overlay*/
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     opacity: 1;
@@ -84,12 +109,9 @@
 /*text*/
 .overlay-text {
     text-align: left;
-    position: absolute;
+    position: relative;
     width: 80%;
-    /*top: 10%;*/
-    left: 10%;
-    top: 55%;
-    transform: translateY(-50%);
+    margin: 2em 10% 1em;
 }
 
 .overlay-title {

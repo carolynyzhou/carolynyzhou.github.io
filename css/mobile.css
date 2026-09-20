@@ -12,18 +12,10 @@
         position: fixed;
     }
 
-    .toggle-button {
-        display: block;
-        top: 12px;
-        right: 12px;
-    }
-
     .nav {
-        display: none;
-    }
-
-    .slideout-nav {
-        display: block;
+        right: 10px;
+        top: 10px;
+        gap: 1em;
     }
 
     /************************************ content & text stuff **************************************/
@@ -42,11 +34,11 @@
 
     /******** portfolios ********/
     .design-portfolio article {
-        height: 20vh; /*set height*/
+        min-height: 15vh; /*floor height, grows to fit text content*/
     }
 
     .art-portfolio article, .misc-portfolio article {
-        height: 20vh; /*set height*/
+        min-height: 15vh; /*floor height, grows to fit text content*/
     }
 
     .overlay-text {

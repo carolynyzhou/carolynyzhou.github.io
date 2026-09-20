@@ -147,17 +147,17 @@ ul.slideout-nav {
     opacity: 1;
     left: 50%;
     transform: translateX(-50%);
-    top: 70%;
+    top: 60%;
     color: #72767d;
 }
 
 .down-arrow {
-    width: 1em;
-    height: 1em;
+    width: .75em;
+    height: .75em;
     border-right: 2px solid #72767d;
     border-top: 2px solid #72767d;
     transform: rotate(135deg) skew(7deg, 7deg);
-    margin-left: 25%;
+    margin-left: 33%;
 
 }
 

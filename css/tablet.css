@@ -4,11 +4,11 @@
 
     /*portfolios*/
     .design-portfolio article {
-        height: 32vh; /*set height*/
+        min-height: 24vh; /*floor height, grows to fit text content*/
     }
 
     .art-portfolio article, .misc-portfolio article {
-        height: 32vh; /*set height*/
+        min-height: 24vh; /*floor height, grows to fit text content*/
     }
 
     /*home*/
