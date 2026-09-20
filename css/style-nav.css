@@ -147,7 +147,7 @@ ul.slideout-nav {
     opacity: 1;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 20px;
+    top: 70%;
     color: #72767d;
 }
 
