@@ -36,13 +36,13 @@
         font-size: 14vw;
     }
 
-    .bio, .resume, #contact {
+    .bio, .resume {
         width: 100%;
     }
 
     /******** portfolios ********/
     .design-portfolio article {
-        height: 26vh; /*set height*/
+        height: 20vh; /*set height*/
     }
 
     .art-portfolio article, .misc-portfolio article {

@@ -29,7 +29,7 @@ h1.intro {
 }
 
 .intro-padding {
-    height: calc(80vh - 20vw + 60 * 80px);
+    height: calc(80vh - 20vw + 54 * 80px);
 }
 
 .intro-subline {
@@ -122,8 +122,12 @@ h1.intro {
 
 /*bottom half of the page (about, contact)*/
 #home-bottom {
-    background-color: #242424;
-    padding: 5em 10% 4em 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    box-sizing: border-box;
 }
 
 /*about*/
@@ -132,7 +136,7 @@ h1.intro {
 }
 
 #about p, #about h3 {
-    color: white;
+    color: #333;
 }
 
 #about h2 {
@@ -140,15 +144,24 @@ h1.intro {
     margin-bottom: .5em;
 }
 
-#about a, #contact a {
+#about a {
     padding-bottom: .1em;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-bottom: 2px solid #333;
+    color: #333;
 }
 
 #about a:hover {
-    color: #ccc;
-    border-bottom: 2px solid #ccc;
+    color: #888;
+    border-bottom: 2px solid #888;
+}
+
+#contact a {
+    color: #333;
+    border-bottom: none;
+}
+
+#contact a:hover {
+    color: #888;
 }
 
 /*resume*/
@@ -174,7 +187,15 @@ h1.intro {
 }
 
 #contact {
-    padding: 1em 0;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: auto;
+    z-index: 10;
+}
+
+#contact .inline-menu {
+    padding-bottom: 0;
 }
 
 .social a {

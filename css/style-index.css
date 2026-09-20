@@ -50,7 +50,7 @@
 
 /*set heights*/
 .design-portfolio article {
-    height: 48vh; /*set height*/
+    height: 40vh; /*set height*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */

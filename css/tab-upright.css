@@ -29,7 +29,7 @@
     
     /******************** portfolio pages *********************/
     .design-portfolio article {
-        height: 36vh; /*set height*/
+        height: 28vh; /*set height*/
     }
 
     .art-portfolio article, .misc-portfolio article {

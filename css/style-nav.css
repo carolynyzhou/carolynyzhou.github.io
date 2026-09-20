@@ -21,10 +21,11 @@
     font-family: "Body", sans-serif;
     font-size: .75em;
     position: fixed;
-    text-align: right;
     right: 30px;
     top: 30px;
-    width: 15%;
+    width: auto;
+    display: flex;
+    gap: 1.5em;
     z-index: 10;
 }
 
@@ -37,10 +38,6 @@
     color: #888;
     border-bottom: none;
 
-}
-
-.nav li {
-    padding-bottom: .5em;
 }
 
 #selected {

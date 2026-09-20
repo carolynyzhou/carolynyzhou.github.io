@@ -1,19 +1,11 @@
 
-$(document).ready(function() {
+// delegated so it still works after nav is injected asynchronously by load-nav.js
+$(document).on('click', '.toggle-button', function() {
+    $(this).toggleClass('button-open');
+    $('.slideout-nav').toggleClass('nav-show');
+});
 
-    var $toggleButton = $('.toggle-button'),
-        $menuWrap = $('.slideout-nav');
-
-    // Hamburger button
-
-    $toggleButton.on('click', function() {
-        $(this).toggleClass('button-open');
-        $menuWrap.toggleClass('nav-show');
-    });
-
-    $(".nav-item").on('click', function() {
-        $menuWrap.toggleClass('nav-show');
-        $toggleButton.toggleClass('button-open');
-    })
-
+$(document).on('click', '.nav-item', function() {
+    $('.slideout-nav').toggleClass('nav-show');
+    $('.toggle-button').toggleClass('button-open');
 });
