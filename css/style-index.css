@@ -21,6 +21,10 @@
     background-image: url(../design/images/basilweb/hero.jpg);
 }
 
+.prototypeworkspace {
+    background-image: url(../design/images/prototypeworkspace/hero.png);
+}
+
 /*art*/
 .drawing {
     background-image: url(../art/images/drawing/landscape_pgh.jpg);
