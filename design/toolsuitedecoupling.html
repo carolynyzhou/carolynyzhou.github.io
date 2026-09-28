@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tool Suite Decoupling | Carolyn Zhou</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style-nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/style-index.css">
+
+        <link rel="stylesheet" type="text/css" href="../css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="../css/tab-upright.css">
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- js -->
+        <script src="../js/show-menu.js" type="text/javascript"></script>
+        <script src="/js/load-nav.js"></script>
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.svg"/>
+    </head>
+    <body>
+        <div id="site-nav"></div>
+
+        <!-- content -->
+        <div class="hero toolsuitedecoupling"></div>
+        <div class="content project">
+            <h1>Tool Suite Decoupling</h1>
+            <div class="right-content">
+                <div class="left-column">
+                    <h2>Challenge</h2>
+                    <p>One internal platform had grown to cover five distinct workflows under a single roof. Features were hard to find, and it was getting harder for the team to reason about ownership as the platform scaled.</p>
+                </div>
+                <div class="right-column">
+                    <h2>Outcome</h2>
+                    <p>Mapped the platform's full feature set to find where functionality was genuinely shared versus workflow-specific, then used that map to plan a phased split into focused, single-domain tools. A working demo is still in progress.</p>
+                </div>
+                <p class="subheader"><span class="subheader-title">My Role</span>Lead Designer</p>
+                <p class="subheader"><span class="subheader-title">Audience</span>Engineers, cross-org stakeholders</p>
+                <p class="subheader"><span class="subheader-title">Tools</span>AI, Markdown, GitHub</p>
+            </div>
+
+            <hr>
+
+            <!-- background -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Background</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <h3>One Platform, Growing Pains</h3>
+                        <p>The platform's home page was originally built around a user's favorites. However, we noticed many users weren't adding any; meanwhile we were adding new capabilities that made the platform more powerful, but burying them in menus. People weren't using what they didn't know was there.</p>
+                        <p>We tried surfacing those features directly on the home page, along with stats on what the platform could do. But the page filled up and people still couldn't find what they needed. We'd added information that wasn't user-friendly and readable.</p>
+                        <p>Discussion began about breaking the platform into separate, dedicated tools, and I set out to test the idea.</p>
+                    </div>
+                </div>
+                <div class="two-column h3-section">
+                    <figure>
+                        <img src="images/toolsuitedecoupling/site_old.png">
+                        <figcaption>Old home page</figcaption>
+                    </figure>
+                    <figure class="last-img">
+                        <img src="images/toolsuitedecoupling/site_current.png">
+                        <figcaption>Current home page</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <hr>
+
+            <!-- planning -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>In Theory: Site Planning</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>I went through every workflow on the existing platform and sorted it into what looked like five core domains. To find where those domains actually depended on each other, I had an AI assistant scan the underlying codebase and catalog every piece of functionality. That surfaced infrastructure that was genuinely shared across domains, things like user access, data pipelines, and management of vendors who work across more than one area, and wasn't clearly owned by any single one.</p>
+                        <p>With that map, I planned a way to handle the shared, cross-domain functionality on its own, separate from each domain's dedicated workflows, and started building individual sites with clean, focused landing views for each.</p>
+                    </div>
+                </div>
+                <div class="big-image h3-section">
+                    <img src="images/toolsuitedecoupling/site_planning1.png">
+                </div>
+            </div>
+            <hr>
+
+            <!-- reality -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>In Reality: Where's the Line?</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>Some workflows didn't split as cleanly as the plan suggested. Audit tasks were a good example: it made sense for the people completing them to see them alongside their everyday work in one tool, but it wasn't obvious whether the team requesting those audits should configure them from that same tool or from their own, or where they should go to review the finished results.</p>
+                    </div>
+                    <div class="h3-section">
+                        <img src="images/toolsuitedecoupling/complexity.png">
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- adjusted plan -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Adjusted Plan</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>Rather than force an even five-way split up front, phase one separates just the two workflows that turned out to be least entangled with the others, while the remaining domains stay grouped together behind shared infrastructure for now. It's not a perfectly even split, but it keeps genuinely coupled workflows together instead of forcing a boundary that doesn't match how people actually work.</p>
+                    </div>
+                    <div class="h3-section">
+                        <img src="images/toolsuitedecoupling/site_planning2.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Status</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>An interactive demo of the phase one split is still in progress. Check back soon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <a href="index.html">‹ Back to Portfolio</a>
+            </footer>
+
+            <hr>
+
+            <!-- SOCIAL -->
+            <div class="social">
+                <h2>My Links</h2>
+                <div class="inline-menu">
+                    <a href="mailto:carolyn.y.zhou@gmail.com" target="_blank">Email</a>
+                    <a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a>
+                    <a href="https://www.behance.net/carolynzhou" target="_blank">Behance</a>
+                    <a href='https://www.instagram.com/rororo_roro_ro/' target="_blank">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
