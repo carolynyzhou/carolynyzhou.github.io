@@ -53,9 +53,9 @@
                 <div class="right-content">
                     <div class="h3-section">
                         <h3>One Platform, Growing Pains</h3>
-                        <p>The platform's home page was originally built around a user's favorites. However, we noticed many users weren't adding any; meanwhile we were adding new capabilities that made the platform more powerful, but burying them in menus. People weren't using what they didn't know was there.</p>
+                        <p>The platform's home page was originally built around a user's favorites. However, we noticed many users weren't adding any; meanwhile we were adding new capabilities, each with complex workflows. They made the platform more powerful, but they were buried in menus. People weren't using what they didn't know was there.</p>
                         <p>We tried surfacing those features directly on the home page, along with stats on what the platform could do. But the page filled up and people still couldn't find what they needed. We'd added information that wasn't user-friendly and readable.</p>
-                        <p>Discussion began about breaking the platform into separate, dedicated tools, and I set out to test the idea.</p>
+                        <p>Discussion began about breaking the platform into separate dedicated tools, and I set out to test the idea.</p>
                     </div>
                 </div>
                 <div class="two-column h3-section">
@@ -74,12 +74,12 @@
             <!-- planning -->
             <div class="h2-section-wrapper">
                 <div class="left-title">
-                    <h2>In Theory: Site Planning</h2>
+                    <h2>In Theory...Site Planning</h2>
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>I went through every workflow on the existing platform and sorted it into what looked like five core domains. To find where those domains actually depended on each other, I had an AI assistant scan the underlying codebase and catalog every piece of functionality. That surfaced infrastructure that was genuinely shared across domains, things like user access, data pipelines, and management of vendors who work across more than one area, and wasn't clearly owned by any single one.</p>
-                        <p>With that map, I planned a way to handle the shared, cross-domain functionality on its own, separate from each domain's dedicated workflows, and started building individual sites with clean, focused landing views for each.</p>
+                        <p>I went through every workflow on the existing platform and sorted it into what looked like 5 core domains. For this process, I had an AI assistant scan the underlying codebase and catalog every piece of functionality. That also surfaced infrastructure that was shared across domains, i.e. user access, data pipelines, and management of vendors who work in more than one area.</p>
+                        <p>With that map, I planned to handle the shared, cross-domain functionality on its own, separate from each domain's dedicated workflows, and I started building individual sites with clean, focused landing views.</p>
                     </div>
                 </div>
                 <div class="big-image h3-section">
@@ -91,14 +91,40 @@
             <!-- reality -->
             <div class="h2-section-wrapper">
                 <div class="left-title">
-                    <h2>In Reality: Where's the Line?</h2>
+                    <h2>In Reality...Where's the Line?</h2>
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>Some workflows didn't split as cleanly as the plan suggested. Audit tasks were a good example: it made sense for the people completing them to see them alongside their everyday work in one tool, but it wasn't obvious whether the team requesting those audits should configure them from that same tool or from their own, or where they should go to review the finished results.</p>
+                        <p>Some workflows didn't split as cleanly as planned. One example is audit tasks: it made sense for raters to complete them in the Annotation tool alongside their other work, but where should the team requesting those audits configure them from? In the Annotation tool, in the Ops tool, have the option in both?</p>
                     </div>
-                    <div class="h3-section">
-                        <img src="images/toolsuitedecoupling/complexity.png">
+                </div>
+                <div class="big-image two-column h3-section">
+                    <figure>
+                        <img src="images/toolsuitedecoupling/1_anno.png" class="dropshadow">
+                        <figcaption>Annotations</figcaption>
+                    </figure>
+                    <figure class="last-img">
+                        <img src="images/toolsuitedecoupling/1_ops.png" class="dropshadow">
+                        <figcaption>Ops & Reporting</figcaption>
+                    </figure>
+                </div>
+                <div class="big-image h3-section">
+                    <div class="flow-diagram">
+                        <div class="flow-question">Where does Eval team configure the audits?</div>
+                        <div class="flow-arrows"><span>↓</span><span>↓</span></div>
+                        <div class="flow-row">
+                            <div class="flow-col">Raters complete audits in their task queue</div>
+                            <div class="flow-connector">↔</div>
+                            <div class="flow-col">Eval team sees rater performance</div>
+                        </div>
+                        <div class="flow-arrows"><span>↓</span><span>↓</span></div>
+                        <div class="flow-row">
+                            <div class="flow-col">Raters & Eval team see tasks in the Annotation site</div>
+                            <div class="flow-connector">↔</div>
+                            <div class="flow-col">Eval team sees Annotation tasks per rater</div>
+                        </div>
+                        <div class="flow-arrows"><span>↓</span><span>↓</span></div>
+                        <div class="flow-question">Where does Eval team go to see judgments?</div>
                     </div>
                 </div>
             </div>
@@ -111,21 +137,43 @@
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>Rather than force an even five-way split up front, phase one separates just the two workflows that turned out to be least entangled with the others, while the remaining domains stay grouped together behind shared infrastructure for now. It's not a perfectly even split, but it keeps genuinely coupled workflows together instead of forcing a boundary that doesn't match how people actually work.</p>
+                        <p>Rather than force a 5-way split upfront, phase 1 separates just the 2 workflows that decoupled most cleanly: Online A/B Testing and Offline Evaluation. This split kept tightly coupled workflows together instead of forcing a boundary that didn't match how people presently worked.</p>
                     </div>
                     <div class="h3-section">
                         <img src="images/toolsuitedecoupling/site_planning2.png">
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class="h2-section-wrapper">
                 <div class="left-title">
-                    <h2>Status</h2>
+                    <h2>Outcome</h2>
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>An interactive demo of the phase one split is still in progress. Check back soon.</p>
+                        <p>Phase 1 shipped two focused home pages, one for A/B Testing and one for Evaluation, each surfacing just the tools and stats relevant to that workflow instead of everything at once. I also added visual differentiation to the cards to create visual hierarchy, helping users navigate without changing the underlying functionality or actual navigation.</p>
+                    </div>
+                </div>
+                <div class="big-image two-column h3-section">
+                    <figure>
+                        <img src="images/toolsuitedecoupling/final_ab.png">
+                        <figcaption>A/B home</figcaption>
+                    </figure>
+                    <figure class="last-img">
+                        <img src="images/toolsuitedecoupling/final_eval.png">
+                        <figcaption>Evaluation home</figcaption>
+                    </figure>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>The split sites would get a new domain that's clear about what it is. But the existing domain would still get hit from bookmarks and old links, and it would not be clear to which site the user should be redirected. Therefore, we needed a lightweight reroute page for visitors landing on the old domain, asking where they meant to go.</p>
+                    </div>
+                    <div class="h3-section">
+                        <img src="images/toolsuitedecoupling/final_reroute.png">
+                    </div>
+                    <div class="h3-section">
+                        <p>Usage stats and outcomes to come.</p>
                     </div>
                 </div>
             </div>

@@ -583,6 +583,55 @@ img {
 
 .two-column figure img {
     width: 100%;
+    margin-bottom: .25em;
+}
+
+/*flow diagram (question -> connected steps -> question)*/
+.flow-diagram {
+    margin-bottom: 1.5em;
+}
+
+.flow-question {
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'Body', sans-serif;
+    color: #333;
+    border: 1px dashed #bbb;
+    border-radius: 8px;
+    padding: .75em 1em;
+    margin-bottom: .25em;
+}
+
+.flow-arrows {
+    display: flex;
+    justify-content: space-around;
+    color: #bbb;
+    font-size: 1.4em;
+    line-height: 1em;
+    margin: .5em 0;
+}
+
+.flow-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5em;
+}
+
+.flow-col {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Body', sans-serif;
+    color: #333;
+}
+
+.flow-connector {
+    flex: 0 0 auto;
+    color: #3EA6E8;
+    font-size: 1.4em;
+    padding: 0 .25em;
 }
 
 .last-img {
