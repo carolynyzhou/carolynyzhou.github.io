@@ -28,19 +28,19 @@
         <!-- content -->
         <div class="hero prototypeworkspace"></div>
         <div class="content project">
-            <h1>Design Prototype Workspace</h1>
+            <h1>AI Prototype Workspace</h1>
             <div class="right-content">
                 <div class="left-column">
                     <h2>Challenge</h2>
-                    <p>Complex, state-heavy internal platforms can't be fully validated through static comps and slide-deck handoffs alone.</p>
+                    <p>Static mocks, slide-deck handoffs, and fragmented code components.</p>
                 </div>
                 <div class="right-column">
                     <h2>Outcome</h2>
-                    <p>Built a component library, a set of AI skills, and a live preview workspace so the team could go straight from an idea to a working prototype, instead of producing static screens first.</p>
+                    <p>Built a component library, a set of AI skills, and a live preview workspace so the team could go straight from an idea to a working prototype.</p>
                 </div>
-                <p class="subheader"><span class="subheader-title">My Role</span>Lead Designer, Design Systems & AI-Assisted Prototyping</p>
+                <p class="subheader"><span class="subheader-title">My Role</span>Lead Designer</p>
                 <p class="subheader"><span class="subheader-title">Audience</span>Internal engineering team</p>
-                <p class="subheader"><span class="subheader-title">Tools</span>Claude, Markdown, GitHub</p>
+                <p class="subheader"><span class="subheader-title">Tools</span>AI, Markdown, GitHub</p>
             </div>
 
             <hr>
@@ -52,9 +52,12 @@
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <h3>Before: Static Comps & Slide Handoffs</h3>
-                        <p>I joined as the team's first designer. I started by designing individual pages, like results dashboards and task-review UI, and tracking recurring patterns in a shared component library. As the patterns added up, I compiled them into components and usage guidelines and handed them off to engineering as a work-in-progress slide deck.</p>
-                        <p>That handoff loop showed its limits fast. Complex, state-heavy internal tools can't be fully validated through static comps and slide handoffs alone. Engineering codified the patterns from basic elements (like color) up through more complex workflows (like multi-step forms), and we used a shared feedback channel to make steady, incremental progress over a couple of years. But every new state still meant a new round of static screens and a new conversation to keep design and code in sync.</p>
+                        <h3>Before: Static Mocks & Slide Handoffs</h3>
+                        <p>I joined as the team's first designer. I started by designing individual pages/workflows and tracking recurring patterns in a shared component library. As the patterns added up, I compiled them into a component library and usage guidelines, which I shared with engineering as a work-in-progress deck.</p>
+                        <p>That handoff loop showed its limits fast. Complex, state-heavy internal tools can't be fully validated through static comps alone. Our engineers codified the patterns from basic elements (i,e. color) up through more complex workflows (i.e. multi-step forms), and we used a shared feedback channel to make steady, incremental progress. But every new state still meant a new round of static screens and a conversation to keep design and code in sync.</p>
+                    </div>
+                    <div class="h3-section">
+                        <img src="images/prototypeworkspace/trad_workflow.png">
                     </div>
                 </div>
             </div>
@@ -67,7 +70,7 @@
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>Last year I started exploring how AI-assisted tools could change this workflow, and used it to move our whole library and process into a new workspace. It's built on three pillars: a <span class="bold">component library</span>, <span class="bold">AI skills & prompt templates</span>, and a <span class="bold">prototyping workspace with a review loop</span>. Together they replace manual screen production with a working prototype from the start.</p>
+                        <p>I started exploring how AI-assisted tools could change our workflow, and used it to move our entire library and process into a new workspace. It's built on three pillars: 1) a <span class="bold">component library</span>, 2) <span class="bold">AI skills & prompt templates</span>, and 3) a <span class="bold">prototyping workspace with a review loop</span>. Together they replace manual screen production with a working prototype from the start.</p>
                     </div>
                 </div>
             </div>
@@ -80,11 +83,8 @@
                 <div class="right-content">
                     <div class="h3-section">
                         <h3>From Atoms to Complex Workflows</h3>
-                        <p>I organized the library using atomic design principles. The smallest indivisible pieces, a button, an icon, a text input, combine into molecules, organisms, templates, and finished pages. That gives designers and engineers a shared vocabulary instead of a flat list of one-off screens.</p>
+                        <p>I set up the library with atomic design principles, giving designers and engineers the building blocks for complexity.</p>
                     </div>
-                </div>
-                <div class="big-image h3-section">
-                    <img src="images/prototypeworkspace/atomic-design-stages.jpg">
                 </div>
                 <div class="big-image h3-section">
                     <img src="images/prototypeworkspace/atomic_design.png">
@@ -99,7 +99,7 @@
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>A set of structured prompts and AI skills connect our design tokens directly to working code. Skills include:</p>
+                        <p>A set of structured prompts and AI skills connect our design tokens directly to working code. These skills include:</p>
                         <ul>
                             <li>1. <span class="bold">Scaffold UI boilerplate</span>: generate new pages that follow our established layout, navigation, and UI conventions.</li>
                             <li>2. <span class="bold">Synthetic data generation</span>: produce mock datasets that match our platform's schemas, so prototypes have real-looking content instead of empty states.</li>
@@ -107,11 +107,12 @@
                             <li>4. <span class="bold">Documentation as product</span>: maintain a shared space my teammates and other colleagues can access and contribute to.</li>
                         </ul>
                     </div>
-                </div>
-                <div class="big-image h3-section">
-                    <img src="images/prototypeworkspace/skill.png">
+                    <div class="h3-section">
+                        <img src="images/prototypeworkspace/skill.png">
+                    </div>
                 </div>
             </div>
+
             <hr>
 
             <!-- pillar 3 -->
@@ -121,11 +122,11 @@
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>The workspace has one navigation structure (a prototype hub, feature pages, a component library, and shared resources) so every experiment has a home. Designers get their own sandbox to build mockups, test interactions, and push changes to Git. Deployed previews let engineers, PMs, and researchers click through live prototypes without setting up a local dev environment.</p>
+                        <p>The workspace has a global navigation structure (a prototype hub, feature pages, a component library, and shared resources) so every experiment has a home. Designers get their own sandbox to build mockups, test interactions, and push changes to Git. Deployed previews let engineers, PMs, and researchers click through live prototypes without setting up a local dev environment.</p>
                     </div>
                 </div>
                 <div class="big-image h3-section">
-                    <img src="images/prototypeworkspace/prototype_page.png">
+                    <img src="images/prototypeworkspace/prototype_page.png" class="dropshadow">
                 </div>
             </div>
 
@@ -135,7 +136,7 @@
                 </div>
                 <div class="right-content">
                     <div class="h3-section">
-                        <p>For me, this meant moving faster. AI could pull usage examples for each component directly from our design system, which I could then adjust for the situation at hand. For teammates who'd worked in both the old and new formats, the clearest feedback was that navigating the workspace, and giving feedback on it, was easier than reviewing a slide deck.</p>
+                        <p>As a designer, this process meant building faster and more consistently. For my engineering teammates who'd worked in both the old and new formats, the clearest feedback was that navigating the workspace made it easier to browse and build from our library, including having a centralized place for completed designs.</p>
                     </div>
                     <div class="h3-section">
                         <table class="comparison-table">

@@ -574,6 +574,17 @@ img {
     width: 48%;
 }
 
+.two-column figure {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    margin: 0;
+}
+
+.two-column figure img {
+    width: 100%;
+}
+
 .last-img {
     float: right;
 }
