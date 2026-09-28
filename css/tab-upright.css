@@ -1,5 +1,10 @@
 @media screen and (max-width: 760px) {
 
+    /*portfolios*/
+    .design-portfolio {
+        grid-template-columns: 1fr;
+    }
+
     /******************* home stuff **********************/
     .intro-subline {
         font-size: 1em;

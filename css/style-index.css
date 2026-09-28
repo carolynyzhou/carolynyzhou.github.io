@@ -1,8 +1,8 @@
 /************ DESIGN index page **********/
 
 /*design*/
-.apple {
-    background-image: url(../design/images/recent/hero.png);
+.more {
+    background-image: url(../design/images/more/hero.png);
 }
 
 .bibledojo {
@@ -61,9 +61,19 @@
     padding-top: 8%;
 }
 
+/*2-column grid, featured tiles span both columns*/
+.design-portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.design-portfolio article.featured {
+    grid-column: 1 / -1;
+}
+
 /*set heights*/
 .design-portfolio article {
-    min-height: 30vh; /*floor height, grows to fit text content*/
+    min-height: 45vh; /*floor height, grows to fit text content*/
     display: flex;
     flex-direction: column;
     background-position: center;
