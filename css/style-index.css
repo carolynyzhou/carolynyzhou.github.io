@@ -154,6 +154,7 @@
 .overlay-subtitle {
     font-family: "Body", sans-serif;
     color: #888;
+    margin-bottom: 0; /*otherwise the inherited trailing margin skews flex vertical centering*/
 }
 
 .design-portfolio h1 {

@@ -32,13 +32,27 @@
         width: 100%;
     }
 
+    .bigger {
+        font-size: 1.1em;
+    }
+
     /******** portfolios ********/
+    .design-portfolio, .art-portfolio {
+        padding-top: 60px; /*8% of a narrow viewport isn't enough clearance under the fixed nav*/
+    }
+
     .design-portfolio article > a, .art-portfolio article > a {
         min-height: 15vh; /*floor height, grows to fit text content*/
     }
 
     .design-portfolio .tile-text .overlay-subtitle, .art-portfolio .tile-text .overlay-subtitle {
         font-size: .7em;
+    }
+
+    /******** about page ********/
+    #home-bottom {
+        min-height: 120vh; /*a little extra page length so content has room to breathe on mobile*/
+        padding-top: 60px; /*so vertically-centered content doesn't tuck under the fixed nav*/
     }
 
     .overlay-text {
