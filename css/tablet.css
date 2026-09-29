@@ -3,12 +3,12 @@
 @media screen and (max-width: 1024px) {
 
     /*portfolios*/
-    .design-portfolio article {
+    .design-portfolio article > a, .art-portfolio article > a {
         min-height: 36vh; /*floor height, grows to fit text content*/
     }
 
-    .art-portfolio article, .misc-portfolio article {
-        min-height: 24vh; /*floor height, grows to fit text content*/
+    .design-portfolio .tile-text .overlay-title, .art-portfolio .tile-text .overlay-title {
+        font-size: 3.5em;
     }
 
     /*home*/

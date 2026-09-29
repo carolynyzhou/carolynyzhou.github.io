@@ -1,10 +1,5 @@
 @media screen and (max-width: 760px) {
 
-    /*portfolios*/
-    .design-portfolio {
-        grid-template-columns: 1fr;
-    }
-
     /******************* home stuff **********************/
     .intro-subline {
         font-size: 1em;
@@ -33,14 +28,14 @@
     }
     
     /******************** portfolio pages *********************/
-    .design-portfolio article {
+    .design-portfolio article > a, .art-portfolio article > a {
         min-height: 21vh; /*floor height, grows to fit text content*/
     }
 
-    .art-portfolio article, .misc-portfolio article {
-        min-height: 21vh; /*floor height, grows to fit text content*/
+    .design-portfolio .tile-text .overlay-title, .art-portfolio .tile-text .overlay-title {
+        font-size: 2em;
     }
-    
+
     /******************** project pages ********************/
 
     h1 {

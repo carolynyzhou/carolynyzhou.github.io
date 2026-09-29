@@ -33,12 +33,12 @@
     }
 
     /******** portfolios ********/
-    .design-portfolio article {
+    .design-portfolio article > a, .art-portfolio article > a {
         min-height: 15vh; /*floor height, grows to fit text content*/
     }
 
-    .art-portfolio article, .misc-portfolio article {
-        min-height: 15vh; /*floor height, grows to fit text content*/
+    .design-portfolio .tile-text .overlay-title, .art-portfolio .tile-text .overlay-title {
+        font-size: 1.3em;
     }
 
     .overlay-text {

@@ -10,8 +10,6 @@ fetch('/partials/nav.html')
             '/design/index.html': 'design',
             '/art/': 'art',
             '/art/index.html': 'art',
-            '/misc/': 'misc',
-            '/misc/index.html': 'misc',
             '/about.html': 'about'
         }[window.location.pathname];
 

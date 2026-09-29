@@ -29,7 +29,7 @@ h1.intro {
 }
 
 .intro-padding {
-    height: calc(80vh - 20vw + 54 * 80px);
+    height: calc(80vh - 20vw + 40 * 80px);
 }
 
 .intro-subline {
@@ -46,11 +46,11 @@ h1.intro {
     display: inline-block;
 }
 
-.names .carolyn, .names .creator, .names .designer, .names .artist {
+.names .carolyn, .names .creator, .names .designer, .names .creative {
       position: absolute;
 }
 
-.names .carolyn span, .names .creator span, .names .designer span, .names .artist span {
+.names .carolyn span, .names .creator span, .names .designer span, .names .creative span {
     display: inline-block;
 }
 
@@ -61,14 +61,14 @@ h1.intro {
 .designer, .design a {
     color: #3c04dc;
 }
-.artist, .artwork a {
-    color: #0038f2;
+.artwork a {
+    color: #f51a4d;
 }
-.creative, .misc a {
+.creative {
     color: #f51a4d;
 }
 
-.design a, .artwork a, .misc a {
+.design a, .artwork a {
     border-bottom: none;
 }
 
@@ -85,17 +85,17 @@ h1.intro {
     color: #666;
 }
 
-.see-more .design, .see-more .artwork, .see-more .misc {
+.see-more .design, .see-more .artwork {
     position: absolute;
     /*opacity: hidden;*/
 }
 
-.see-more .design span, .see-more .artwork span, .see-more .misc span {
+.see-more .design span, .see-more .artwork span {
     display: inline-block;
     font-size: 1em;
 }
 
-.design, .misc, .artwork {
+.design, .artwork {
     opacity: 0;
 }
 .design {
@@ -103,9 +103,6 @@ h1.intro {
 }
 .artwork {
     z-index: 2;
-}
-.misc {
-    z-index: 1;
 }
 
 .inline-menu {

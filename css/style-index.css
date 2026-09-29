@@ -42,94 +42,97 @@
     background-image: url(../art/images/sketchbook/sketchbook.jpg);
 }
 
-/*misc*/
 .gen1 {
-    background-image: url(../misc/images/genesis1.png);
+    background-image: url(../art/images/genesis1.png);
 }
 
 .clouds {
-    background-image: url(../misc/images/clouds/hero.jpg);
-}
-
-.website {
-    background-image: url(../misc/images/website/bg.jpg);
+    background-image: url(../art/images/clouds/hero.jpg);
 }
 
 
 /*clear the fixed nav*/
-.design-portfolio, .art-portfolio, .misc-portfolio {
+.design-portfolio, .art-portfolio {
     padding-top: 8%;
 }
 
-/*2-column grid, featured tiles span both columns*/
-.design-portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.design-portfolio article.featured {
-    grid-column: 1 / -1;
-}
-
-/*set heights*/
-.design-portfolio article {
-    min-height: 45vh; /*floor height, grows to fit text content*/
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Resize the background image to cover the entire container */
-    width: 100%;
-}
-
-.art-portfolio article, .misc-portfolio article {
-    min-height: 30vh; /*floor height, grows to fit text content*/
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Resize the background image to cover the entire container */
-    width: 100%;
-}
-
-/*lets .container be the direct flex item so it always fills the article*/
+/*each project is a full-width row, split into an image half and a text half*/
 .design-portfolio article > a,
-.art-portfolio article > a,
-.misc-portfolio article > a {
-    display: contents;
-}
-
-/*shared properties*/
-.container {
-    height: 100%;
-}
-
-.design-portfolio .container,
-.art-portfolio .container,
-.misc-portfolio .container {
-    flex: 1;
+.art-portfolio article > a {
     display: flex;
-    align-items: center;
-}
-
-/*overlay*/
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    transition: .25s ease;
-    background-color: #f8f8fa;
-}
-
-/*text*/
-.overlay-text {
-    text-align: left;
+    min-height: 45vh; /*floor height, grows to fit text content*/
     position: relative;
-    width: 80%;
-    margin: 2em 10% 1em;
+    border-bottom: none; /*override the global a{} underline border*/
+    transition: .25s ease;
+}
+
+/*hover the whole image+text pair: one shadow around the pair (only real links, not the href-less "more" tile)*/
+.design-portfolio a[href]:hover,
+.art-portfolio a[href]:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+    z-index: 2;
+}
+
+.design-portfolio .tile-image,
+.design-portfolio .tile-text,
+.art-portfolio .tile-image,
+.art-portfolio .tile-text {
+    flex: 0 0 50%; /*explicit basis, not 0%+grow, avoids browser edge cases with percentage padding*/
+    box-sizing: border-box; /*so tile-text's padding is included within its 50%, not added on top*/
+}
+
+.design-portfolio .tile-image,
+.art-portfolio .tile-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    transition: .25s ease;
+}
+
+.design-portfolio .tile-text,
+.art-portfolio .tile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+    position: relative;
+    --tile-bg: #f8f8fa;
+    background-color: var(--tile-bg);
+    transition: .25s ease;
+}
+
+.design-portfolio .tile-text .overlay-title,
+.art-portfolio .tile-text .overlay-title {
+    overflow-wrap: break-word;
+}
+
+/*small arrow pointing from the text tile into its associated image tile*/
+.design-portfolio .tile-text::before,
+.art-portfolio .tile-text::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+
+/*odd projects: image first, text second (arrow points left, into the image)*/
+.design-portfolio article:nth-child(odd) .tile-text::before,
+.art-portfolio article:nth-child(odd) .tile-text::before {
+    left: 0;
+    transform: translate(-100%, -50%);
+    border-right: 20px solid var(--tile-bg);
+}
+
+/*even projects: text first, image second (arrow points right, into the image)*/
+.design-portfolio article:nth-child(even) .tile-text::before,
+.art-portfolio article:nth-child(even) .tile-text::before {
+    right: 0;
+    transform: translate(100%, -50%);
+    border-left: 20px solid var(--tile-bg);
 }
 
 .overlay-title {
@@ -149,18 +152,6 @@
 }
 
 .art-portfolio h1 {
-    color: #0038f2;
-}
-
-.misc-portfolio h1 {
     color: #f51a4d;
 }
 
-/*hover over portfolio item*/
-.container:hover .overlay {
-    opacity: .5;
-}
-
-.container:hover .overlay-title, .container:hover .overlay-subtitle {
-    color: #333;
-}
