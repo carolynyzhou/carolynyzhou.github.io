@@ -398,6 +398,190 @@ ul, ol {
     color: #666;
 }
 
+/*icon grid for design principles / results (e.g. consent forms case study)*/
+.principles-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.principle {
+    flex: 1;
+    position: relative;
+}
+
+.principle-icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto .75em;
+}
+
+.principle-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.principle h4 {
+    font-family: 'Body', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #222;
+    margin-bottom: .35em;
+}
+
+.principle p {
+    color: #666;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.principle-status {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    font-family: 'Body', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.principle-status.status-yes {
+    color: #34c759;
+}
+
+.principle-status.status-partial {
+    color: #aaa;
+}
+
+.principle-callout {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: .9em 1.1em;
+    margin-top: 1.5em;
+    font-family: 'Body', sans-serif;
+    font-weight: 600;
+    font-size: .85em;
+    color: #222;
+    line-height: 1.4em;
+}
+
+.principle-callout::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+}
+
+/*list-of-forms diagram (required/optional badges + grouping bracket)*/
+.forms-diagram {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px;
+    margin: 1em 0;
+}
+
+.forms-row {
+    grid-column: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    padding: .6em 1.5em .6em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.forms-row:last-of-type {
+    border-bottom: none;
+}
+
+.form-badge {
+    flex: 0 0 auto;
+    font-family: 'Body', sans-serif;
+    font-size: .7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    padding: .3em .7em;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-top: .2em;
+}
+
+.form-badge.required {
+    background-color: #fbe14f;
+    color: #4a3b00;
+}
+
+.form-badge.optional {
+    background-color: #e6e6e6;
+    color: #666;
+}
+
+.form-info h4 {
+    font-family: 'Body', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #222;
+    margin-bottom: .15em;
+}
+
+.form-info p {
+    color: #666;
+    font-size: .9em;
+}
+
+.forms-bracket {
+    grid-column: 2;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5em;
+}
+
+.forms-bracket.new {
+    grid-column: 3;
+}
+
+.forms-bracket::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 0;
+    width: 16px;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+}
+
+.forms-bracket span {
+    margin-left: calc(16px + .75em);
+}
+
+.forms-bracket span {
+    font-family: 'Body', sans-serif;
+    font-weight: 700;
+    color: #222;
+    white-space: nowrap;
+}
+
+.forms-bracket.new::before {
+    border-color: #009929;
+}
+
+.forms-bracket.new span {
+    color: #009929;
+}
+
 br {
     line-height: 1.5em;
 }

@@ -32,8 +32,8 @@
         min-height: 21vh; /*floor height, grows to fit text content*/
     }
 
-    .design-portfolio .tile-text .overlay-title, .art-portfolio .tile-text .overlay-title {
-        font-size: 2em;
+    .design-portfolio .tile-text .overlay-subtitle, .art-portfolio .tile-text .overlay-subtitle {
+        font-size: .8em;
     }
 
     /******************** project pages ********************/

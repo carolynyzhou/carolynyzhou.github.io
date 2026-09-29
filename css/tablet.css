@@ -7,8 +7,8 @@
         min-height: 36vh; /*floor height, grows to fit text content*/
     }
 
-    .design-portfolio .tile-text .overlay-title, .art-portfolio .tile-text .overlay-title {
-        font-size: 3.5em;
+    .design-portfolio .tile-text .overlay-subtitle, .art-portfolio .tile-text .overlay-subtitle {
+        font-size: .9em;
     }
 
     /*home*/

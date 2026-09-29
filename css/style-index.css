@@ -18,7 +18,7 @@
 }
 
 .basilweb {
-    background-image: url(../design/images/basilweb/hero.jpg);
+    background-image: url(../design/images/basilweb/hero.png);
 }
 
 .prototypeworkspace {
@@ -27,6 +27,10 @@
 
 .toolsuitedecoupling {
     background-image: url(../design/images/toolsuitedecoupling/hero.png);
+}
+
+.consentforms {
+    background-image: url(../design/images/consentforms/hero.png);
 }
 
 /*art*/
@@ -103,7 +107,12 @@
 
 .design-portfolio .tile-text .overlay-title,
 .art-portfolio .tile-text .overlay-title {
+    /*fluid instead of fixed breakpoint jumps, so long single words (e.g. "Decoupling") shrink
+      continuously with the column instead of hitting a size that's still too big to fit and
+      breaking mid-word*/
+    font-size: clamp(1.3em, 5vw, 6em);
     overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /*small arrow pointing from the text tile into its associated image tile*/

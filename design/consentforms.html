@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Healthcare Consent Forms | Carolyn Zhou</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style-nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/style-index.css">
+
+        <link rel="stylesheet" type="text/css" href="../css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="../css/tab-upright.css">
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- js -->
+        <script src="../js/show-menu.js" type="text/javascript"></script>
+        <script src="/js/load-nav.js"></script>
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.svg"/>
+    </head>
+    <body>
+        <div id="site-nav"></div>
+
+        <!-- content -->
+        <div class="hero consentforms"></div>
+        <div class="content project">
+            <h1>Healthcare Consent Forms</h1>
+            <div class="right-content">
+                <div class="left-column">
+                    <h2>Challenge</h2>
+                    <p>A healthcare app needed patients to review and sign several new legal consent forms, but the ask risked bolting more screens onto an already long onboarding flow that most people would click through without reading.</p>
+                </div>
+                <div class="right-column">
+                    <h2>Outcome</h2>
+                    <p>Restructured the forms and onboarding flow so patients actually understand what they're agreeing to. The overall flow got longer, but the required part got shorter, and every form now leads with a plain-language summary.</p>
+                </div>
+                <p class="subheader"><span class="subheader-title">My Roles</span>UX Design</p>
+                <p class="subheader"><span class="subheader-title">Team</span>Visual Designer, Legal & Privacy, Engineering</p>
+            </div>
+
+            <hr>
+
+            <!-- background -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Background</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>The clinic asked for two things: 1) add consent forms to explain new healthcare options, and 2) let patients review and manage those forms from within the app.</p>
+                        <p>However, onboarding was already long, and adding more screens for new forms would make it worse. So the team intentionally expanded the scope from "add new forms" to include helping patients actually understand the benefits and effects of each form, redesigning the forms and flow wherever it would improve clarity and user-friendliness.</p>
+                        <p>Constraints: 1) certain forms had to be signed before a patient could start using the app at all, and 2) the legal copy inside each form, written by the Legal & Privacy team, could not be edited or shortened.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- discovery -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Discovery: Use Cases & Heuristics</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>I mapped out key users and use cases: a new patient creating an account and reviewing forms during onboarding, a dependent creating an account and seeing a limited set of forms, and an existing patient reviewing new forms from inside the app later on.</p>
+                        <p>I also catalogued the heuristics each surface needed to handle: what happens when a user gives or denies consent, what happens if they close the app mid-review, and edge cases like forms that depend on other forms being signed first. The in-app side needed its own form management view, clear agreed/not-agreed states, and a way to resurface an updated form that needs a fresh signature.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- principles -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Design Principles</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <div class="principles-grid">
+                            <div class="principle">
+                                <div class="principle-icon"><img src="images/consentforms/principle_transparent.png"></div>
+                                <h4>Be transparent</h4>
+                                <p>Make it easy at each step for patients to understand what they are about to do.</p>
+                            </div>
+                            <div class="principle">
+                                <div class="principle-icon"><img src="images/consentforms/principle_trim.png"></div>
+                                <h4>Streamline</h4>
+                                <p>Trim the fat; only ask and share information that's necessary.</p>
+                            </div>
+                            <div class="principle">
+                                <div class="principle-icon"><img src="images/consentforms/principle_giveback.png"></div>
+                                <h4>Give back</h4>
+                                <p>Help patients understand why they are being asked to complete certain steps.</p>
+                            </div>
+                        </div>
+                        <p>The overall goal was to educate patients about their healthcare options and make the form signing and management more digestible.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- IA: forms -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Information Architecture: Forms</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>I noted every form as required or optional to receive care, as defined by the clinic. We could allow patients to skip anything optional in onboarding. I also sorted the undifferentiated list of forms by purpose.</p>
+                    </div>
+                    <div class="h3-section">
+                        <div class="forms-diagram">
+                            <div class="forms-row" style="grid-row: 1;">
+                                <span class="form-badge required">Required</span>
+                                <div class="form-info">
+                                    <h4>Consent to Care</h4>
+                                    <p>Agree to receive care from the clinic</p>
+                                </div>
+                            </div>
+                            <div class="forms-row" style="grid-row: 2;">
+                                <span class="form-badge required">Required</span>
+                                <div class="form-info">
+                                    <h4>Notice of Privacy Practices</h4>
+                                    <p>Acknowledge how the clinic uses your medical data</p>
+                                </div>
+                            </div>
+                            <div class="forms-row" style="grid-row: 3;">
+                                <span class="form-badge optional">Optional</span>
+                                <div class="form-info">
+                                    <h4>Health Data</h4>
+                                    <p>Allow the clinic to see your health app data</p>
+                                </div>
+                            </div>
+                            <div class="forms-row" style="grid-row: 4;">
+                                <span class="form-badge optional">Optional</span>
+                                <div class="form-info">
+                                    <h4>Connect My Care</h4>
+                                    <p>Allow providers to share your data</p>
+                                </div>
+                            </div>
+                            <div class="forms-row" style="grid-row: 5;">
+                                <span class="form-badge optional">Optional</span>
+                                <div class="form-info">
+                                    <h4>Informed Consent Form (Research pt.1)</h4>
+                                    <p>Share health data for research</p>
+                                </div>
+                            </div>
+                            <div class="forms-row" style="grid-row: 6;">
+                                <span class="form-badge optional">Optional</span>
+                                <div class="form-info">
+                                    <h4>HIPAA (Research pt.2)</h4>
+                                    <p>Share health data for research</p>
+                                </div>
+                            </div>
+                            <div class="forms-row" style="grid-row: 7;">
+                                <span class="form-badge optional">Optional</span>
+                                <div class="form-info">
+                                    <h4>Contact for Studies</h4>
+                                    <p>Allow the clinic to contact you about research studies</p>
+                                </div>
+                            </div>
+
+                            <div class="forms-bracket" style="grid-row: 1 / 3;"><span>Forms for Care</span></div>
+                            <div class="forms-bracket" style="grid-row: 3 / 5;"><span>Health Data</span></div>
+                            <div class="forms-bracket" style="grid-row: 5 / 8;"><span>Research</span></div>
+                            <div class="forms-bracket new" style="grid-row: 4 / 8;"><span>New</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- IA: onboarding flow -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Information Architecture: Onboarding Flow</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>I started from the existing onboarding flow and list of new forms.</p>
+                        <p>From there, I added 3 changes: 1) Screens were grouped by purpose. 2) Groups were reordered for better cohesion, moving the optional health-data and research forms to the end. 3) Added informational bumper screens to explain the purpose of each upcoming section before diving in.</p>
+                        <p>As a result, the overall flow got longer (more screens, more explanation), but the <span class="bold">required</span> portion, which every patient has to complete before using the app, got shorter. Everything optional was clearly marked as such.</p>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>Existing flow, with new screens for the added consent forms.</p>
+                    </div>
+                </div>
+                <div class="big-image h3-section">
+                    <img src="images/consentforms/flow_existing_newscreens.png">
+                </div>
+
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>1) I identified and sorted the screens into distinct purposes.</p>
+                    </div>
+                </div>
+                <div class="big-image h3-section">
+                    <img src="images/consentforms/flow_newscreen_sorting.png">
+                </div>
+
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>2) I reordered for cohesion and 3) added informational bumper screens (highlighted) to explain each section.</p>
+                    </div>
+                </div>
+                <div class="big-image h3-section">
+                    <img src="images/consentforms/flow_bumpers.png">
+                </div>
+
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>The final new flow was longer overall, but the required section is shorter.</p>
+                    </div>
+                </div>
+                <div class="big-image h3-section">
+                    <img src="images/consentforms/flow_new.png">
+                </div>
+            </div>
+            <hr>
+
+            <!-- final designs -->
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Final Designs</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <h3>Bumpers</h3>
+                        <p>Bumper screens highlight the main points of their upcoming section before a patient lands on the legal copy itself, so they have context going in instead of hitting walls of dense text.</p>
+                    </div>
+                    <div class="big-image h3-section">
+                        <img src="images/consentforms/final_bumpers.png">
+                    </div>
+                    <div class="h3-section">
+                        <h3>Form Redesign</h3>
+                        <p>The legal copy could not be changed, but I reworked the frame around it. Each form gained an "About this form" summary and a set of "You should know" bullet points up top, giving patients a plain-language pass before (or instead of) reading the full legal text.</p>
+                    </div>
+                    <div class="big-image h3-section">
+                        <img src="images/consentforms/final_forms.png">
+                    </div>
+                    <div class="h3-section">
+                        <h3>Management View</h3>
+                        <p>The app's profile page displays every form in organized groups matching the same categories from the IA work, and lets patients give or withdraw consent for any optional form at any time.</p>
+                    </div>
+                    <div class="big-image h3-section">
+                        <img src="images/consentforms/final_profile.png">
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="h2-section-wrapper">
+                <div class="left-title">
+                    <h2>Results</h2>
+                </div>
+                <div class="right-content">
+                    <div class="h3-section">
+                        <p>Checking against the original principles, transparency and giving back were achieved, but streamlining was intentionally reworked in favor or clarity.</p>
+                        <div class="principles-grid">
+                            <div class="principle">
+                                <div class="principle-icon">
+                                    <span class="principle-status status-yes">✓</span>
+                                    <img src="images/consentforms/principle_transparent.png">
+                                </div>
+                                <h4>Be transparent</h4>
+                                <p>Make it easy at each step for patients to understand what they are about to do.</p>
+                            </div>
+                            <div class="principle">
+                                <div class="principle-icon">
+                                    <span class="principle-status status-partial">?</span>
+                                    <img src="images/consentforms/principle_trim.png">
+                                </div>
+                                <h4>Streamline</h4>
+                                <p>Trim the fat; only ask and share information that's necessary.</p>
+                                <div class="principle-callout">Overall, we sacrificed brevity in favor of clarity, but shortened required onboarding.</div>
+                            </div>
+                            <div class="principle">
+                                <div class="principle-icon">
+                                    <span class="principle-status status-yes">✓</span>
+                                    <img src="images/consentforms/principle_giveback.png">
+                                </div>
+                                <h4>Give back</h4>
+                                <p>Help patients understand why they are being asked to complete certain steps.</p>
+                            </div>
+                        </div>
+                        <p>This was an interesting practice of discernment in when to increase the scope of an ask vs. minimizing LOE, building the design rationale to justify expanding the original ask for comprehension and clarity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <a href="index.html">‹ Back to Portfolio</a>
+            </footer>
+
+            <hr>
+
+            <!-- SOCIAL -->
+            <div class="social">
+                <h2>My Links</h2>
+                <div class="inline-menu">
+                    <a href="mailto:carolyn.y.zhou@gmail.com" target="_blank">Email</a>
+                    <a href="https://www.linkedin.com/in/carolyn-zhou/" target="_blank">LinkedIn</a>
+                    <a href="https://www.behance.net/carolynzhou" target="_blank">Behance</a>
+                    <a href='https://www.instagram.com/rororo_roro_ro/' target="_blank">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
