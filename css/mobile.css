@@ -62,7 +62,7 @@
 
     /********case study content********/
     .hero {
-        display: none;
+        background-attachment: scroll; /*background-attachment:fixed is unreliable on iOS Safari*/
     }
 
     .h2-section-wrapper {

@@ -477,9 +477,21 @@ ul, ol {
     top: -9px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
     border-bottom: 9px solid #fff;
+}
+
+.principle-callout::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #e5e5e5;
 }
 
 /*list-of-forms diagram (required/optional badges + grouping bracket)*/
