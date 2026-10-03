@@ -33,6 +33,14 @@
     background-image: url(../design/images/consentforms/hero.png);
 }
 
+.experimentresults {
+    background-image: url(../design/images/experimentresults/hero.png);
+}
+
+.selfserveexperiment {
+    background-image: url(../design/images/selfserveexperiment/hero.png);
+}
+
 /*art*/
 .drawing {
     background-image: url(../art/images/drawing/landscape_pgh.jpg);

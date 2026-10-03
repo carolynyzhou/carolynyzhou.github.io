@@ -238,6 +238,56 @@ body {
     background-size: cover;
 }
 
+.under-construction {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.under-construction h1 {
+    text-align: center;
+}
+
+.under-construction p {
+    max-width: 480px;
+}
+
+.under-construction footer {
+    margin-top: 1.5em;
+}
+
+.blurred-content {
+    filter: blur(6px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.blur-fade {
+    position: relative;
+    max-height: 650px;
+    overflow: hidden;
+}
+
+.blur-fade::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 220px;
+    background: linear-gradient(to bottom, rgba(248, 248, 250, 0), #f8f8fa 85%);
+}
+
+.under-construction .emoji-mark {
+    font-size: 6em;
+    line-height: 1em;
+    margin-bottom: .5em;
+    max-width: none;
+}
+
 /**************************** text stuff *****************************/
 /*general text styling*/
 h1 {
